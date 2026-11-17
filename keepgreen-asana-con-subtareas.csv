@@ -1,0 +1,527 @@
+Name,Section/Column,Description,Parent task
+Home,Sin empezar,"Description: Portada: slideshow, iconos de confianza, colección destacada, bloques de texto e imagen, listado de colecciones, blog destacado y FAQ.
+
+Tipo: Plantilla
+
+Prioridad: Alta
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/",
+Césped artificial de calidad al mejor precio,,https://keepgreen.es/,Home
+Colección por uso o medida,Sin empezar,"Description: Landing de colección con foto + texto, vídeo, rejilla de productos y FAQ. La usan las de medida (30/35/40 mm, rollos, al corte) y las de uso (jardín, terraza, balcón, piscina, mascotas, niños, colegios, eventos, camping, interiores, urbanizaciones, zonas públicas, parques) y Black Friday.
+
+Tipo: Plantilla
+
+Prioridad: Alta
+
+Nº de URLs: 20
+
+URL de referencia: https://keepgreen.es/collections/black-friday
+
+Decisión pendiente: ¿Se unifican medida y uso en una sola plantilla o se separan?
+
+URLs:
+- https://keepgreen.es/collections/black-friday
+- https://keepgreen.es/collections/cesped-artificial-30-mm
+- https://keepgreen.es/collections/cesped-artificial-35-mm
+- https://keepgreen.es/collections/cesped-artificial-40-mm
+- https://keepgreen.es/collections/cesped-artificial-al-corte
+- https://keepgreen.es/collections/cesped-artificial-balcon
+- https://keepgreen.es/collections/cesped-artificial-barato
+- https://keepgreen.es/collections/cesped-artificial-camping
+- https://keepgreen.es/collections/cesped-artificial-colegios
+- https://keepgreen.es/collections/cesped-artificial-eventos
+- https://keepgreen.es/collections/cesped-artificial-interiores
+- https://keepgreen.es/collections/cesped-artificial-jardin
+- https://keepgreen.es/collections/cesped-artificial-mascotas
+- https://keepgreen.es/collections/cesped-artificial-ninos
+- https://keepgreen.es/collections/cesped-artificial-parques-infantiles
+- https://keepgreen.es/collections/cesped-artificial-piscina
+- https://keepgreen.es/collections/cesped-artificial-rollos
+- https://keepgreen.es/collections/cesped-artificial-terraza
+- https://keepgreen.es/collections/cesped-artificial-urbanizaciones
+- https://keepgreen.es/collections/cesped-artificial-zonas-publicas",
+Black Friday,,https://keepgreen.es/collections/black-friday,Colección por uso o medida
+Césped artificial 30 mm,,https://keepgreen.es/collections/cesped-artificial-30-mm,Colección por uso o medida
+Césped artificial 35 mm,,https://keepgreen.es/collections/cesped-artificial-35-mm,Colección por uso o medida
+Césped artificial 40 mm,,https://keepgreen.es/collections/cesped-artificial-40-mm,Colección por uso o medida
+Césped artificial al corte,,https://keepgreen.es/collections/cesped-artificial-al-corte,Colección por uso o medida
+Césped artificial para Balcón,,https://keepgreen.es/collections/cesped-artificial-balcon,Colección por uso o medida
+Césped artificial barato,,https://keepgreen.es/collections/cesped-artificial-barato,Colección por uso o medida
+Césped artificial para camping,,https://keepgreen.es/collections/cesped-artificial-camping,Colección por uso o medida
+Césped artificial para colegios,,https://keepgreen.es/collections/cesped-artificial-colegios,Colección por uso o medida
+Césped artificial para eventos,,https://keepgreen.es/collections/cesped-artificial-eventos,Colección por uso o medida
+Césped artificial para interiores,,https://keepgreen.es/collections/cesped-artificial-interiores,Colección por uso o medida
+Césped artificial para jardín,,https://keepgreen.es/collections/cesped-artificial-jardin,Colección por uso o medida
+Césped artificial para mascotas,,https://keepgreen.es/collections/cesped-artificial-mascotas,Colección por uso o medida
+Césped artificial para niños,,https://keepgreen.es/collections/cesped-artificial-ninos,Colección por uso o medida
+Césped artificial para parques infantiles,,https://keepgreen.es/collections/cesped-artificial-parques-infantiles,Colección por uso o medida
+Césped artificial para piscina,,https://keepgreen.es/collections/cesped-artificial-piscina,Colección por uso o medida
+Césped artificial en rollos,,https://keepgreen.es/collections/cesped-artificial-rollos,Colección por uso o medida
+Césped Artificial para Terraza,,https://keepgreen.es/collections/cesped-artificial-terraza,Colección por uso o medida
+Césped artificial para urbanizaciones y comunidades,,https://keepgreen.es/collections/cesped-artificial-urbanizaciones,Colección por uso o medida
+Césped artificial para zonas públicas,,https://keepgreen.es/collections/cesped-artificial-zonas-publicas,Colección por uso o medida
+Colección de ciudad,Sin empezar,"Description: Landing local (Alicante, Almería, Barcelona, Castellón, Madrid, Málaga, Murcia, Sevilla, Valencia, Zaragoza): iconos, bloques de texto, columnas, rejilla de productos, FAQ y bloques custom.
+
+Tipo: Plantilla
+
+Prioridad: Alta
+
+Nº de URLs: 10
+
+URL de referencia: https://keepgreen.es/collections/cesped-artificial-alicante
+
+Decisión pendiente: ¿Se mantienen las 10 ciudades?
+
+URLs:
+- https://keepgreen.es/collections/cesped-artificial-alicante
+- https://keepgreen.es/collections/cesped-artificial-almeria
+- https://keepgreen.es/collections/cesped-artificial-barcelona
+- https://keepgreen.es/collections/cesped-artificial-castellon
+- https://keepgreen.es/collections/cesped-artificial-madrid
+- https://keepgreen.es/collections/cesped-artificial-malaga
+- https://keepgreen.es/collections/cesped-artificial-murcia
+- https://keepgreen.es/collections/cesped-artificial-sevilla
+- https://keepgreen.es/collections/cesped-artificial-valencia
+- https://keepgreen.es/collections/cesped-artificial-zaragoza",
+Césped artificial en Alicante,,https://keepgreen.es/collections/cesped-artificial-alicante,Colección de ciudad
+Césped artificial en Almería,,https://keepgreen.es/collections/cesped-artificial-almeria,Colección de ciudad
+Césped artificial en Barcelona,,https://keepgreen.es/collections/cesped-artificial-barcelona,Colección de ciudad
+Césped artificial en Castellón,,https://keepgreen.es/collections/cesped-artificial-castellon,Colección de ciudad
+Césped artificial en Madrid,,https://keepgreen.es/collections/cesped-artificial-madrid,Colección de ciudad
+Césped artificial en Málaga,,https://keepgreen.es/collections/cesped-artificial-malaga,Colección de ciudad
+Césped artificial en Murcia,,https://keepgreen.es/collections/cesped-artificial-murcia,Colección de ciudad
+Césped artificial en Sevilla,,https://keepgreen.es/collections/cesped-artificial-sevilla,Colección de ciudad
+Césped artificial en Valencia,,https://keepgreen.es/collections/cesped-artificial-valencia,Colección de ciudad
+Césped artificial en Zaragoza,,https://keepgreen.es/collections/cesped-artificial-zaragoza,Colección de ciudad
+Colección todo el césped,Sin empezar,"Description: Página general «comprar césped» con todos los modelos.
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/collections/cesped-artificial
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/collections/cesped-artificial",
+Comprar césped artificial en España,,https://keepgreen.es/collections/cesped-artificial,Colección todo el césped
+Colección de accesorios,Sin empezar,"Description: Listado de herramientas y accesorios con bloques explicativos y columnas.
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/collections/accesorios-cesped-artificial
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/collections/accesorios-cesped-artificial",
+Herramientas y accesorios para césped artificial,,https://keepgreen.es/collections/accesorios-cesped-artificial,Colección de accesorios
+Colección por defecto,Sin empezar,"Description: Plantilla de colección genérica de Shopify, sin H1. La usan /collections/all y productos-complementarios.
+
+Tipo: Plantilla
+
+Prioridad: Baja
+
+Nº de URLs: 2
+
+URL de referencia: https://keepgreen.es/collections/all
+
+Decisión pendiente: ¿Se eliminan o se les da plantilla propia?
+
+URLs:
+- https://keepgreen.es/collections/all
+- https://keepgreen.es/collections/productos-complementarios",
+Productos,,https://keepgreen.es/collections/all,Colección por defecto
+productos-complementarios,,https://keepgreen.es/collections/productos-complementarios,Colección por defecto
+Ficha de producto · césped,Sin empezar,"Description: Ficha de césped: galería, detalles, 4 bloques de imagen+texto, colección destacada, productos recomendados y listado de colecciones. La usan los 6 modelos y la caja de muestras.
+
+Tipo: Plantilla
+
+Prioridad: Alta
+
+Nº de URLs: 7
+
+URL de referencia: https://keepgreen.es/products/albatros-cesped-artificial-de-40-mm
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/products/albatros-cesped-artificial-de-40-mm
+- https://keepgreen.es/products/caja-de-muestras
+- https://keepgreen.es/products/cuco-cesped-artificial-35-mm
+- https://keepgreen.es/products/flamenco-cesped-artificial-de-45-mm
+- https://keepgreen.es/products/jilguero-cesped-artificial-de-30-mm
+- https://keepgreen.es/products/kiwi-cesped-artificial-de-35-mm
+- https://keepgreen.es/products/ruisenor-cesped-artificial-de-30-mm",
+ALBATROS,,https://keepgreen.es/products/albatros-cesped-artificial-de-40-mm,Ficha de producto · césped
+Caja de Muestras Césped Artificial - Prueba la Calidad Keepgreen,,https://keepgreen.es/products/caja-de-muestras,Ficha de producto · césped
+CUCO,,https://keepgreen.es/products/cuco-cesped-artificial-35-mm,Ficha de producto · césped
+FLAMENCO,,https://keepgreen.es/products/flamenco-cesped-artificial-de-45-mm,Ficha de producto · césped
+JILGUERO,,https://keepgreen.es/products/jilguero-cesped-artificial-de-30-mm,Ficha de producto · césped
+KIWI,,https://keepgreen.es/products/kiwi-cesped-artificial-de-35-mm,Ficha de producto · césped
+RUISEÑOR,,https://keepgreen.es/products/ruisenor-cesped-artificial-de-30-mm,Ficha de producto · césped
+Ficha de producto · accesorio,Sin empezar,"Description: Ficha de accesorio: galería, detalles, bloques de imagen+texto y colección destacada (sin recomendados).
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 13
+
+URL de referencia: https://keepgreen.es/products/ambientador
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/products/ambientador
+- https://keepgreen.es/products/arena-silice-saco-25kg
+- https://keepgreen.es/products/banda-union
+- https://keepgreen.es/products/cepillo-cerdas-duras-con-mango
+- https://keepgreen.es/products/cinta-adhesiva-doble-cara
+- https://keepgreen.es/products/cinta-union-autoadhesiva
+- https://keepgreen.es/products/cola-bicomponente
+- https://keepgreen.es/products/cutter-profesional-para-cesped-artificial
+- https://keepgreen.es/products/espatula-dentada
+- https://keepgreen.es/products/grapas-de-sujecion
+- https://keepgreen.es/products/limpiador
+- https://keepgreen.es/products/malla-antihierbas
+- https://keepgreen.es/products/sellador-adhesivo",
+Keep Real - Ambientador césped artificial,,https://keepgreen.es/products/ambientador,Ficha de producto · accesorio
+Arena de sílice para césped artificial de 25kg,,https://keepgreen.es/products/arena-silice-saco-25kg,Ficha de producto · accesorio
+Banda de unión geotextil para césped artificial KT0,,https://keepgreen.es/products/banda-union,Ficha de producto · accesorio
+Cepillo de cerdas duras para césped artificial,,https://keepgreen.es/products/cepillo-cerdas-duras-con-mango,Ficha de producto · accesorio
+Cinta adhesiva de doble cara para césped artificial KT2,,https://keepgreen.es/products/cinta-adhesiva-doble-cara,Ficha de producto · accesorio
+Cinta de unión autoadhesiva para césped artificial KT1,,https://keepgreen.es/products/cinta-union-autoadhesiva,Ficha de producto · accesorio
+RockFix - Cola bicomponente 12kg,,https://keepgreen.es/products/cola-bicomponente,Ficha de producto · accesorio
+Cútter para cortar césped artificial,,https://keepgreen.es/products/cutter-profesional-para-cesped-artificial,Ficha de producto · accesorio
+Espátula dentada,,https://keepgreen.es/products/espatula-dentada,Ficha de producto · accesorio
+Grapas de sujeción,,https://keepgreen.es/products/grapas-de-sujecion,Ficha de producto · accesorio
+Limpiador Higienizador césped artificial - Keep Clean,,https://keepgreen.es/products/limpiador,Ficha de producto · accesorio
+Malla Antihierbas para césped artificial,,https://keepgreen.es/products/malla-antihierbas,Ficha de producto · accesorio
+SmartFix – Sellador adhesivo para césped artificial,,https://keepgreen.es/products/sellador-adhesivo,Ficha de producto · accesorio
+Guía de instalación por superficie,Sin empezar,"Description: Guía larga con slideshow, vídeo, pasos con iconos, galería y blog destacado. General, tierra, cemento y baldosa.
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 4
+
+URL de referencia: https://keepgreen.es/pages/instalar-cesped-artificial
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/instalar-cesped-artificial
+- https://keepgreen.es/pages/instalar-cesped-artificial-baldosa
+- https://keepgreen.es/pages/instalar-cesped-artificial-cemento
+- https://keepgreen.es/pages/instalar-cesped-artificial-tierra",
+Instalación de césped artificial: Guía completa,,https://keepgreen.es/pages/instalar-cesped-artificial,Guía de instalación por superficie
+Cómo instalar césped artificial en baldosa: Guía completa,,https://keepgreen.es/pages/instalar-cesped-artificial-baldosa,Guía de instalación por superficie
+Cómo instalar césped artificial sobre cemento: Guía paso a paso,,https://keepgreen.es/pages/instalar-cesped-artificial-cemento,Guía de instalación por superficie
+Cómo instalar césped artificial sobre tierra: Guía práctica,,https://keepgreen.es/pages/instalar-cesped-artificial-tierra,Guía de instalación por superficie
+Guía paso a paso,Sin empezar,"Description: Guía corta: slideshow, vídeo, bloques de imagen+texto y blog destacado. Elegir, calcular medidas, preparar terreno, cortar, juntar uniones, pegar, arena de sílice, cepillar.
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 8
+
+URL de referencia: https://keepgreen.es/pages/arena-silice-cesped-artificial
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/arena-silice-cesped-artificial
+- https://keepgreen.es/pages/calcular-medidas-cesped-artificial
+- https://keepgreen.es/pages/como-pegar-cesped-artificial
+- https://keepgreen.es/pages/cortar-cesped-artificial
+- https://keepgreen.es/pages/elegir-cesped-artificial
+- https://keepgreen.es/pages/juntar-uniones-cesped-artificial
+- https://keepgreen.es/pages/peinar-y-cepillar-cesped-artificial
+- https://keepgreen.es/pages/preparar-terreno-instalar-cesped-artificial",
+Cómo esparcir arena de sílice sobre césped artificial,,https://keepgreen.es/pages/arena-silice-cesped-artificial,Guía paso a paso
+Guía: ¿cómo saber cuántos metros de césped artificial necesitas?,,https://keepgreen.es/pages/calcular-medidas-cesped-artificial,Guía paso a paso
+¿Cómo pegar césped artificial al suelo?: Guía paso a paso,,https://keepgreen.es/pages/como-pegar-cesped-artificial,Guía paso a paso
+¿Cómo cortar el césped artificial correctamente?,,https://keepgreen.es/pages/cortar-cesped-artificial,Guía paso a paso
+Cómo elegir el mejor césped artificial: Guía de compra,,https://keepgreen.es/pages/elegir-cesped-artificial,Guía paso a paso
+Cómo juntar tiras de césped artificial: Guía práctica,,https://keepgreen.es/pages/juntar-uniones-cesped-artificial,Guía paso a paso
+Cómo peinar y cepillar tu césped artificial,,https://keepgreen.es/pages/peinar-y-cepillar-cesped-artificial,Guía paso a paso
+Cómo preparar el terreno para instalar césped artificial,,https://keepgreen.es/pages/preparar-terreno-instalar-cesped-artificial,Guía paso a paso
+Página de mantenimiento,Sin empezar,"Description: Plantilla compartida por 3 URLs que muestran exactamente el mismo contenido (drenaje, instalación en terrazas y mantenimiento).
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 3
+
+URL de referencia: https://keepgreen.es/pages/drenaje-cesped-artificial
+
+Decisión pendiente: Drenaje y terrazas tienen título SEO propio pero el contenido es el de mantenimiento. ¿Se redactan o se redirigen?
+
+URLs:
+- https://keepgreen.es/pages/drenaje-cesped-artificial
+- https://keepgreen.es/pages/instalar-cesped-artificial-terrazas
+- https://keepgreen.es/pages/mantenimiento-limpieza-cesped-artificial",
+Drenaje del Césped Artificial: Guía Completa,,https://keepgreen.es/pages/drenaje-cesped-artificial,Página de mantenimiento
+Cómo Instalar Césped Artificial en Terrazas: Guía Práctica,,https://keepgreen.es/pages/instalar-cesped-artificial-terrazas,Página de mantenimiento
+Mantenimiento y Limpieza de Césped Artificial: Guía Completa,,https://keepgreen.es/pages/mantenimiento-limpieza-cesped-artificial,Página de mantenimiento
+Páginas legales,Sin empezar,"Description: Plantilla de texto legal: Aviso legal, Condiciones de compra, Política de cookies, Política de privacidad y Política de envío.
+
+Tipo: Plantilla
+
+Prioridad: Baja
+
+Nº de URLs: 5
+
+URL de referencia: https://keepgreen.es/pages/aviso-legal
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/aviso-legal
+- https://keepgreen.es/pages/condiciones-de-compra
+- https://keepgreen.es/pages/politica-de-cookies
+- https://keepgreen.es/policies/privacy-policy
+- https://keepgreen.es/policies/shipping-policy",
+Aviso legal,,https://keepgreen.es/pages/aviso-legal,Páginas legales
+Condiciones de compra,,https://keepgreen.es/pages/condiciones-de-compra,Páginas legales
+Política de cookies,,https://keepgreen.es/pages/politica-de-cookies,Páginas legales
+Política de privacidad,,https://keepgreen.es/policies/privacy-policy,Páginas legales
+Política de envío,,https://keepgreen.es/policies/shipping-policy,Páginas legales
+Portada del blog,Sin empezar,"Description: Página índice del blog con galerías de categorías y artículos destacados.
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/pages/blog
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/blog",
+Blog Keepgreen | Inspiración y consejos sobre césped artificial,,https://keepgreen.es/pages/blog,Portada del blog
+Listado de categoría del blog,Sin empezar,"Description: Listado de artículos por categoría (6 categorías).
+
+Tipo: Plantilla
+
+Prioridad: Baja
+
+Nº de URLs: 6
+
+URL de referencia: https://keepgreen.es/blogs/decoracion-uso
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/blogs/decoracion-uso
+- https://keepgreen.es/blogs/innovacion-tecnologia
+- https://keepgreen.es/blogs/instalacion
+- https://keepgreen.es/blogs/mantenimiento-limpieza
+- https://keepgreen.es/blogs/materiales-accesorios
+- https://keepgreen.es/blogs/sostenibilidad",
+Decoración y uso,,https://keepgreen.es/blogs/decoracion-uso,Listado de categoría del blog
+Innovación y tecnología,,https://keepgreen.es/blogs/innovacion-tecnologia,Listado de categoría del blog
+Instalación,,https://keepgreen.es/blogs/instalacion,Listado de categoría del blog
+Mantenimiento y limpieza,,https://keepgreen.es/blogs/mantenimiento-limpieza,Listado de categoría del blog
+Materiales y accesorios,,https://keepgreen.es/blogs/materiales-accesorios,Listado de categoría del blog
+Sostenibilidad,,https://keepgreen.es/blogs/sostenibilidad,Listado de categoría del blog
+Artículo del blog,Sin empezar,"Description: Plantilla de artículo (43 artículos).
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 43
+
+URL de referencia: https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-atico
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-atico
+- https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-en-interiores
+- https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-madera-terraza
+- https://keepgreen.es/blogs/decoracion-uso/decoracion-cesped-artificial
+- https://keepgreen.es/blogs/decoracion-uso/decorar-terraza-cesped-artificial-palets
+- https://keepgreen.es/blogs/decoracion-uso/decorar-terraza-cesped-artificial-piedras
+- https://keepgreen.es/blogs/decoracion-uso/decorar-terraza-pequena-ideas
+- https://keepgreen.es/blogs/decoracion-uso/iluminar-jardin-cesped-artificial
+- https://keepgreen.es/blogs/decoracion-uso/jardines-piedras-cesped-artificial
+- https://keepgreen.es/blogs/decoracion-uso/mejores-ideas-decorar-jardin
+- https://keepgreen.es/blogs/decoracion-uso/patios-pequenos-cesped-artificial
+- https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-antialergico
+- https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-mascotas
+- https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-resistente-al-fuego
+- https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-ultima-generacion
+- https://keepgreen.es/blogs/innovacion-tecnologia/dtex-cesped-artificial
+- https://keepgreen.es/blogs/innovacion-tecnologia/efecto-memoria-cesped-artificial
+- https://keepgreen.es/blogs/innovacion-tecnologia/puntadas-cesped-artificial
+- https://keepgreen.es/blogs/instalacion/altura-cesped-artificial
+- https://keepgreen.es/blogs/instalacion/cesped-artificial-arboles
+- https://keepgreen.es/blogs/instalacion/cesped-artificial-balcones-terrazas
+- https://keepgreen.es/blogs/instalacion/mejores-suelos-terraza
+- https://keepgreen.es/blogs/instalacion/mejores-superficies-instalar-cesped-artificial
+- https://keepgreen.es/blogs/instalacion/piscina-sobre-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/bichos-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/cesped-artificial-calor
+- https://keepgreen.es/blogs/mantenimiento-limpieza/cesped-artificial-lluvia
+- https://keepgreen.es/blogs/mantenimiento-limpieza/cuidado-cesped-artificial-invierno
+- https://keepgreen.es/blogs/mantenimiento-limpieza/desinfectar-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/duracion-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/limpiar-pipi-olor-perro-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/quitar-electricidad-estatica-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/regar-cesped-artificial
+- https://keepgreen.es/blogs/mantenimiento-limpieza/reparar-cesped-artificial
+- https://keepgreen.es/blogs/materiales-accesorios/aislar-suelo-terraza-calor
+- https://keepgreen.es/blogs/materiales-accesorios/arena-silice-cesped-artificial
+- https://keepgreen.es/blogs/materiales-accesorios/mejor-suelo-jardin-patio
+- https://keepgreen.es/blogs/materiales-accesorios/tipos-de-cesped-artificial
+- https://keepgreen.es/blogs/materiales-accesorios/tipos-suelos-terrazas-exteriores
+- https://keepgreen.es/blogs/sostenibilidad/cesped-artificial-ecologico
+- https://keepgreen.es/blogs/sostenibilidad/cesped-artificial-o-natural
+- https://keepgreen.es/blogs/sostenibilidad/peligros-cesped-artificial
+- https://keepgreen.es/blogs/sostenibilidad/ventajas-desventajas-cesped-artificial",
+Césped artificial para áticos: cómo elegirlo y por qué instalarlo,,https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-atico,Artículo del blog
+Césped artificial en interiores: 5 ideas prácticas para usarlo,,https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-en-interiores,Artículo del blog
+Césped artificial y madera: la combinación perfecta para tu terraza,,https://keepgreen.es/blogs/decoracion-uso/cesped-artificial-madera-terraza,Artículo del blog
+Decoración con césped artificial: inspírate con estas ideas,,https://keepgreen.es/blogs/decoracion-uso/decoracion-cesped-artificial,Artículo del blog
+Ideas para decorar tu terraza con césped artificial y palets |,,https://keepgreen.es/blogs/decoracion-uso/decorar-terraza-cesped-artificial-palets,Artículo del blog
+Ideas para decorar tu terraza con césped artificial y piedras,,https://keepgreen.es/blogs/decoracion-uso/decorar-terraza-cesped-artificial-piedras,Artículo del blog
+Ideas para decorar una terraza pequeña con estilo,,https://keepgreen.es/blogs/decoracion-uso/decorar-terraza-pequena-ideas,Artículo del blog
+Cómo iluminar un jardín de césped artificial: ideas y consejos,,https://keepgreen.es/blogs/decoracion-uso/iluminar-jardin-cesped-artificial,Artículo del blog
+Cómo decorar jardines con piedras y césped artificial: ideas y estilos,,https://keepgreen.es/blogs/decoracion-uso/jardines-piedras-cesped-artificial,Artículo del blog
+Ideas para decorar tu jardín y triunfar este verano,,https://keepgreen.es/blogs/decoracion-uso/mejores-ideas-decorar-jardin,Artículo del blog
+Patios pequeños con césped artificial: ideas y ejemplos para lograr un espacio ideal,,https://keepgreen.es/blogs/decoracion-uso/patios-pequenos-cesped-artificial,Artículo del blog
+Césped artificial antialérgico: beneficios y recomendaciones,,https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-antialergico,Artículo del blog
+Césped artificial para mascotas: Cómo elegir el más resistente y seguro,,https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-mascotas,Artículo del blog
+¿El césped artificial es resistente al fuego? Todo lo que debes saber,,https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-resistente-al-fuego,Artículo del blog
+Césped artificial de última generación: características y ventajas,,https://keepgreen.es/blogs/innovacion-tecnologia/cesped-artificial-ultima-generacion,Artículo del blog
+Qué es Dtex en césped artificial y por qué es importante,,https://keepgreen.es/blogs/innovacion-tecnologia/dtex-cesped-artificial,Artículo del blog
+Efecto memoria en el césped artificial: qué es y por qué importa,,https://keepgreen.es/blogs/innovacion-tecnologia/efecto-memoria-cesped-artificial,Artículo del blog
+Puntadas en el césped artificial: qué son y por qué importan,,https://keepgreen.es/blogs/innovacion-tecnologia/puntadas-cesped-artificial,Artículo del blog
+Altura ideal del césped artificial: Guía para elegir la correcta,,https://keepgreen.es/blogs/instalacion/altura-cesped-artificial,Artículo del blog
+Césped artificial y árboles: compatibilidad y recomendaciones,,https://keepgreen.es/blogs/instalacion/cesped-artificial-arboles,Artículo del blog
+Césped artificial en balcones y terrazas: ventajas y desventajas,,https://keepgreen.es/blogs/instalacion/cesped-artificial-balcones-terrazas,Artículo del blog
+Mejores suelos para terrazas exteriores,,https://keepgreen.es/blogs/instalacion/mejores-suelos-terraza,Artículo del blog
+Dónde instalar césped artificial: las mejores superficies,,https://keepgreen.es/blogs/instalacion/mejores-superficies-instalar-cesped-artificial,Artículo del blog
+¿Se puede poner una piscina sobre césped artificial? Guía completa,,https://keepgreen.es/blogs/instalacion/piscina-sobre-cesped-artificial,Artículo del blog
+Cómo eliminar y prevenir bichos en el césped artificial,,https://keepgreen.es/blogs/mantenimiento-limpieza/bichos-cesped-artificial,Artículo del blog
+Césped artificial y calor: trucos para evitar que se caliente y queme,,https://keepgreen.es/blogs/mantenimiento-limpieza/cesped-artificial-calor,Artículo del blog
+¿Qué pasa con el césped artificial cuando llueve?,,https://keepgreen.es/blogs/mantenimiento-limpieza/cesped-artificial-lluvia,Artículo del blog
+Cómo cuidar el césped artificial en invierno: Guía práctica,,https://keepgreen.es/blogs/mantenimiento-limpieza/cuidado-cesped-artificial-invierno,Artículo del blog
+Cómo desinfectar el césped artificial de forma eficaz,,https://keepgreen.es/blogs/mantenimiento-limpieza/desinfectar-cesped-artificial,Artículo del blog
+Cuánto dura el césped artificial y cuándo cambiarlo,,https://keepgreen.es/blogs/mantenimiento-limpieza/duracion-cesped-artificial,Artículo del blog
+Cómo limpiar el pipí de perro en el césped artificial y eliminar el olor,,https://keepgreen.es/blogs/mantenimiento-limpieza/limpiar-pipi-olor-perro-cesped-artificial,Artículo del blog
+Cómo eliminar la electricidad estática del césped artificial,,https://keepgreen.es/blogs/mantenimiento-limpieza/quitar-electricidad-estatica-cesped-artificial,Artículo del blog
+¿Se debe regar el césped artificial? Cuándo y cómo hacerlo correctamente,,https://keepgreen.es/blogs/mantenimiento-limpieza/regar-cesped-artificial,Artículo del blog
+Cómo reparar el césped artificial roto o dañado y evitar que se deteriore,,https://keepgreen.es/blogs/mantenimiento-limpieza/reparar-cesped-artificial,Artículo del blog
+Cómo aislar el suelo de la terraza del calor: mejores materiales térmicos,,https://keepgreen.es/blogs/materiales-accesorios/aislar-suelo-terraza-calor,Artículo del blog
+Arena de sílice en césped artificial: qué es y cómo se usa,,https://keepgreen.es/blogs/materiales-accesorios/arena-silice-cesped-artificial,Artículo del blog
+Cómo elegir el mejor suelo para tu jardín o patio: guía completa,,https://keepgreen.es/blogs/materiales-accesorios/mejor-suelo-jardin-patio,Artículo del blog
+Tipos de césped artificial,,https://keepgreen.es/blogs/materiales-accesorios/tipos-de-cesped-artificial,Artículo del blog
+Guía de tipos de suelos para terrazas y exteriores: ventajas y usos,,https://keepgreen.es/blogs/materiales-accesorios/tipos-suelos-terrazas-exteriores,Artículo del blog
+Césped artificial y sostenibilidad: ¿es ecológico?,,https://keepgreen.es/blogs/sostenibilidad/cesped-artificial-ecologico,Artículo del blog
+Césped artificial o natural: ¿Cuál elegir?,,https://keepgreen.es/blogs/sostenibilidad/cesped-artificial-o-natural,Artículo del blog
+¿Es seguro el césped artificial? Peligros e inconvenientes,,https://keepgreen.es/blogs/sostenibilidad/peligros-cesped-artificial,Artículo del blog
+Ventajas y desventajas del césped artificial,,https://keepgreen.es/blogs/sostenibilidad/ventajas-desventajas-cesped-artificial,Artículo del blog
+Muestras,Sin empezar,"Description: Landing de solicitud de muestras con formulario y pestañas de colección.
+
+Tipo: Plantilla
+
+Prioridad: Alta
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/pages/muestras-cesped-artificial
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/muestras-cesped-artificial",
+Muestras de césped artificial - Entrega en 24/48h,,https://keepgreen.es/pages/muestras-cesped-artificial,Muestras
+Garantía,Sin empezar,"Description: Página de garantía con bloques de imagen+texto y texto custom.
+
+Tipo: Plantilla
+
+Prioridad: Baja
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/pages/garantia
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/garantia",
+Garantía,,https://keepgreen.es/pages/garantia,Garantía
+Fábrica / sobre nosotros,Sin empezar,"Description: Página de empresa: slideshow, texto y bloques de imagen.
+
+Tipo: Plantilla
+
+Prioridad: Media
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/pages/fabrica-cesped-artificial
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/pages/fabrica-cesped-artificial",
+Fabricantes de césped artificial en España,,https://keepgreen.es/pages/fabrica-cesped-artificial,Fábrica / sobre nosotros
+Alta de cliente,Sin empezar,"Description: Página de registro con texto y bloque custom. No está enlazada desde ningún sitio.
+
+Tipo: Plantilla
+
+Prioridad: Baja
+
+Nº de URLs: 1
+
+URL de referencia: https://keepgreen.es/pages/alta-cliente
+
+Decisión pendiente: ¿Se mantiene?
+
+URLs:
+- https://keepgreen.es/pages/alta-cliente",
+Únete a Keepgreen - Crea tu Cuenta y Mejora tu Jardín,,https://keepgreen.es/pages/alta-cliente,Alta de cliente
+"Sistema: cuenta, carrito y búsqueda",Sin empezar,"Description: Páginas de Shopify: login, registro, carrito y resultados de búsqueda.
+
+Tipo: Plantilla
+
+Prioridad: Baja
+
+Nº de URLs: 4
+
+URL de referencia: https://keepgreen.es/account/login
+
+Decisión pendiente: —
+
+URLs:
+- https://keepgreen.es/account/login
+- https://keepgreen.es/account/register
+- https://keepgreen.es/cart
+- https://keepgreen.es/search",
+Cuenta,,https://keepgreen.es/account/login,"Sistema: cuenta, carrito y búsqueda"
+Crear cuenta,,https://keepgreen.es/account/register,"Sistema: cuenta, carrito y búsqueda"
+Carrito,,https://keepgreen.es/cart,"Sistema: cuenta, carrito y búsqueda"
+Buscar,,https://keepgreen.es/search,"Sistema: cuenta, carrito y búsqueda"
