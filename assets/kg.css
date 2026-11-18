@@ -661,3 +661,16 @@ body.mod4 .sec-head .btn{display:none}
 .rt.sm .num span{padding-bottom:3px}
 .rt.sm .price b{white-space:nowrap}
 @media(max-width:900px){.rt.sm .num{padding:4px 9px 3px 8px;left:8px;top:8px}.rt.sm .num b{font-size:26px}.rt.sm .num span{font-size:9px}.rt.sm .price b{font-size:16px}.rt.sm .price small{display:none}}
+/* cabecera · el logo no se encoge (se aplastaba cuando el menú no cabía) y tiene aire */
+.logo{flex:none;display:flex;align-items:center}
+body.menu2 .header .wrap{width:min(1320px,calc(100% - 48px));gap:40px}
+body.menu2 .logo img{height:42px}
+body.menu2 .nav{gap:20px;font-size:11.5px;letter-spacing:.07em}
+body.menu2 .hright{gap:10px;margin-left:12px}
+body.menu2 .hmu,body.menu2 .hcta{padding:10px 16px;font-size:13px}
+@media(max-width:1380px){body.menu2 .hcta{display:none}}
+@media(max-width:1180px){body.menu2 .header .wrap{gap:24px}body.menu2 .nav{gap:16px}}
+body.menu2 .header .wrap{gap:30px}
+body.menu2 .logo img{height:40px}
+body.menu2 .nav{gap:18px}
+body.menu2 .hright{margin-left:4px}
