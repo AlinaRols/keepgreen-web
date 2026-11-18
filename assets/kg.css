@@ -607,3 +607,57 @@ body:not(.ins1) .ins1,body:not(.ins2) .ins2{display:none!important}
 .steps.mini b{font-size:16px}
 .install .chips{margin-top:0}
 .cov-line{margin-top:14px;font-size:14px;color:rgba(255,255,255,.7)}
+
+/* MENÚ 2 · según el documento: Instalación profesional · Comprar césped · Hazlo tú mismo · Proyectos y opiniones · Zonas + botón «Muestras gratis» aparte */
+body:not(.menu1) .nav.menu1,body:not(.menu2) .nav.menu2,body:not(.menu2) .hmu{display:none!important}
+body.menu2 .header .wrap{gap:28px}
+body.menu2 .nav{gap:22px;font-size:12px;letter-spacing:.08em}
+body.menu2 .hright{gap:10px}
+body.menu2 .hmu{padding:10px 18px;font-size:13.5px}
+body.menu2 .hcta{padding:10px 16px;font-size:13.5px}
+body.menu2 .hcta::after{content:""}
+@media(max-width:1180px){body.menu2 .hcta{display:none}}
+@media(max-width:1000px){body.menu2 .nav,body.menu2 .hmu{display:none!important}}
+
+/* MODELOS 4 · los seis con doble botón (comprar / con instalación) */
+body:not(.mod4) .mod4{display:none!important}
+body.mod1 .helpme,body.mod2 .helpme{display:none}
+body.mod4 .sec-head .btn{display:none}
+.grid-rt.six{grid-template-columns:repeat(3,1fr);gap:20px}
+.rt.sm>a{display:block}
+.rt.sm>a img{aspect-ratio:1/.6;object-fit:cover;width:100%;display:block}
+.rt.sm .num{left:16px;top:16px}
+.rt.sm .num b{font-size:44px}
+.rt.sm .body{padding:16px 18px 18px;gap:6px}
+.rt.sm .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.rt.sm h3{font-size:19px}
+.rt.sm .price{margin:0;gap:6px}
+.rt.sm .price b{font-size:18px}.rt.sm .price small{font-size:11px;color:var(--ink-3)}
+.rt.sm p{font-size:13.5px}
+.rt.sm .act{display:flex;gap:8px;margin-top:8px}
+.rt.sm .act .btn{flex:1;justify-content:center;padding:11px 10px;font-size:13.5px;margin:0}
+.rt.sm .act .btn-ghost{border-color:var(--line);color:var(--ink)}
+.rt.sm .act .btn-ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+@media(max-width:900px){.grid-rt.six{grid-template-columns:1fr 1fr;gap:12px}.rt.sm .act{flex-direction:column}.rt.sm .num b{font-size:36px}.rt.sm .body{padding:14px}.rt.sm h3{font-size:16px}.rt.sm .top{flex-direction:column;gap:2px}}
+.qf-model{display:flex;align-items:center;gap:8px;margin:-6px 0 14px;font-size:14px}
+.qf-model span{color:var(--ink-3)}.qf-model b{background:var(--green-l);color:var(--green-d);padding:4px 10px;border-radius:999px;font-size:13px}
+
+/* MUESTRAS · bloque propio (home) */
+.samples{background:var(--cream)}
+.samples h2{font-size:clamp(26px,3vw,38px);margin-bottom:12px}
+.samples .lead{max-width:520px}
+.schips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 20px}
+.schips button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font:inherit;font-size:13.5px;font-weight:600;color:var(--ink);cursor:pointer;transition:all .15s}
+.schips button:hover{border-color:var(--green)}
+.schips button.on{background:var(--green);border-color:var(--green);color:#fff}
+.schips button.on::before{content:"✓ "}
+.sact{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.sact span{font-size:13.5px;color:var(--ink-3)}
+.samples .pic img{aspect-ratio:1/.85;width:100%}
+@media(max-width:900px){.samples .wrap{grid-template-columns:1fr;gap:28px}.samples .pic{order:-1}.samples .pic img{aspect-ratio:16/10}}
+/* modelos 4 · número legible sobre la foto y precio sin saltos en móvil */
+.rt.sm .num{background:rgba(255,255,255,.92);padding:6px 12px 5px 10px;border-radius:14px;left:12px;top:12px}
+.rt.sm .num b{font-size:38px}
+.rt.sm .num span{padding-bottom:3px}
+.rt.sm .price b{white-space:nowrap}
+@media(max-width:900px){.rt.sm .num{padding:4px 9px 3px 8px;left:8px;top:8px}.rt.sm .num b{font-size:26px}.rt.sm .num span{font-size:9px}.rt.sm .price b{font-size:16px}.rt.sm .price small{display:none}}
