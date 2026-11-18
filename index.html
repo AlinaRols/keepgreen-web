@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1794997361">
+<link rel="stylesheet" href="assets/kg.css?v=1794997798">
 </head>
 <body data-hero="f">
 
@@ -327,7 +327,7 @@
 <script>
 (function(){
   var q=new URLSearchParams(location.search),h=(q.get('hero')||'f').toLowerCase();if(!/^[defg]$/.test(h))h='f';document.body.setAttribute('data-hero',h);
-  var n=q.get('nav')||'1';if(/^[123]$/.test(n))document.body.classList.add('nav'+n);
+  var n=q.get('nav')||'2';if(/^[123]$/.test(n))document.body.classList.add('nav'+n);
   if(n==='3'){var hd=document.querySelector('.header'),tb=document.querySelector('.topbar');function sc(){hd.classList.toggle('solid',window.scrollY>tb.offsetHeight+10)}window.addEventListener('scroll',sc);sc()}
   var v=(q.get('v')||'1');if(/^[0-3]$/.test(v)&&v!=='0')(v==='3'?document.body.classList.add('v1','v3'):document.body.classList.add('v'+v));
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
