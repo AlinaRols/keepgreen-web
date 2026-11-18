@@ -599,3 +599,11 @@ body:not(.mod1) .mod1,body:not(.mod2) .mod2,body:not(.mod3) .mod3{display:none!i
 .bb.pro i{background:rgba(255,255,255,.18)}
 .hero-f .help{margin-top:30px}
 @media(max-width:520px){.bb .s{white-space:normal}}
+
+/* instalación · variante ligera */
+body:not(.ins1) .ins1,body:not(.ins2) .ins2{display:none!important}
+.steps.mini{gap:12px;margin:24px 0 22px}
+.steps.mini>div{align-items:center}
+.steps.mini b{font-size:16px}
+.install .chips{margin-top:0}
+.cov-line{margin-top:14px;font-size:14px;color:rgba(255,255,255,.7)}

@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795000879">
+<link rel="stylesheet" href="assets/kg.css?v=1795000997">
 </head>
 <body data-hero="f">
 
@@ -213,7 +213,7 @@
 
 <!-- 4 · INSTALACIÓN + formulario -->
 <section class="sec install" id="instalacion"><div class="wrap">
-  <div class="reveal">
+  <div class="reveal ins1">
     <span class="eyebrow">Quiero un instalador</span>
     <h2>Una buena instalación importa tanto como el césped</h2>
     <p class="lead" style="margin-top:14px">Por eso lo instalamos con equipos propios, no con subcontratas. Nos cuentas tu espacio, te llamamos en 24 h y te damos precio cerrado con instalación.</p>
@@ -226,6 +226,18 @@
       <b>Instaladores propios en Alicante, Almería, Barcelona, Castellón, Madrid, Málaga, Murcia, Sevilla, Valencia y Zaragoza</b> y alrededores.
       ¿Vives en otra zona? Te enviamos el césped a casa y te acompañamos por teléfono para que lo instales tú o tu instalador de confianza.
     </div>
+  </div>
+  <div class="reveal ins2">
+    <span class="eyebrow">Quiero un instalador</span>
+    <h2>Lo medimos, lo instalamos y lo garantizamos</h2>
+    <p class="lead" style="margin-top:14px">Equipos propios y precio cerrado. Te llamamos en 24 h.</p>
+    <div class="steps mini">
+      <div><span>1</span><div><b>Nos cuentas tu espacio</b></div></div>
+      <div><span>2</span><div><b>Te llamamos y medimos</b></div></div>
+      <div><span>3</span><div><b>Instalamos, con 10 años de garantía</b></div></div>
+    </div>
+    <div class="chips"><span>Alicante</span><span>Almería</span><span>Barcelona</span><span>Castellón</span><span>Madrid</span><span>Málaga</span><span>Murcia</span><span>Sevilla</span><span>Valencia</span><span>Zaragoza</span></div>
+    <p class="cov-line">¿Otra zona? Te enviamos el césped y te acompañamos por teléfono.</p>
   </div>
   <form class="form qf reveal" onsubmit="return false">
     <h3>Pide presupuesto con instalación</h3>
@@ -343,6 +355,7 @@
 <script>
 (function(){
   var q=new URLSearchParams(location.search),h=(q.get('hero')||'f').toLowerCase();if(!/^[defg]$/.test(h))h='f';document.body.setAttribute('data-hero',h);
+  var ins=q.get('ins')||'1';if(/^[12]$/.test(ins))document.body.classList.add('ins'+ins);
   var mo=q.get('mod')||'3';if(/^[123]$/.test(mo))document.body.classList.add('mod'+mo);
   var n=q.get('nav')||'2';if(/^[123]$/.test(n))document.body.classList.add('nav'+n);
   if(n==='3'){var hd=document.querySelector('.header'),tb=document.querySelector('.topbar');function sc(){hd.classList.toggle('solid',window.scrollY>tb.offsetHeight+10)}window.addEventListener('scroll',sc);sc()}
