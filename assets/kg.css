@@ -587,3 +587,15 @@ body:not(.mod1) .mod1,body:not(.mod2) .mod2,body:not(.mod3) .mod3{display:none!i
 .seo{margin-top:32px;padding-top:28px;gap:32px}
 .seo h3{font-size:15.5px;margin-bottom:6px}
 .seo p{font-size:14px}
+
+/* portada F · botones más cuidados */
+.big{max-width:860px;gap:18px}
+.bb{padding:18px 22px 18px 18px;border-radius:16px;gap:14px}
+.bb .ic{width:50px;height:50px;border-radius:14px}
+.bb b{font-size:20px;letter-spacing:-.01em}
+.bb .s{font-size:13.5px;white-space:nowrap}
+.bb i{width:34px;height:34px;border-radius:50%;background:var(--green-l);display:grid;place-items:center;font-size:18px;transition:transform .25s}
+.bb:hover i{transform:translateX(3px)}
+.bb.pro i{background:rgba(255,255,255,.18)}
+.hero-f .help{margin-top:30px}
+@media(max-width:520px){.bb .s{white-space:normal}}
