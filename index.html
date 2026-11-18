@@ -71,6 +71,60 @@
   </div>
 </section>
 
+
+<!-- PORTADA E · pantalla partida, cada opción es una foto -->
+<section class="hero hero-e">
+  <div class="wrap top">
+    <span class="eyebrow">Fabricantes de césped artificial · Garantía de 10 años</span>
+    <h1>Césped artificial para tu casa. ¿Cómo lo quieres?</h1>
+  </div>
+  <div class="halves">
+    <a class="half" href="#modelos">
+      <img src="assets/home/cesped-artificial.webp" alt="Rollos de césped artificial Keepgreen">
+      <div class="t"><small>Opción 1</small><h2>Lo instalo yo</h2><p>Seis modelos desde 8,90 €/m², muestras gratis en 24/48 h y guías paso a paso.</p><span class="btn btn-white">Ver modelos y pedir muestras</span></div>
+    </a>
+    <a class="half pro" href="#instalacion">
+      <img src="assets/home/consejos-mantenimiento-cesped-artificial.webp" alt="Césped artificial instalado alrededor de una piscina">
+      <div class="t"><small>Opción 2 · Te llamamos en 24 h</small><h2>Quiero un instalador</h2><p>Medimos, presupuestamos e instalamos con equipo propio. Precio cerrado y 10 años de garantía.</p><span class="btn btn-green">Pedir presupuesto gratis</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- PORTADA F · foto con titular y dos botones grandes -->
+<section class="hero hero-f">
+  <img src="assets/home/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen">
+  <div class="wrap">
+    <span class="eyebrow">Fabricantes de césped artificial · Garantía de 10 años</span>
+    <h1>Césped artificial para tu casa</h1>
+    <p class="sub">Lo fabricamos nosotros. Tú decides si lo instalas tú o lo instalamos nosotros.</p>
+    <div class="big">
+      <a class="bb" href="#modelos"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 9l-2-2-1.7 1.7a1 1 0 0 1-1.4-1.4L18.6 5.6 16.6 3.6l-2.3 2.7z"/><path d="m2 22 9.5-9.5"/><path d="m5.5 11.5 7 7"/><path d="M3 15 9 21"/></svg></span><span class="tx"><b>Lo instalo yo</b><span class="s">Modelos desde 8,90 €/m² y muestras gratis</span></span><i>→</i></a>
+      <a class="bb pro" href="#instalacion"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01"/></svg></span><span class="tx"><b>Quiero un instalador</b><span class="s">Presupuesto gratis, te llamamos en 24 h</span></span><i>→</i></a>
+    </div>
+    <div class="help"><span>¿No lo tienes claro?</span><a href="tel:965403811">Llámanos al 965 403 811</a><a href="#">Escríbenos por WhatsApp</a></div>
+  </div>
+</section>
+
+<!-- PORTADA G · foto corta + dos tarjetas con foto sobre fondo crema -->
+<section class="hero hero-g">
+  <div class="pic"><img src="assets/home/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen">
+    <div class="wrap"><span class="eyebrow">Fabricantes de césped artificial · Garantía de 10 años</span><h1>Césped artificial para tu casa. Tú eliges cómo.</h1></div>
+  </div>
+  <div class="wrap">
+    <div class="gcards">
+      <a class="gcard" href="#modelos">
+        <img src="assets/home/cesped-artificial.webp" alt="">
+        <div><small>Opción 1</small><h2>Lo instalo yo</h2><p>Elige entre seis modelos desde 8,90 €/m², pide muestras gratis y te lo cortamos a medida. Con guías y vídeos para cada superficie.</p><span class="btn btn-ghost">Ver modelos y pedir muestras</span></div>
+      </a>
+      <a class="gcard pro" href="#instalacion">
+        <img src="assets/home/consejos-mantenimiento-cesped-artificial.webp" alt="">
+        <div><small>Opción 2 · Te llamamos en 24 h</small><h2>Quiero un instalador</h2><p>Medimos, presupuestamos e instalamos con equipo propio en 10 ciudades. Precio cerrado y 10 años de garantía en producto e instalación.</p><span class="btn btn-green">Pedir presupuesto gratis</span></div>
+      </a>
+    </div>
+    <div class="help"><span>¿No lo tienes claro?</span><a href="tel:965403811">Llámanos al 965 403 811</a><a href="#">Escríbenos por WhatsApp</a></div>
+  </div>
+</section>
+
 <!-- 2 · CONFIANZA -->
 <section class="trust"><div class="wrap">
   <div><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V9l7-6 7 6v12"/><path d="M9 21v-7h6v7"/></svg><div><b>Fabricantes</b><span>Fabricamos el césped que vendemos</span></div></div>
@@ -272,7 +326,8 @@
 
 <script>
 (function(){
-  var v=(new URLSearchParams(location.search).get('v')||'1');if(/^[0-3]$/.test(v)&&v!=='0')(v==='3'?document.body.classList.add('v1','v3'):document.body.classList.add('v'+v));
+  var q=new URLSearchParams(location.search),h=(q.get('hero')||'d').toLowerCase();if(!/^[defg]$/.test(h))h='d';document.body.setAttribute('data-hero',h);
+  var v=(q.get('v')||'1');if(/^[0-3]$/.test(v)&&v!=='0')(v==='3'?document.body.classList.add('v1','v3'):document.body.classList.add('v'+v));
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
   // calculadora
