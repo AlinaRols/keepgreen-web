@@ -413,3 +413,26 @@ textarea.in{min-height:88px;resize:vertical}
 .about h3{font-size:16px;margin-bottom:10px}
 .about p{font-size:14px;color:var(--ink-2);line-height:1.65}
 @media(max-width:860px){.about .wrap{grid-template-columns:1fr;gap:24px}}
+
+/* home · portada centrada (v1: dentro de la foto, abajo · v2: tarjetas saliendo de la foto) */
+body.v1 .hero-d,body.v2 .hero-d{align-items:flex-end}
+body.v1 .hero-d .wrap,body.v2 .hero-d .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+body.v1 .hero-d h1,body.v2 .hero-d h1{max-width:22ch}
+body.v1 .hero-d .sub,body.v2 .hero-d .sub{max-width:60ch}
+body.v1 .doors,body.v2 .doors{width:100%;max-width:880px;text-align:left}
+body.v1 .hero-d .help,body.v2 .hero-d .help{justify-content:center}
+body.v1 .hero-d{min-height:820px;padding:230px 0 44px}
+body.v1 .hero-d::after{background:linear-gradient(180deg,rgba(0,0,0,.02) 0%,rgba(0,0,0,.18) 30%,rgba(0,0,0,.62) 100%)}
+body.v2 .hero-d{min-height:600px;padding:170px 0 0}
+body.v2 .hero-d::after{background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.2) 45%,rgba(0,0,0,.5) 100%)}
+body.v2 .doors{margin-bottom:-150px;position:relative;z-index:2}
+body.v2 .hero-d .help{display:none}
+body.v2 .trust .wrap{padding-top:176px}
+@media(max-width:760px){
+  body.v1 .hero-d{min-height:0;padding:150px 0 36px}
+  body.v2 .hero-d{min-height:0;padding:120px 0 0}
+  body.v2 .doors{margin-bottom:-60px}
+  body.v2 .trust .wrap{padding-top:86px}
+}
+body.v3 .hero-d>img{content:url("home/consejos-mantenimiento-cesped-artificial.webp");object-position:center 40%}
+body.v3 .hero-d::after{background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.22) 35%,rgba(0,0,0,.55) 100%)}
