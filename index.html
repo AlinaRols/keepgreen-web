@@ -10,275 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --green:#4c8032; --green-d:#3a6526; --green-dd:#24421a; --green-l:#eef4e8; --green-ll:#f5f9f1;
-  --ink:#1f2421; --ink-2:#4a524c; --ink-3:#7d857f;
-  --line:#e3e6e1; --cream:#f6f5f0; --white:#fff;
-  --pink:#ed0069;
-  --r:14px; --rs:8px;
-  --f:'Montserrat',system-ui,sans-serif;
-  --shadow:0 10px 30px rgba(31,36,33,.08);
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--f);color:var(--ink);background:var(--white);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font:inherit;cursor:pointer;border:0;background:none}
-.wrap{width:min(1240px,calc(100% - 48px));margin-inline:auto}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:15px;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap}
-.btn-green{background:var(--green);color:#fff}
-.btn-green:hover{background:var(--green-d);transform:translateY(-1px)}
-.btn-dark{background:var(--ink);color:#fff}
-.btn-dark:hover{background:#000}
-.btn-white{background:#fff;color:var(--ink)}
-.btn-white:hover{background:var(--green-l)}
-.btn-ghost{border:1.5px solid var(--ink);color:var(--ink);padding:13px 24px}
-.btn-ghost:hover{background:var(--ink);color:#fff}
-.btn-ghost-w{border:1.5px solid rgba(255,255,255,.7);color:#fff;padding:13px 24px}
-.btn-ghost-w:hover{background:#fff;color:var(--ink)}
-.btn svg{width:18px;height:18px}
-.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
-h1,h2,h3{line-height:1.12;letter-spacing:-.015em;font-weight:700}
-h2{font-size:clamp(28px,3.4vw,42px)}
-.lead{font-size:17px;color:var(--ink-2);max-width:56ch}
-.sec{padding:84px 0}
-.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:40px}
-.sec-head .lead{margin-top:12px}
-@media(max-width:760px){.sec{padding:60px 0}.sec-head{flex-direction:column;align-items:flex-start;gap:16px}}
-
-/* top bar */
-.topbar{background:var(--green-dd);color:#dfe9d6;font-size:12.5px;font-weight:500}
-.topbar .wrap{display:flex;justify-content:center;gap:40px;padding:9px 0}
-.topbar span{display:flex;align-items:center;gap:8px}
-.topbar svg{width:14px;height:14px;color:#9fd27f}
-@media(max-width:760px){.topbar span:not(:first-child){display:none}}
-
-/* header */
-.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
-.header .wrap{display:flex;align-items:center;gap:36px;height:76px}
-.logo img{height:34px;width:auto}
-.nav{display:flex;gap:28px;font-weight:600;font-size:14.5px;margin-left:12px}
-.nav a{display:flex;align-items:center;gap:5px;color:var(--ink)}
-.nav a svg{width:12px;height:12px;opacity:.6}
-.nav a:hover{color:var(--green)}
-.hright{margin-left:auto;display:flex;align-items:center;gap:22px}
-.tel{font-weight:600;font-size:14.5px;display:flex;align-items:center;gap:8px}
-.tel svg{width:16px;height:16px;color:var(--green)}
-.icons{display:flex;gap:14px}
-.icons svg{width:21px;height:21px;stroke:var(--ink);fill:none;stroke-width:1.7}
-.burger{display:none}
-@media(max-width:1000px){.nav,.tel,.hcta{display:none}.burger{display:block;margin-left:auto}.hright{margin-left:0}.burger svg{width:26px;height:26px}}
-
-/* hero variants */
-body:not([data-hero="a"]) .hero-a,body:not([data-hero="b"]) .hero-b,body:not([data-hero="c"]) .hero-c{display:none!important}
-.hero-b{display:block}
-.hero-a{position:relative;min-height:640px;height:78vh;max-height:800px;display:grid;place-items:center;color:#fff;isolation:isolate}
-.hero-a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-a::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.42) 100%)}
-.hero-a .wrap{text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero-a .eyebrow{color:#c7e5b3}
-.hero-a h1{font-size:clamp(38px,6vw,76px);max-width:14ch;text-shadow:0 2px 24px rgba(0,0,0,.25)}
-.hero-a p{margin:22px 0 32px;font-size:clamp(16px,1.5vw,19px);max-width:48ch;color:rgba(255,255,255,.92)}
-.hero-a .cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-.hero-a .pill{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.hero-a .pill a{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(8px);color:#fff;padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600}
-.hero-a .pill a:hover{background:#fff;color:var(--ink)}
-@media(max-width:760px){.hero-a{height:auto;min-height:0;padding:64px 0 36px;grid-template-rows:auto auto}.hero-a .pill{position:static;transform:none;margin-top:28px;padding:0 24px}}
-
-.hero-b{background:var(--cream)}
-.hero-b .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;min-height:640px;padding:48px 0}
-.hero-b h1{font-size:clamp(38px,5.2vw,66px);max-width:13ch}
-.hero-b h1 em{font-style:normal;color:var(--green)}
-.hero-b p{margin:22px 0 32px;font-size:18px;color:var(--ink-2);max-width:46ch}
-.hero-b .cta{display:flex;gap:14px;flex-wrap:wrap}
-.hero-b .proof{display:flex;align-items:center;gap:14px;margin-top:34px;font-size:13.5px;color:var(--ink-2)}
-.hero-b .proof .stars{color:#e9a416;letter-spacing:1px}
-.hero-b .proof b{color:var(--ink)}
-.hero-b .pic{position:relative}
-.hero-b .pic img{border-radius:24px;aspect-ratio:4/4.6;object-fit:cover;width:100%}
-.hero-b .card{position:absolute;left:-36px;bottom:40px;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:16px 18px;display:flex;gap:14px;align-items:center;max-width:300px}
-.hero-b .card img{width:64px;height:64px;border-radius:10px;aspect-ratio:1;object-fit:cover}
-.hero-b .card b{display:block;font-size:14px}
-.hero-b .card span{font-size:13px;color:var(--ink-2)}
-.hero-b .badge{position:absolute;top:22px;right:22px;background:var(--pink);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px}
-@media(max-width:900px){.hero-b .wrap{grid-template-columns:1fr;min-height:0}.hero-b .pic{order:-1}.hero-b .pic img{aspect-ratio:4/3}.hero-b .card{left:16px;bottom:16px}}
-
-.hero-c{position:relative;min-height:640px;height:80vh;max-height:820px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
-.hero-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-c::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.15) 60%,rgba(0,0,0,0) 100%),linear-gradient(0deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 50%)}
-.hero-c .wrap{padding-bottom:64px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
-.hero-c h1{font-size:clamp(40px,6.4vw,84px);line-height:1.02;max-width:12ch}
-.hero-c p{margin:20px 0 28px;font-size:18px;max-width:44ch;color:rgba(255,255,255,.9)}
-.hero-c .cta{display:flex;gap:14px;flex-wrap:wrap}
-.hero-c .panel{background:rgba(255,255,255,.96);color:var(--ink);border-radius:18px;padding:22px 24px;box-shadow:var(--shadow)}
-.hero-c .panel h3{font-size:15px;margin-bottom:12px}
-.hero-c .panel .chips{display:flex;flex-wrap:wrap;gap:8px}
-.hero-c .panel .chips a{border:1.5px solid var(--line);padding:9px 14px;border-radius:999px;font-size:13.5px;font-weight:600;background:#fff}
-.hero-c .panel .chips a:hover{border-color:var(--green);color:var(--green)}
-.hero-c .panel small{display:block;margin-top:12px;font-size:12.5px;color:var(--ink-3)}
-@media(max-width:900px){.hero-c .wrap{grid-template-columns:1fr}.hero-c .panel{display:none}}
-
-/* trust */
-.trust{border-bottom:1px solid var(--line)}
-.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:26px 0}
-.trust div{display:flex;gap:14px;align-items:center}
-.trust svg{width:38px;height:38px;flex:none;stroke:var(--green);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.trust b{display:block;font-size:14.5px}
-.trust span{font-size:13px;color:var(--ink-2)}
-@media(max-width:900px){.trust .wrap{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.trust .wrap{grid-template-columns:1fr;gap:16px}}
-
-/* espacios */
-.spaces{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
-.space{position:relative;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;background:var(--green-l);isolation:isolate}
-.space img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.22,1,.36,1)}
-.space:hover img{transform:scale(1.05)}
-.space::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,0) 55%)}
-.space b{position:absolute;left:16px;bottom:14px;z-index:1;color:#fff;font-size:17px}
-.space i{position:absolute;right:12px;top:12px;z-index:1;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;opacity:0;transition:opacity .25s}
-.space:hover i{opacity:1}
-.space i svg{width:14px;height:14px}
-@media(max-width:1000px){.spaces{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.spaces{grid-template-columns:repeat(2,1fr);gap:10px}}
-
-/* productos */
-.products-sec{background:var(--green-ll)}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
-.filters button{padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:13.5px;font-weight:600;color:var(--ink-2)}
-.filters button.on{background:var(--ink);border-color:var(--ink);color:#fff}
-.grid-p{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.pc{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
-.pc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.pc .ph{position:relative;background:#f3f3f0}
-.pc .ph img{aspect-ratio:1/.78;object-fit:cover;width:100%}
-.pc .ph .off{position:absolute;left:14px;top:14px;background:var(--pink);color:#fff;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px}
-.pc .ph .mm{position:absolute;right:14px;top:14px;background:#fff;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;border:1px solid var(--line)}
-.pc .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
-.pc h3{font-size:19px;letter-spacing:.04em}
-.pc .sub{font-size:13.5px;color:var(--ink-2);margin-top:2px}
-.pc .price{display:flex;align-items:baseline;gap:10px}
-.pc .price b{font-size:24px}
-.pc .price s{color:var(--ink-3);font-size:14px}
-.pc .price small{font-size:12px;color:var(--ink-3)}
-.bars{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;font-size:12.5px;color:var(--ink-2)}
-.bars div{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.bars u{display:flex;gap:3px;text-decoration:none}
-.bars u i{width:14px;height:5px;border-radius:3px;background:var(--line)}
-.bars u i.f{background:var(--green)}
-.pc .act{display:flex;gap:10px;margin-top:auto;padding-top:6px}
-.pc .act .btn{flex:1;justify-content:center;padding:12px 16px;font-size:14px}
-@media(max-width:1000px){.grid-p{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.grid-p{grid-template-columns:1fr}}
-
-/* corte band */
-.band{background:var(--green);color:#fff;border-radius:22px;padding:44px 52px;display:grid;grid-template-columns:1.3fr auto;align-items:center;gap:32px;margin-top:36px}
-.band h3{font-size:clamp(22px,2.4vw,30px)}
-.band p{margin-top:8px;color:#dfe9d6;max-width:60ch}
-@media(max-width:800px){.band{grid-template-columns:1fr;padding:32px}}
-
-/* muestras */
-.samples .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.samples .pic{position:relative}
-.samples .pic img{border-radius:22px;aspect-ratio:1;object-fit:cover}
-.samples .tag{position:absolute;left:24px;top:24px;background:#fff;border-radius:999px;padding:10px 16px;font-weight:700;font-size:13px;display:flex;gap:8px;align-items:center;box-shadow:var(--shadow)}
-.samples .tag i{width:8px;height:8px;border-radius:50%;background:var(--green)}
-.steps{display:grid;gap:18px;margin:28px 0 32px}
-.steps div{display:flex;gap:16px;align-items:flex-start}
-.steps span{flex:none;width:34px;height:34px;border-radius:50%;background:var(--green-l);color:var(--green);font-weight:700;display:grid;place-items:center;font-size:14px}
-.steps b{display:block;font-size:15.5px}
-.steps p{font-size:14.5px;color:var(--ink-2)}
-@media(max-width:860px){.samples .wrap{grid-template-columns:1fr;gap:36px}}
-
-/* opiniones */
-.reviews{background:var(--cream)}
-.rev-head{display:flex;align-items:center;gap:22px;margin-bottom:36px;flex-wrap:wrap}
-.score{display:flex;align-items:center;gap:14px;background:#fff;border-radius:14px;padding:14px 18px;border:1px solid var(--line)}
-.score b{font-size:30px;line-height:1}
-.score .stars{color:#e9a416;font-size:16px;letter-spacing:2px}
-.score span{display:block;font-size:12.5px;color:var(--ink-2)}
-.grid-r{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.rc{background:#fff;border-radius:var(--r);padding:26px;border:1px solid var(--line)}
-.rc .stars{color:#e9a416;letter-spacing:2px;font-size:14px}
-.rc p{margin:14px 0 18px;font-size:15px;color:var(--ink-2)}
-.rc b{font-size:14px}
-.rc small{display:block;color:var(--ink-3);font-size:12.5px}
-@media(max-width:860px){.grid-r{grid-template-columns:1fr}}
-
-/* guías */
-.grid-g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.gc{border-radius:var(--r);overflow:hidden;background:var(--white);border:1px solid var(--line)}
-.gc img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform .6s cubic-bezier(.22,1,.36,1)}
-.gc:hover img{transform:scale(1.04)}
-.gc .ov{overflow:hidden}
-.gc div.t{padding:22px}
-.gc h3{font-size:19px;margin-bottom:8px}
-.gc p{font-size:14.5px;color:var(--ink-2)}
-.gc a.more{display:inline-flex;gap:8px;align-items:center;margin-top:16px;font-weight:700;font-size:14px;color:var(--green)}
-.gc a.more svg{width:16px;height:16px}
-@media(max-width:860px){.grid-g{grid-template-columns:1fr}}
-
-/* blog */
-.grid-b{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}
-.bc{position:relative;border-radius:var(--r);overflow:hidden;min-height:300px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
-.bc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.bc::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,.05) 60%)}
-.bc div{padding:26px}
-.bc small{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#c7e5b3}
-.bc h3{font-size:22px;margin-top:8px;max-width:22ch}
-.list-b{display:grid;gap:14px}
-.lb{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;border:1px solid var(--line);border-radius:var(--rs);overflow:hidden;background:#fff}
-.lb img{aspect-ratio:1;object-fit:cover;height:100%}
-.lb h3{font-size:15px;line-height:1.3}
-.lb small{font-size:12px;color:var(--ink-3)}
-.lb div{padding:10px 14px 10px 0}
-@media(max-width:860px){.grid-b{grid-template-columns:1fr}}
-
-/* faq */
-.faq{background:var(--green-ll)}
-.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
-details{border-bottom:1px solid var(--line);padding:18px 0}
-details:first-of-type{border-top:1px solid var(--line)}
-summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:16px;cursor:pointer}
-summary::-webkit-details-marker{display:none}
-summary span{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-size:18px;line-height:1;transition:transform .25s}
-details[open] summary span{transform:rotate(45deg);background:var(--ink);color:#fff}
-details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
-@media(max-width:860px){.faq .wrap{grid-template-columns:1fr;gap:28px}}
-
-/* centros */
-.centers .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.centers img{border-radius:22px;width:100%}
-.cities{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.cities a{padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);font-size:14px;font-weight:600}
-.cities a:hover{border-color:var(--green);color:var(--green)}
-@media(max-width:860px){.centers .wrap{grid-template-columns:1fr}}
-
-/* footer */
-.footer{background:var(--ink);color:#b9c0bb;padding:64px 0 28px;font-size:14px}
-.footer .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
-.footer h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
-.footer ul{list-style:none;display:grid;gap:9px}
-.footer a:hover{color:#fff}
-.footer .brand img{height:30px;filter:brightness(0) invert(1);margin-bottom:16px}
-.footer .brand p{max-width:34ch}
-.footer .news{display:flex;margin-top:18px;max-width:360px}
-.footer .news input{flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:999px 0 0 999px;padding:12px 16px;color:#fff;font:inherit;font-size:14px}
-.footer .news button{background:var(--green);color:#fff;border-radius:0 999px 999px 0;padding:0 18px;font-weight:600}
-.footer .bottom{display:flex;justify-content:space-between;gap:20px;padding-top:22px;font-size:12.5px;flex-wrap:wrap}
-.footer .bottom div{display:flex;gap:18px;flex-wrap:wrap}
-@media(max-width:860px){.footer .cols{grid-template-columns:1fr 1fr}}
-
-/* variante selector (solo mockup) */
-.vsel{position:fixed;right:16px;bottom:16px;z-index:99;display:flex;gap:6px;background:#fff;padding:6px;border-radius:999px;box-shadow:var(--shadow);border:1px solid var(--line)}
-.vsel a{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;color:var(--ink-2)}
-.vsel a.on{background:var(--ink);color:#fff}
-.vsel.hide{display:none}
-
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
-.reveal.visible{opacity:1;transform:none}
-</style>
+<link rel="stylesheet" href="assets/kg.css">
 </head>
 <body data-hero="a">
 
@@ -299,7 +31,7 @@ details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
   </nav>
   <div class="hright">
     <a class="tel" href="tel:965403811"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>965 403 811</a>
-    <a class="btn btn-green hcta" href="#muestras" style="padding:11px 20px;font-size:14px">Muestras gratis</a>
+    <a class="btn btn-green hcta" href="presupuesto.html" style="padding:11px 20px;font-size:14px">Pedir presupuesto</a>
     <div class="icons">
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
@@ -369,6 +101,36 @@ details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
   </div>
 </section>
 
+<!-- HERO D · dos puertas: lo instalo yo / quiero un instalador -->
+<section class="hero hero-d">
+  <img src="assets/home/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen">
+  <div class="wrap">
+    <span class="eyebrow">Césped artificial de fabricante · Garantía de 10 años</span>
+    <h1>Césped artificial para tu casa. Tú eliges cómo.</h1>
+    <p class="sub">Lo fabricamos nosotros en España. Puedes instalarlo tú con nuestras guías y muestras gratis, o dejar que lo midamos e instalemos nosotros.</p>
+    <div class="doors">
+      <a class="door" href="#productos">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 9l-2-2-1.7 1.7a1 1 0 0 1-1.4-1.4L18.6 5.6 16.6 3.6l-2.3 2.7z"/><path d="m2 22 9.5-9.5"/><path d="m5.5 11.5 7 7"/><path d="M3 15 9 21"/></svg></span>
+        <small>Opción 1</small>
+        <h2>Lo instalo yo</h2>
+        <p>Elige modelo, pide muestras gratis y sigue nuestras guías paso a paso. Te lo cortamos a medida.</p>
+        <ul><li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Modelos desde 8,90 €/m²</li><li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Muestras gratis en 24/48 h</li><li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Guías y vídeos para cada superficie</li></ul>
+        <span class="btn btn-ghost">Ver modelos y pedir muestras</span>
+      </a>
+      <a class="door pro" href="presupuesto.html">
+        <span class="fav">TE LLAMAMOS EN 24 H</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01"/></svg></span>
+        <small>Opción 2</small>
+        <h2>Quiero un instalador</h2>
+        <p>Medimos, presupuestamos e instalamos. Un asesor te llama, sin compromiso, y te dice precio cerrado.</p>
+        <ul><li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Presupuesto cerrado y sin sorpresas</li><li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Instaladores propios en 10 ciudades</li><li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Garantía de 10 años en producto e instalación</li></ul>
+        <span class="btn btn-green">Pedir presupuesto gratis</span>
+      </a>
+    </div>
+    <div class="help"><span>¿No lo tienes claro?</span><a href="tel:965403811">Llámanos al 965 403 811</a><a href="#">Escríbenos por WhatsApp</a></div>
+  </div>
+</section>
+
 <section class="trust"><div class="wrap">
   <div><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><path d="M12 8v4l3 2"/></svg><div><b>Te asesoramos</b><span>Te ayudamos a elegir el mejor césped para ti</span></div></div>
   <div><svg viewBox="0 0 24 24"><path d="M12 2 15 8l6 .9-4.5 4.3 1 6.3L12 16.5 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg><div><b>Calidades premium</b><span>Modelos de césped hiperrealistas</span></div></div>
@@ -393,7 +155,7 @@ details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
 
 <section class="sec products-sec" id="productos"><div class="wrap">
   <div class="sec-head reveal">
-    <div><span class="eyebrow">Nuestros modelos</span><h2>Encuentra el mejor césped artificial para ti</h2><p class="lead">Seis modelos, de 30 a 45 mm. Todos fabricados por nosotros, con 10 años de garantía y precio por m² con IVA incluido.</p></div>
+    <div><span class="eyebrow">Lo instalo yo · Nuestros modelos</span><h2>Encuentra el mejor césped artificial para ti</h2><p class="lead">Seis modelos, de 30 a 45 mm, fabricados por nosotros con 10 años de garantía. Pide muestras gratis de los que te gusten y compáralos en casa antes de decidir.</p></div>
   </div>
   <div class="filters reveal"><button class="on">Todos</button><button>30 mm</button><button>35 mm</button><button>40 mm</button><button>45 mm</button><button>Mascotas</button><button>Niños</button></div>
   <div class="grid-p reveal">
@@ -401,42 +163,42 @@ details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
       <div><h3>JILGUERO</h3><p class="sub">Aspecto de césped recién cortado. Ideal para jardines familiares y mascotas.</p></div>
       <div class="price"><b>8,90 €/m²</b><s>11,00 €</s><small>IVA incl.</small></div>
       <div class="bars"><div>Suavidad<u><i class="f"></i><i class="f"></i><i></i><i></i></u></div><div>Espesor<u><i class="f"></i><i class="f"></i><i></i><i></i></u></div><div>Memoria<u><i class="f"></i><i class="f"></i><i></i><i></i></u></div><div>Resistencia<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div></div>
-      <div class="act"><a class="btn btn-green" href="#">Elegir medida</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Muestra</a></div>
+      <div class="act"><a class="btn btn-green" href="#muestras">Pedir muestra gratis</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Ver</a></div>
     </div></article>
     <article class="pc"><div class="ph"><img src="assets/cesped/ruisenor-1.webp" alt="Ruiseñor"><span class="mm">30 mm</span></div><div class="body">
       <div><h3>RUISEÑOR</h3><p class="sub">Máxima densidad en 30 mm. Aspecto impecable bajo uso intensivo.</p></div>
       <div class="price"><b>13,30 €/m²</b><small>IVA incl.</small></div>
       <div class="bars"><div>Suavidad<u><i class="f"></i><i class="f"></i><i></i><i></i></u></div><div>Espesor<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Memoria<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Resistencia<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div></div>
-      <div class="act"><a class="btn btn-green" href="#">Elegir medida</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Muestra</a></div>
+      <div class="act"><a class="btn btn-green" href="#muestras">Pedir muestra gratis</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Ver</a></div>
     </div></article>
     <article class="pc"><div class="ph"><img src="assets/cesped/kiwi-1.webp" alt="Kiwi"><span class="mm">35 mm</span></div><div class="body">
       <div><h3>KIWI</h3><p class="sub">Suavidad y resistencia equilibradas. Para familias con niños y mascotas.</p></div>
       <div class="price"><b>13,50 €/m²</b><small>IVA incl.</small></div>
       <div class="bars"><div>Suavidad<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Espesor<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Memoria<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Resistencia<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div></div>
-      <div class="act"><a class="btn btn-green" href="#">Elegir medida</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Muestra</a></div>
+      <div class="act"><a class="btn btn-green" href="#muestras">Pedir muestra gratis</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Ver</a></div>
     </div></article>
     <article class="pc"><div class="ph"><img src="assets/cesped/cuco-1.webp" alt="Cuco"><span class="mm">35 mm</span></div><div class="body">
       <div><h3>CUCO</h3><p class="sub">Premium: fibra Flat de 4 tonos y la densidad más alta de la gama.</p></div>
       <div class="price"><b>16,50 €/m²</b><small>IVA incl.</small></div>
       <div class="bars"><div>Suavidad<u><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></u></div><div>Espesor<u><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></u></div><div>Memoria<u><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></u></div><div>Resistencia<u><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></u></div></div>
-      <div class="act"><a class="btn btn-green" href="#">Elegir medida</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Muestra</a></div>
+      <div class="act"><a class="btn btn-green" href="#muestras">Pedir muestra gratis</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Ver</a></div>
     </div></article>
     <article class="pc"><div class="ph"><img src="assets/cesped/albatros-1.webp" alt="Albatros"><span class="off">Oferta</span><span class="mm">40 mm</span></div><div class="body">
       <div><h3>ALBATROS</h3><p class="sub">Mullido y generoso. Para zonas de descanso y juego tranquilo.</p></div>
       <div class="price"><b>15,50 €/m²</b><s>17,00 €</s><small>IVA incl.</small></div>
       <div class="bars"><div>Suavidad<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Espesor<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Memoria<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Resistencia<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div></div>
-      <div class="act"><a class="btn btn-green" href="#">Elegir medida</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Muestra</a></div>
+      <div class="act"><a class="btn btn-green" href="#muestras">Pedir muestra gratis</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Ver</a></div>
     </div></article>
     <article class="pc"><div class="ph"><img src="assets/cesped/flamenco-1.webp" alt="Flamenco"><span class="mm">45 mm</span></div><div class="body">
       <div><h3>FLAMENCO</h3><p class="sub">El más suave y mullido. Densidad extraordinaria, fibras siempre erguidas.</p></div>
       <div class="price"><b>23,50 €/m²</b><small>IVA incl.</small></div>
       <div class="bars"><div>Suavidad<u><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></u></div><div>Espesor<u><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></u></div><div>Memoria<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div><div>Resistencia<u><i class="f"></i><i class="f"></i><i class="f"></i><i></i></u></div></div>
-      <div class="act"><a class="btn btn-green" href="#">Elegir medida</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Muestra</a></div>
+      <div class="act"><a class="btn btn-green" href="#muestras">Pedir muestra gratis</a><a class="btn btn-ghost" href="#" style="flex:0;padding:12px 16px">Ver</a></div>
     </div></article>
   </div>
   <div class="band reveal">
-    <div><h3>¿Necesitas una medida concreta? Lo cortamos por ti.</h3><p>Compra césped artificial al corte, en anchos de 1 o 2 metros y la longitud exacta que necesites. Sin sobras ni costes extra. O rollos completos si tu proyecto es grande.</p></div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-white" href="#">Césped al corte</a><a class="btn btn-ghost-w" href="#">Rollos completos</a></div>
+    <div><h3>¿Prefieres que lo midamos e instalemos nosotros?</h3><p>Cuéntanos dónde va y cuántos metros tienes, más o menos. Un asesor te llama en 24 h y te da precio cerrado con instalación. Sin compromiso.</p></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-white" href="presupuesto.html">Pedir presupuesto gratis</a><a class="btn btn-ghost-w" href="#">Césped al corte</a></div>
   </div>
 </div></section>
 
@@ -455,6 +217,23 @@ details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
       <div><span>3</span><div><b>Decides con calma</b><p>Y te asesoramos por teléfono o WhatsApp si lo necesitas.</p></div></div>
     </div>
     <a class="btn btn-green" href="#">Pide tus muestras gratis</a>
+  </div>
+</div></section>
+
+<section class="sec install" id="instalacion"><div class="wrap">
+  <div class="reveal"><img src="assets/home/consejos-mantenimiento-cesped-artificial.webp" alt="Instalación de césped artificial alrededor de una piscina"></div>
+  <div class="reveal">
+    <span class="eyebrow">Quiero un instalador</span>
+    <h2>Así trabajamos cuando lo instalamos nosotros</h2>
+    <p class="lead" style="margin-top:14px">Equipos propios, no subcontratas. Del presupuesto a la última grapa nos encargamos de todo.</p>
+    <div class="steps">
+      <div><span>1</span><div><b>Nos cuentas tu proyecto</b><p>Un formulario de dos minutos, o una llamada.</p></div></div>
+      <div><span>2</span><div><b>Te llamamos en 24 h</b><p>Un asesor resuelve dudas y te recomienda modelo.</p></div></div>
+      <div><span>3</span><div><b>Medimos y cerramos precio</b><p>Visita o medición por planos. Presupuesto cerrado, sin sorpresas.</p></div></div>
+      <div><span>4</span><div><b>Instalamos y garantizamos</b><p>Preparación, drenaje, uniones y acabado. 10 años de garantía.</p></div></div>
+    </div>
+    <a class="btn btn-green" href="presupuesto.html">Pedir presupuesto gratis</a>
+    <div class="chips"><span>Alicante</span><span>Almería</span><span>Barcelona</span><span>Castellón</span><span>Madrid</span><span>Málaga</span><span>Murcia</span><span>Sevilla</span><span>Valencia</span><span>Zaragoza</span></div>
   </div>
 </div></section>
 
@@ -520,18 +299,18 @@ details p{margin-top:12px;color:var(--ink-2);font-size:15px;max-width:62ch}
     <div class="brand"><img src="assets/home/logo-keepgreen.png" alt="Keepgreen"><p>Césped artificial de fabricante para el hogar. Calidad premium, precio directo y garantía de 10 años.</p>
       <form class="news" onsubmit="return false"><input type="email" placeholder="Tu email para ofertas y consejos"><button>Suscribirme</button></form></div>
     <div><h4>Césped artificial</h4><ul><li><a href="#">Todos los modelos</a></li><li><a href="#">Al corte</a></li><li><a href="#">En rollos</a></li><li><a href="#">Césped barato</a></li><li><a href="#">Accesorios</a></li><li><a href="#">Caja de muestras</a></li></ul></div>
-    <div><h4>Ayuda</h4><ul><li><a href="#">Cómo instalarlo</a></li><li><a href="#">Calcular medidas</a></li><li><a href="#">Mantenimiento</a></li><li><a href="#">Garantía</a></li><li><a href="#">Envíos y devoluciones</a></li><li><a href="#">Preguntas frecuentes</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul><li><a href="presupuesto.html">Pedir presupuesto</a></li><li><a href="#">Cómo instalarlo</a></li><li><a href="#">Calcular medidas</a></li><li><a href="#">Mantenimiento</a></li><li><a href="#">Garantía</a></li><li><a href="#">Envíos y devoluciones</a></li><li><a href="#">Preguntas frecuentes</a></li></ul></div>
     <div><h4>Keepgreen</h4><ul><li><a href="#">Fabricantes en España</a></li><li><a href="#">Nuestros centros</a></li><li><a href="#">Blog</a></li><li><a href="tel:965403811">965 403 811</a></li><li><a href="mailto:hola@keepgreen.es">hola@keepgreen.es</a></li></ul></div>
   </div>
   <div class="bottom"><span>© 2026 Keepgreen · Fabricado en España</span><div><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a><a href="#">Términos</a></div></div>
 </div></footer>
 
-<div class="vsel" id="vsel"><a href="?hero=a">A</a><a href="?hero=b">B</a><a href="?hero=c">C</a></div>
+<div class="vsel" id="vsel"><a href="?hero=d">D</a><a href="?hero=a">A</a><a href="?hero=b">B</a><a href="?hero=c">C</a></div>
 
 <script>
 (function(){
-  var q=new URLSearchParams(location.search), h=(q.get('hero')||'a').toLowerCase();
-  if(!/^[abc]$/.test(h))h='a';
+  var q=new URLSearchParams(location.search), h=(q.get('hero')||'d').toLowerCase();
+  if(!/^[abcd]$/.test(h))h='d';
   document.body.setAttribute('data-hero',h);
   document.querySelectorAll('#vsel a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='?hero='+h)});
   if(q.get('sel')==='0')document.getElementById('vsel').classList.add('hide');
