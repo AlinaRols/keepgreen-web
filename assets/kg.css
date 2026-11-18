@@ -497,3 +497,52 @@ body.v3 .hero-d::after{background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba
 .hero-g .help{margin-top:22px;font-size:14px;color:var(--ink-2);display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
 .hero-g .help a{text-decoration:underline;text-underline-offset:3px;font-weight:600;color:var(--ink)}
 @media(max-width:760px){.gcards{grid-template-columns:1fr;margin-top:-60px}.hero-g .pic{min-height:0;padding:36px 0 84px}.gcard img{aspect-ratio:16/7}}
+
+/* cabecera · arreglo general: nada se parte en dos líneas */
+.nav a,.tel,.hcta{white-space:nowrap}
+.hcta{padding:11px 20px;font-size:14px}
+.topbar .wrap{position:relative}
+.topbar .tb-right{display:none}
+
+/* NAV 1 · compacta: menú centrado, teléfono y botón a la derecha */
+body.nav1 .header .wrap{gap:0}
+body.nav1 .nav{margin:0 auto;gap:30px;font-size:14.5px}
+body.nav1 .nav a svg{display:none}
+body.nav1 .hright{margin-left:0;gap:18px}
+body.nav1 .tel{font-size:14px}
+body.nav1 .icons{gap:10px;padding-left:4px;border-left:1px solid var(--line);margin-left:2px}
+body.nav1 .icons svg{width:19px;height:19px;margin-left:8px}
+
+/* NAV 2 · tipo Realturf: menú en mayúsculas pequeñas a la derecha, teléfono y WhatsApp en la barra verde */
+body.nav2 .topbar .wrap{justify-content:flex-start;gap:28px}
+body.nav2 .topbar .tb-right{display:flex;gap:18px;margin-left:auto}
+body.nav2 .tb-right a{display:flex;align-items:center;gap:6px;color:#fff;font-weight:600}
+body.nav2 .tb-right svg{width:13px;height:13px;color:#9fd27f}
+body.nav2 .header .wrap{height:84px}
+body.nav2 .logo img{height:38px}
+body.nav2 .nav{margin-left:auto;gap:26px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+body.nav2 .nav a svg{display:none}
+body.nav2 .hright{margin-left:0;gap:14px}
+body.nav2 .tel,body.nav2 .icons{display:none}
+body.nav2 .hcta{background:#fff;color:var(--green-d);border:1.5px solid var(--green);padding:10px 18px}
+body.nav2 .hcta:hover{background:var(--green);color:#fff}
+body.nav2 .hcta::after{content:" →"}
+
+/* NAV 3 · transparente sobre la foto, se vuelve blanca al hacer scroll */
+body.nav3 .header{position:relative;margin-bottom:-80px;background:transparent;border-bottom:1px solid rgba(255,255,255,.18);backdrop-filter:none;color:#fff}
+body.nav3 .header.solid{position:fixed;top:0;background:rgba(255,255,255,.94);border-bottom-color:var(--line);color:var(--ink);backdrop-filter:saturate(180%) blur(12px)}
+body.nav3 .topbar{position:relative;z-index:51}
+body.nav3 .header .wrap{gap:0;height:80px}
+body.nav3 .logo img{filter:brightness(0) invert(1)}
+body.nav3 .header.solid .logo img{filter:none}
+body.nav3 .nav{margin:0 auto;gap:30px;font-size:14.5px}
+body.nav3 .nav a{color:inherit}
+body.nav3 .nav a svg{display:none}
+body.nav3 .hright{margin-left:0;gap:18px}
+body.nav3 .tel{color:inherit}body.nav3 .tel svg{color:inherit}
+body.nav3 .icons svg{stroke:currentColor}
+body.nav3 .hcta{background:#fff;color:var(--ink)}
+body.nav3 .header.solid .hcta{background:var(--green);color:#fff}
+body.nav3 .hero-f{padding-top:140px}
+body.nav3 .hero-f::after{background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.3) 30%,rgba(0,0,0,.65) 100%)}
+@media(max-width:1000px){body.nav1 .icons,body.nav3 .icons{display:none}}
