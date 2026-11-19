@@ -685,3 +685,44 @@ body.novideo .hero-f>video.hv{display:none}
 /* ===== PORTADA F · botones sin icono ===== */
 .hero-f .big{max-width:780px}
 .hero-f .bb{padding:20px 20px 20px 26px}
+
+/* ===== PORTADA F · disposiciones (?lay=1..4) ===== */
+.hero-f .hf{display:flex;flex-direction:column;align-items:center;width:100%}
+/* 2 · texto abajo a la izquierda, botones sencillos */
+body.lay2 .hero-f{align-items:flex-end;padding:56px 0 64px}
+body.lay2 .hero-f .hf{align-items:flex-start;text-align:left}
+body.lay2 .hero-f h1{font-size:clamp(36px,4.6vw,62px)}
+body.lay2 .hero-f .sub{margin:14px 0 26px;max-width:44ch}
+body.lay2 .hero-f .big{display:flex;flex-wrap:wrap;gap:12px;max-width:none;width:auto}
+body.lay2 .hero-f .bb{padding:14px 16px 14px 26px;border-radius:999px;gap:14px;box-shadow:none}
+body.lay2 .hero-f .bb .s{display:none}
+body.lay2 .hero-f .bb b{font-size:16px}
+body.lay2 .hero-f .bb i{width:28px;height:28px;font-size:15px}
+body.lay2 .hero-f .help{justify-content:flex-start;margin-top:22px}
+body.lay2 .hero-f::after{background:linear-gradient(90deg,rgba(0,0,0,.62),rgba(0,0,0,.12) 72%),linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.5))}
+/* 3 · texto centrado y los dos caminos como barra al pie */
+body.lay3 .hero-f{padding:56px 0 150px}
+body.lay3 .hero-f h1{font-size:clamp(38px,5.2vw,68px)}
+body.lay3 .hero-f .sub{margin:16px 0 0}
+body.lay3 .hero-f .help{margin-top:22px}
+body.lay3 .hero-f .big{position:absolute;left:0;right:0;bottom:0;max-width:none;width:100%;gap:0}
+body.lay3 .hero-f .bb{border-radius:0;box-shadow:none;padding:26px 44px}
+body.lay3 .hero-f .bb:hover{transform:none}
+body.lay3 .hero-f .bb:first-child{padding-left:max(24px,calc((100vw - 1240px)/2))}
+body.lay3 .hero-f .bb.pro{padding-right:max(24px,calc((100vw - 1240px)/2))}
+body.lay3 .hero-f .bb b{font-size:22px}
+@media(max-width:760px){body.lay3 .hero-f{padding-bottom:40px}body.lay3 .hero-f .big{position:static;margin-top:26px;gap:12px}body.lay3 .hero-f .bb,body.lay3 .hero-f .bb:first-child,body.lay3 .hero-f .bb.pro{border-radius:14px;padding:18px 20px}body.lay3 .hero-f .bb b{font-size:19px}}
+/* 4 · tarjeta blanca a la izquierda, el vídeo se ve entero a la derecha */
+body.lay4 .hero-f{padding:64px 0}
+body.lay4 .hero-f .wrap{align-items:flex-start}
+body.lay4 .hero-f .hf{background:#fff;color:var(--ink);border-radius:24px;padding:40px 40px 32px;max-width:500px;align-items:flex-start;text-align:left;box-shadow:0 24px 60px rgba(0,0,0,.3)}
+body.lay4 .hero-f .eyebrow{color:var(--green)}
+body.lay4 .hero-f h1{font-size:clamp(32px,3.3vw,46px);text-shadow:none;line-height:1.08}
+body.lay4 .hero-f .sub{color:var(--ink-2);margin:14px 0 24px;font-size:16px}
+body.lay4 .hero-f .big{grid-template-columns:1fr;gap:10px}
+body.lay4 .hero-f .bb{box-shadow:none;border:1.5px solid rgba(0,0,0,.14)}
+body.lay4 .hero-f .bb.pro{border-color:var(--green)}
+body.lay4 .hero-f .help{color:var(--ink-2);justify-content:flex-start;margin-top:20px;font-size:13px;gap:8px 14px}
+body.lay4 .hero-f .help a{color:var(--ink)}
+body.lay4 .hero-f::after{background:rgba(0,0,0,.1)}
+@media(max-width:760px){body.lay4 .hero-f{padding:180px 0 16px}body.lay4 .hero-f .hf{padding:26px 22px 22px;border-radius:20px}}

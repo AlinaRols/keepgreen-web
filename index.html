@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795101920">
+<link rel="stylesheet" href="assets/kg.css?v=1795102054">
 </head>
 <body data-hero="f">
 
@@ -102,7 +102,7 @@
 <section class="hero hero-f">
   <img src="assets/home/hero-desktop.webp" alt="Jardín con piscina y césped artificial Keepgreen">
   <video class="hv" autoplay muted loop playsinline preload="auto" poster="assets/home/hero-poster.webp" aria-hidden="true"><source src="assets/home/hero.mp4" type="video/mp4"></video>
-  <div class="wrap">
+  <div class="wrap"><div class="hf">
     <span class="eyebrow">Especialistas en césped artificial · Garantía de 10 años</span>
     <h1>Césped artificial para tu casa</h1>
     <p class="sub">Calidad premium al mejor precio garantizado. Tú decides si lo instalas tú o lo instalamos nosotros.</p>
@@ -111,7 +111,7 @@
       <a class="bb pro" href="#instalacion"><span class="tx"><b>Quiero un instalador</b><span class="s">Sin compromiso · Te llamamos en 24&nbsp;h</span></span><i>→</i></a>
     </div>
     <div class="help"><span>¿No lo tienes claro?</span><a href="tel:965403811">Llámanos al 965 403 811</a><a href="#">Escríbenos por WhatsApp</a></div>
-  </div>
+  </div></div>
 </section>
 
 <!-- PORTADA G · foto corta + dos tarjetas con foto sobre fondo crema -->
@@ -383,7 +383,8 @@
   var q=new URLSearchParams(location.search),h=(q.get('hero')||'f').toLowerCase();if(!/^[defg]$/.test(h))h='f';document.body.setAttribute('data-hero',h);
   var ins=q.get('ins')||'2';if(/^[12]$/.test(ins))document.body.classList.add('ins'+ins);
   var mo=q.get('mod')||'4';if(/^[1234]$/.test(mo))document.body.classList.add('mod'+mo);
-  if(q.get('video')==='0')document.body.classList.add('novideo');
+  var la=q.get('lay')||'1';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
+if(q.get('video')==='0')document.body.classList.add('novideo');
 var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu'+me);
   var n=q.get('nav')||'2';if(/^[123]$/.test(n))document.body.classList.add('nav'+n);
   if(n==='3'){var hd=document.querySelector('.header'),tb=document.querySelector('.topbar');function sc(){hd.classList.toggle('solid',window.scrollY>tb.offsetHeight+10)}window.addEventListener('scroll',sc);sc()}
