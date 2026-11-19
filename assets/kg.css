@@ -960,3 +960,9 @@ body.spk .sb-cta i{color:var(--pink)}
 .sb-tel small{display:block;font-size:12.5px;color:var(--ink-2)}
 .sb-tel b{display:block;font-size:19px;font-weight:800;letter-spacing:-.01em;white-space:nowrap}
 @media(max-width:900px){.sb-row{flex-direction:column;align-items:stretch}.sb-tel{border-left:0;padding-left:0;justify-content:center}}
+
+/* muestras · botón y garantías centrados en la columna */
+.sact2{align-items:center}
+.sb-row{justify-content:center}
+.sb-ok{justify-content:center}
+.sbox .sact .sb-cta{padding-left:36px;gap:26px}
