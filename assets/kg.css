@@ -726,3 +726,50 @@ body.lay4 .hero-f .help{color:var(--ink-2);justify-content:flex-start;margin-top
 body.lay4 .hero-f .help a{color:var(--ink)}
 body.lay4 .hero-f::after{background:rgba(0,0,0,.1)}
 @media(max-width:760px){body.lay4 .hero-f{padding:180px 0 16px}body.lay4 .hero-f .hf{padding:26px 22px 22px;border-radius:20px}}
+
+/* ===== BARRA DE VENTAJAS · versiones (?tr=0 antigua, 1, 2, 3) ===== */
+body:not(.tr3) .trust.trn,body.tr3 .trust:not(.trn){display:none}
+body:not(.tr0) .trust .wrap>div>div{display:block}
+body:not(.tr0) .trust b{font-size:15px;line-height:1.25}
+body:not(.tr0) .trust span{display:block;margin-top:3px;font-size:13px;line-height:1.35}
+/* 1 · fila limpia con separadores e icono en círculo */
+body.tr1 .trust .wrap,body.tr2 .trust .wrap{gap:0}
+body.tr1 .trust .wrap{padding:30px 0}
+body.tr1 .trust .wrap>div,body.tr2 .trust .wrap>div{padding:4px 26px;border-left:1px solid var(--line)}
+body.tr1 .trust .wrap>div:first-child,body.tr2 .trust .wrap>div:first-child{border-left:0;padding-left:0}
+body.tr1 .trust .wrap>div:last-child,body.tr2 .trust .wrap>div:last-child{padding-right:0}
+body.tr1 .trust svg,body.tr2 .trust svg{width:22px;height:22px;padding:12px;box-sizing:content-box;background:var(--green-l);border-radius:50%;stroke-width:1.7}
+/* 2 · tarjeta blanca que monta sobre el vídeo */
+body.tr2 .trust{border:0;position:relative;z-index:3;margin-top:-52px;background:linear-gradient(180deg,transparent 52px,var(--green-ll) 52px)}
+body.tr2 .trust .wrap{background:#fff;border-radius:20px;box-shadow:0 18px 50px rgba(20,40,20,.13);padding:26px 34px}
+body.tr2 .trust .wrap>div:first-child{padding-left:0}
+body.tr2.lay2 .hero-f{padding-bottom:116px}
+/* 3 · cuatro cifras, sin iconos */
+.trust.trn .wrap{gap:0;padding:34px 0}
+.trust.trn .wrap>div{display:block;padding:2px 30px;border-left:1px solid var(--line)}
+.trust.trn .wrap>div:first-child{border-left:0;padding-left:0}
+.trust.trn b{font-size:32px!important;line-height:1.05!important;font-weight:800;letter-spacing:-.02em;color:var(--green)}
+.trust.trn span{margin-top:6px!important;font-size:13.5px!important;max-width:22ch}
+@media(max-width:900px){
+  body.tr1 .trust .wrap,body.tr2 .trust .wrap,.trust.trn .wrap{gap:22px 18px}
+  body.tr1 .trust .wrap>div,body.tr2 .trust .wrap>div,.trust.trn .wrap>div{border-left:0;padding:0}
+  body.tr2 .trust{margin-top:-36px;background:linear-gradient(180deg,transparent 36px,var(--green-ll) 36px)}
+  body.tr2 .trust .wrap{padding:22px 20px;border-radius:18px}
+  body.tr2.lay2 .hero-f{padding-bottom:76px}
+  .trust.trn b{font-size:26px!important}
+}
+@media(max-width:520px){
+  body.tr1 .trust .wrap,body.tr2 .trust .wrap,.trust.trn .wrap{grid-template-columns:1fr 1fr}
+  body.tr1 .trust .wrap>div,body.tr2 .trust .wrap>div{flex-direction:column;align-items:flex-start;gap:10px}
+  body.tr1 .trust svg,body.tr2 .trust svg{width:20px;height:20px;padding:10px}
+}
+/* barra de ventajas · móvil compacto: icono + título, sin la línea pequeña */
+@media(max-width:900px){body:not(.tr0) .trust .wrap{align-items:start}}
+@media(max-width:520px){
+  body.tr1 .trust .wrap>div,body.tr2 .trust .wrap>div{flex-direction:row;align-items:center;gap:10px}
+  body.tr1 .trust .wrap>div span,body.tr2 .trust .wrap>div span{display:none}
+  body.tr1 .trust b,body.tr2 .trust b{font-size:13.5px}
+  body.tr1 .trust svg,body.tr2 .trust svg{width:18px;height:18px;padding:9px}
+  body.tr1 .trust .wrap,body.tr2 .trust .wrap{gap:16px 12px;align-items:center}
+  body.tr2 .trust .wrap{padding:18px 16px}
+}

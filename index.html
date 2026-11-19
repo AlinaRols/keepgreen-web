@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795102111">
+<link rel="stylesheet" href="assets/kg.css?v=1795103552">
 </head>
 <body data-hero="f">
 
@@ -140,6 +140,13 @@
   <div><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 11h18M8 7V4h8v3"/></svg><div><b>Muestras gratis</b><span>En casa en 24/48 h, sin compromiso</span></div></div>
   <div><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><path d="M12 8v4l3 2"/></svg><div><b>Te llamamos en 24 h</b><span>Una persona, no un bot</span></div></div>
   <div><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><div><b>Garantía de 10 años</b><span>En todos nuestros modelos</span></div></div>
+</div></section>
+
+<section class="trust trn"><div class="wrap">
+  <div><b>10 años</b><span>de garantía en todos los modelos</span></div>
+  <div><b>24/48 h</b><span>y tienes las muestras gratis en casa</span></div>
+  <div><b>160 €</b><span>de compra y el envío te sale gratis</span></div>
+  <div><b>10 ciudades</b><span>con centro Keepgreen</span></div>
 </div></section>
 
 <!-- 3 · MODELOS + altura + calculadora + texto -->
@@ -383,7 +390,8 @@
   var q=new URLSearchParams(location.search),h=(q.get('hero')||'f').toLowerCase();if(!/^[defg]$/.test(h))h='f';document.body.setAttribute('data-hero',h);
   var ins=q.get('ins')||'2';if(/^[12]$/.test(ins))document.body.classList.add('ins'+ins);
   var mo=q.get('mod')||'4';if(/^[1234]$/.test(mo))document.body.classList.add('mod'+mo);
-  var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
+  var tr=q.get('tr')||'2';if(/^[0123]$/.test(tr))document.body.classList.add('tr'+tr);
+var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
 if(q.get('video')==='0')document.body.classList.add('novideo');
 var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu'+me);
   var n=q.get('nav')||'2';if(/^[123]$/.test(n))document.body.classList.add('nav'+n);
