@@ -986,3 +986,9 @@ body.spk .sb-cta i{color:var(--pink)}
 .rmq .rc b{font-size:14.5px}
 @media(prefers-reduced-motion:reduce){.rmq{overflow-x:auto}.rmq-track{animation:none}}
 @media(max-width:760px){.rmq .rc{width:290px;padding:22px}.rmq-track{gap:14px;animation-duration:45s}.rh-a{white-space:normal}}
+/* menos aire entre modelos, muestras y opiniones */
+.products-sec{padding-bottom:44px}
+.samples{padding-top:44px;padding-bottom:64px;background:linear-gradient(180deg,var(--green-ll) 0,var(--cream) 220px)}
+.reviews{padding-top:56px}
+.morebtn{margin-top:26px}
+@media(max-width:900px){.products-sec{padding-bottom:32px}.samples{padding-top:32px;padding-bottom:44px}.reviews{padding-top:40px}}
