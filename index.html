@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795107896">
+<link rel="stylesheet" href="assets/kg.css?v=1795108070">
 </head>
 <body data-hero="f">
 
@@ -233,17 +233,20 @@
 </div></section>
 
 <!-- 5 · OPINIONES -->
-<section class="sec reviews" id="opiniones"><div class="wrap">
-  <div class="rev-head reveal">
-    <div class="score"><b>4,62</b><div><div class="stars">★★★★★</div><span>171 opiniones · Trusted Shops</span></div></div>
-    <div><h2 style="font-size:clamp(24px,2.6vw,32px)">Lo que dicen quienes ya lo tienen</h2></div>
-  </div>
-  <div class="grid-r reveal">
-    <div class="rc"><div class="stars">★★★★★</div><p>«Nos lo instalaron en dos días. Vinieron a medir, nos dieron precio cerrado y no hubo ninguna sorpresa. El jardín parece de verdad».</p><b>Carmen L.</b><small>Málaga · Jardín 60 m² · Instalado por Keepgreen</small></div>
-    <div class="rc"><div class="stars">★★★★★</div><p>«Pedí muestras un lunes y el miércoles ya las tenía en casa. Elegimos el Albatros para la terraza y lo puse yo siguiendo sus vídeos».</p><b>Javier M.</b><small>Madrid · Terraza 18 m² · Lo instaló él</small></div>
-    <div class="rc"><div class="stars">★★★★★</div><p>«Tenemos dos perros y era lo que más nos preocupaba. Con el Jilguero, un cepillado de vez en cuando y cero barro en casa».</p><b>Marta R.</b><small>Alicante · Jardín 40 m² · Instalado por Keepgreen</small></div>
-  </div>
-</div></section>
+<section class="sec reviews" id="opiniones">
+  <div class="wrap"><div class="rev-head reveal">
+    <div class="score"><b>4,62</b><div><div class="stars">★★★★★</div><span>Excelente · 121 opiniones</span></div></div>
+    <div class="rh-t"><h2>Lo que dicen quienes ya lo tienen</h2><p>Opiniones verificadas por Trusted Shops.</p></div>
+    <a class="rh-a" href="https://www.trustedshops.es/evaluacion/info_X6455B2D2720A493C9B22A300F6565DEB.html">Ver todas las opiniones →</a>
+  </div></div>
+  <div class="rmq reveal"><div class="rmq-track">
+      <article class="rc"><div class="stars" aria-label="5 de 5">★★★★★</div><h3>Todo excelente</h3><p>«Nos llegaron las muestras enseguida y nos asesoraron en todo momento por WhatsApp.»</p><b>Cliente verificado</b><small>10 sept 2026 · Opinión verificada</small></article>
+      <article class="rc"><div class="stars" aria-label="5 de 5">★★★★★</div><h3>Profesionales de 10</h3><p>«Durante la instalación tuve alguna duda y me ayudaron online en el momento.»</p><b>Javier</b><small>5 ago 2026 · Opinión verificada</small></article>
+      <article class="rc"><div class="stars" aria-label="5 de 5">★★★★★</div><h3>Muy contentos</h3><p>«El tacto del césped estupendo y la instalación fácil.»</p><b>Elena</b><small>22 jul 2026 · Opinión verificada</small></article>
+      <article class="rc"><div class="stars" aria-label="5 de 5">★★★★★</div><h3>Mejor de lo esperado</h3><p>«Tal cual está en su página web.»</p><b>Antonio</b><small>15 sept 2026 · Opinión verificada</small></article>
+      <article class="rc"><div class="stars" aria-label="5 de 5">★★★★★</div><h3>Compra muy satisfactoria</h3><p>«El césped llegó dentro de los plazos previstos manteniendo las características de las muestras.»</p><b>Israel</b><small>29 jun 2026 · Opinión verificada</small></article>
+  </div></div>
+</section>
 
 <!-- 4 · INSTALACIÓN + formulario -->
 <section class="sec install" id="instalacion"><div class="wrap">
@@ -416,6 +419,8 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
   var v=(q.get('v')||'1');if(/^[0-3]$/.test(v)&&v!=='0')(v==='3'?document.body.classList.add('v1','v3'):document.body.classList.add('v'+v));
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){if(q.get('nofx'))el.classList.add('visible');else io.observe(el)});
+  // opiniones: se duplican para que la fila pase sin cortes
+  document.querySelectorAll('.rmq-track').forEach(function(t){[].slice.call(t.children).forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');t.appendChild(k)})});
   // pop-up de la caja de muestras (?pop=1 lo abre para capturas)
   var pop=document.getElementById('pop-muestras');
   if(pop){var pf=pop.querySelector('.pop-form'),pk=pop.querySelector('.pop-ok');
