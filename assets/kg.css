@@ -674,3 +674,10 @@ body.menu2 .header .wrap{gap:30px}
 body.menu2 .logo img{height:40px}
 body.menu2 .nav{gap:18px}
 body.menu2 .hright{margin-left:4px}
+
+/* ===== PORTADA F · vídeo de fondo (?video=0 muestra la foto) ===== */
+.hero-f>video.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none}
+body.novideo .hero-f>video.hv{display:none}
+@media(prefers-reduced-motion:reduce){.hero-f>video.hv{display:none}}
+.hero-f::after{background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.38) 50%,rgba(0,0,0,.66) 100%)}
+.tb-right a{white-space:nowrap}
