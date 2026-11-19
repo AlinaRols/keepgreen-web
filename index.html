@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795105647">
+<link rel="stylesheet" href="assets/kg.css?v=1795106050">
 </head>
 <body data-hero="f">
 
@@ -206,34 +206,22 @@
     <div class="prow"><img src="assets/cesped/cuco-3n.webp" alt="Césped artificial Cuco 35 mm" loading="lazy"><div class="pn"><h3>CUCO <span class="mmc">35 mm</span></h3><p>Fibra plana, el más denso.</p></div><div class="pp"><b>16,50 €</b><i>/m²</i><small>IVA incl.</small></div><div class="act"><a class="btn btn-ghost" href="#">Ver modelo</a><a class="btn btn-green" href="#">Comprar</a></div></div>
     <div class="prow"><img src="assets/cesped/flamenco-3n.webp" alt="Césped artificial Flamenco 45 mm" loading="lazy"><div class="pn"><h3>FLAMENCO <span class="mmc">45 mm</span></h3><p>El más suave de la gama.</p></div><div class="pp"><b>23,50 €</b><i>/m²</i><small>IVA incl.</small></div><div class="act"><a class="btn btn-ghost" href="#">Ver modelo</a><a class="btn btn-green" href="#">Comprar</a></div></div>
   </div>
+  <form class="calc cbar reveal" onsubmit="return false">
+    <h3>Calcula cuánto te cuesta</h3>
+    <label><span>Metros (m²)</span><input class="in" type="number" id="c-m2" value="40" min="1" inputmode="numeric"></label>
+    <label><span>Modelo</span><select class="in" id="c-model">
+      <option value="8.90">Jilguero · 30 mm · 8,90 €/m²</option>
+      <option value="13.30">Ruiseñor · 30 mm · 13,30 €/m²</option>
+      <option value="13.50">Kiwi · 35 mm · 13,50 €/m²</option>
+      <option value="15.50" selected>Albatros · 40 mm · 15,50 €/m²</option>
+      <option value="16.50">Cuco · 35 mm · 16,50 €/m²</option>
+      <option value="23.50">Flamenco · 45 mm · 23,50 €/m²</option>
+    </select></label>
+    <div class="cout"><small>Césped, IVA incluido</small><b id="c-out">620 €</b></div>
+    <div class="cbtn"><a class="btn btn-green" href="#">Comprar</a><a class="btn btn-ghost" href="#instalacion">Precio con instalación</a></div>
+  </form>
   <div class="nextbar reveal"><div class="nb-t"><b>¿Dudas entre dos modelos?</b><span>Te mandamos hasta cuatro muestras a casa en 24/48&nbsp;h. Gratis.</span></div><div class="nb-a"><a class="btn btn-green" href="#muestras">Pedir muestras gratis</a><a class="btn btn-ghost" href="#instalacion">Prefiero que me lo instalen</a></div></div>
 
-  <div class="model-aside reveal">
-    <div class="heights">
-      <h3>¿Qué altura elegir?</h3>
-      <div class="hrow">
-        <div><b>30 mm</b><span>Fibra corta</span><p>Mucho paso y mascotas.</p></div>
-        <div><b>35–40 mm</b><span>Fibra media</span><p>Jardín y terraza, uso mixto.</p></div>
-        <div><b>45 mm</b><span>Fibra alta</span><p>Para descansar descalzo.</p></div>
-      </div>
-    </div>
-    <form class="calc" onsubmit="return false">
-      <h3>Calcula cuánto te cuesta</h3>
-      <div class="crow">
-        <label><span>Metros cuadrados</span><input class="in" type="number" id="c-m2" value="40" min="1" inputmode="numeric"></label>
-        <label><span>Modelo</span><select class="in" id="c-model">
-          <option value="8.90">Jilguero · 30 mm · 8,90 €/m²</option>
-          <option value="13.30">Ruiseñor · 30 mm · 13,30 €/m²</option>
-          <option value="13.50">Kiwi · 35 mm · 13,50 €/m²</option>
-          <option value="16.50">Cuco · 35 mm · 16,50 €/m²</option>
-          <option value="15.50" selected>Albatros · 40 mm · 15,50 €/m²</option>
-          <option value="23.50">Flamenco · 45 mm · 23,50 €/m²</option>
-        </select></label>
-      </div>
-      <div class="cout"><small>Césped al corte, IVA incluido</small><b id="c-out">620 €</b><small>Envío gratis a partir de 160 €. Sin instalación.</small></div>
-      <div class="cbtn"><a class="btn btn-ghost" href="#">Comprar al corte</a><a class="btn btn-green" href="#instalacion">Precio con instalación</a></div>
-    </form>
-  </div>
 
 </div></section>
 

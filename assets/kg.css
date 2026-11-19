@@ -850,3 +850,16 @@ body.pr2 .rt.sm h3{font-size:19px}
 .nb-a .btn-ghost{border-color:var(--line);color:var(--ink)}
 .nb-a .btn-ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 @media(max-width:760px){.nextbar{padding:20px;border-radius:18px}.nb-t b{font-size:17px}.nb-a{width:100%;flex-direction:column}.nb-a .btn{justify-content:center}}
+
+/* ===== MODELOS · calculadora en una barra (sin el cuadro de alturas) ===== */
+.calc.cbar{margin-top:22px;display:grid;grid-template-columns:auto 130px minmax(200px,1fr) auto auto;align-items:end;gap:14px 20px;padding:20px 26px 20px 30px;border-radius:20px}
+.calc.cbar h3{margin:0;align-self:center;font-size:19px;line-height:1.2;max-width:8.5em;letter-spacing:-.01em}
+.calc.cbar .cout{margin:0;padding:0 6px;background:none;display:block;text-align:right;min-width:140px}
+.calc.cbar .cout small{display:block;flex-basis:auto;font-size:12px}
+.calc.cbar .cout b{display:block;font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--pink);margin-top:2px}
+.calc.cbar .cbtn{flex-wrap:nowrap}
+.calc.cbar .cbtn .btn{flex:none;padding:13px 22px;font-size:14.5px;margin:0}
+.calc.cbar .cbtn .btn-ghost{border-color:var(--line);color:var(--ink)}
+.calc.cbar+.nextbar{margin-top:16px}
+@media(max-width:1180px){.calc.cbar{grid-template-columns:130px 1fr auto}.calc.cbar h3{grid-column:1/-1;max-width:none}.calc.cbar .cbtn{grid-column:1/-1}.calc.cbar .cbtn .btn{flex:1;justify-content:center}}
+@media(max-width:700px){.calc.cbar{grid-template-columns:104px 1fr;padding:20px}.calc.cbar .cout{grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;text-align:left;padding:12px 14px;background:var(--pink-l);border-radius:12px}.calc.cbar .cout b{font-size:28px;margin:0}.calc.cbar .cbtn{flex-direction:column}}
