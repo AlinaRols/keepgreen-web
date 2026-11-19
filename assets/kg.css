@@ -797,3 +797,46 @@ body:not(.mm1) .rt.sm .num,body:not(.mm2) .mmc,body:not(.mm3) .mms,body:not(.mm4
 }
 .mmp b{white-space:nowrap}
 @media(max-width:900px){.mmp{align-items:center}.mmp img{width:58px}.mmp b{font-size:17px}.mmp span{font-size:10.5px}}
+
+/* ===== MODELOS 4 · el precio manda (?pr=0 antigua, 1, 2, 3) · rosa de keepgreen.es ===== */
+:root{--pink:#ed0069;--pink-d:#c90059;--pink-l:#fde8f1}
+.rt.sm .price b i,.pp i{font-style:normal}
+body:not(.pr1) .rt.sm .flag,body:not(.pr2) .rt.sm .ptag,body:not(.pr3) .ptable,body.pr3 .grid-rt.six.mod4{display:none!important}
+/* 1 · precio grande bajo el nombre */
+body.pr1 .rt.sm .top,body.pr2 .rt.sm .top{flex-direction:column;align-items:flex-start;gap:8px}
+body.pr1 .rt.sm h3{font-size:15px;letter-spacing:.06em;color:var(--ink-2)}
+body.pr1 .rt.sm .price{align-items:baseline;gap:8px}
+body.pr1 .rt.sm .price b{font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+body.pr1 .rt.sm .price b i{font-size:15px;font-weight:600;letter-spacing:0;color:var(--ink-2);margin-left:3px}
+body.pr1 .rt.sm .body{gap:8px}
+.rt.sm .flag{position:absolute;left:14px;top:14px;background:var(--pink);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+/* 2 · etiqueta rosa con el precio sobre la foto */
+.rt.sm .ptag{position:absolute;left:14px;top:14px;background:var(--pink);color:#fff;font-size:13px;font-weight:600;padding:8px 14px 8px 13px;border-radius:999px;line-height:1;box-shadow:0 6px 16px rgba(237,0,105,.25)}
+.rt.sm .ptag b{font-size:19px;font-weight:800;letter-spacing:-.01em;margin-right:1px}
+body.pr2 .rt.sm .price{display:none}
+body.pr2 .rt.sm h3{font-size:19px}
+/* 3 · tabla de precios */
+.ptable{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.prow{display:grid;grid-template-columns:120px 1fr 190px auto;align-items:center;gap:22px;padding:10px 26px 10px 14px;border-top:1px solid var(--line)}
+.prow:first-child{border-top:0}
+.prow img{width:120px;aspect-ratio:3/2;object-fit:contain;display:block}
+.prow h3{font-size:18px;letter-spacing:.02em}
+.prow p{font-size:13.5px;color:var(--ink-2);margin-top:2px}
+.pp{text-align:right;white-space:nowrap}
+.pp b{font-size:28px;font-weight:800;letter-spacing:-.03em;color:var(--pink)}
+.pp i{font-size:14px;font-weight:600;color:var(--ink-2);margin-left:3px}
+.pp small{display:block;font-size:11px;color:var(--ink-3);margin-top:-2px}
+.prow .act{display:flex;gap:8px}
+.prow .act .btn{padding:11px 18px;font-size:13.5px;margin:0;white-space:nowrap}
+.prow .act .btn-ghost{border-color:var(--line);color:var(--ink)}
+@media(max-width:900px){
+  body.pr1 .rt.sm .price b{font-size:26px}body.pr1 .rt.sm .price b i{font-size:12px}
+  body.pr1 .rt.sm h3{font-size:13px}
+  .rt.sm .flag{left:8px;top:8px;font-size:9.5px;padding:5px 8px}
+  .rt.sm .ptag{left:8px;top:8px;font-size:11px;padding:6px 10px}.rt.sm .ptag b{font-size:15px}
+  .prow{grid-template-columns:84px 1fr auto;gap:8px 12px;padding:12px 14px}
+  .prow img{width:84px}.prow h3{font-size:15px}.prow p{display:none}
+  .pp b{font-size:22px}.pp i{font-size:12px}.pp small{display:none}
+  .prow .act{grid-column:1/-1}.prow .act .btn{flex:1;justify-content:center;padding:10px}
+  .prow .mmc{margin-top:4px}
+}
