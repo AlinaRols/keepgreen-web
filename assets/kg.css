@@ -681,3 +681,7 @@ body.novideo .hero-f>video.hv{display:none}
 @media(prefers-reduced-motion:reduce){.hero-f>video.hv{display:none}}
 .hero-f::after{background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.38) 50%,rgba(0,0,0,.66) 100%)}
 .tb-right a{white-space:nowrap}
+
+/* ===== PORTADA F · botones sin icono ===== */
+.hero-f .big{max-width:780px}
+.hero-f .bb{padding:20px 20px 20px 26px}
