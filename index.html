@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795106050">
+<link rel="stylesheet" href="assets/kg.css?v=1795106333">
 </head>
 <body data-hero="f">
 
@@ -39,7 +39,7 @@
   </nav>
   <div class="hright">
     <a class="tel" href="tel:965403811"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>965 403 811</a>
-    <a class="btn btn-green hmu menu2" href="#muestras">Muestras gratis</a>
+    <a class="btn btn-green hmu menu2" href="#muestras" data-samples>Muestras gratis</a>
     <a class="btn btn-green hcta" href="presupuesto.html">Pedir presupuesto</a>
     <div class="icons">
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -220,8 +220,7 @@
     <div class="cout"><small>Césped, IVA incluido</small><b id="c-out">620 €</b></div>
     <div class="cbtn"><a class="btn btn-green" href="#">Comprar</a><a class="btn btn-ghost" href="#instalacion">Precio con instalación</a></div>
   </form>
-  <div class="nextbar reveal"><div class="nb-t"><b>¿Dudas entre dos modelos?</b><span>Te mandamos hasta cuatro muestras a casa en 24/48&nbsp;h. Gratis.</span></div><div class="nb-a"><a class="btn btn-green" href="#muestras">Pedir muestras gratis</a><a class="btn btn-ghost" href="#instalacion">Prefiero que me lo instalen</a></div></div>
-
+  
 
 </div></section>
 
@@ -230,13 +229,15 @@
   <div class="reveal">
     <span class="eyebrow">Muestras gratis</span>
     <h2>Tócalo antes de decidir</h2>
-    <p class="lead">Hasta cuatro modelos, en casa en 24/48 h. Sin compromiso.</p>
-    <div class="schips">
-      <button type="button" class="on">Jilguero · 30</button><button type="button">Ruiseñor · 30</button><button type="button">Kiwi · 35</button><button type="button">Cuco · 35</button><button type="button" class="on">Albatros · 40</button><button type="button">Flamenco · 45</button>
-    </div>
-    <div class="sact"><a class="btn btn-green" href="#">Pedir mis muestras gratis →</a><span>Envío gratis. Las recibes en 24/48 h.</span></div>
+    <p class="lead">Te mandamos a casa una caja con los seis modelos. Gratis y sin compromiso.</p>
+    <ul class="slist">
+      <li>Los seis modelos, en muestras de gran tamaño</li>
+      <li>Catálogo con los datos y el precio de cada uno</li>
+      <li>En tu casa en 24/48&nbsp;h</li>
+    </ul>
+    <div class="sact"><a class="btn btn-green" href="#muestras" data-samples>Pedir mi caja de muestras →</a><span>El envío también es gratis.</span></div>
   </div>
-  <div class="pic reveal"><img src="assets/home/como-elegir-cesped-artificial.webp" alt="Muestras de césped artificial Keepgreen"><span class="tag"><i></i>Hasta 4 muestras · 24/48 h</span></div>
+  <div class="pic reveal"><img src="assets/home/como-elegir-cesped-artificial.webp" alt="Muestras de césped artificial Keepgreen"><span class="tag"><i></i>Los 6 modelos · 24/48 h</span></div>
 </div></section>
 
 <!-- 4 · INSTALACIÓN + formulario -->
@@ -381,6 +382,31 @@
   <div class="bottom"><span>© 2026 Keepgreen · Alicante, España</span><div><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a><a href="#">Términos</a></div></div>
 </div></footer>
 
+<!-- POP-UP · caja de muestras -->
+<div class="pop" id="pop-muestras" hidden>
+  <div class="pop-bg" data-close></div>
+  <div class="pop-card" role="dialog" aria-modal="true" aria-labelledby="pm-t">
+    <button class="pop-x" type="button" data-close aria-label="Cerrar">×</button>
+    <div class="pop-pic"><img src="assets/home/como-elegir-cesped-artificial.webp" alt=""><span class="tag"><i></i>Los 6 modelos · 24/48 h</span></div>
+    <form class="pop-form" novalidate>
+      <span class="eyebrow">Muestras gratis</span>
+      <h3 id="pm-t">¿Dónde te mandamos la caja?</h3>
+      <p class="sub">Los seis modelos y el catálogo, en casa en 24/48&nbsp;h.</p>
+      <div class="f-grid">
+        <div><label class="l" for="pm-n">Nombre</label><input class="in" id="pm-n" name="nombre" autocomplete="name" required></div>
+        <div><label class="l" for="pm-tel">Teléfono</label><input class="in" id="pm-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <div class="full"><label class="l" for="pm-e">Email</label><input class="in" id="pm-e" name="email" type="email" autocomplete="email" required></div>
+        <div class="full"><label class="l" for="pm-d">Dirección de envío</label><input class="in" id="pm-d" name="direccion" autocomplete="street-address" placeholder="Calle, número y piso" required></div>
+        <div><label class="l" for="pm-cp">Código postal</label><input class="in" id="pm-cp" name="cp" autocomplete="postal-code" inputmode="numeric" required></div>
+        <div><label class="l" for="pm-p">Población</label><input class="in" id="pm-p" name="poblacion" autocomplete="address-level2" required></div>
+        <div class="full"><label class="chk"><input type="checkbox" name="instalacion"> Quiero también un presupuesto con instalación</label></div>
+      </div>
+      <button class="btn btn-green" type="submit">Enviadme la caja</button>
+      <p class="legal">Al enviar aceptas la <a href="#">política de privacidad</a>.</p>
+    </form>
+    <div class="pop-ok" hidden><span class="eyebrow">Muestras gratis</span><h3>¡Recibido!</h3><p class="sub">Preparamos tu caja con los seis modelos. La tendrás en casa en 24/48&nbsp;h.</p><button class="btn btn-green" type="button" data-close>Seguir viendo la web</button></div>
+  </div>
+</div>
 <script>
 (function(){
   var q=new URLSearchParams(location.search),h=(q.get('hero')||'f').toLowerCase();if(!/^[defg]$/.test(h))h='f';document.body.setAttribute('data-hero',h);
@@ -401,11 +427,17 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
   var m2=document.getElementById('c-m2'),md=document.getElementById('c-model'),out=document.getElementById('c-out');
   function calc(){var n=Math.max(0,parseFloat(m2.value)||0)*parseFloat(md.value);out.textContent=n.toLocaleString('es-ES',{maximumFractionDigits:0})+' €'}
   m2.addEventListener('input',calc);md.addEventListener('change',calc);calc();
-  // muestras: elegir hasta 4
-  document.querySelectorAll('.schips button').forEach(function(b){b.addEventListener('click',function(){
-    if(b.classList.contains('on'))return b.classList.remove('on');
-    if(document.querySelectorAll('.schips button.on').length<4)b.classList.add('on');
-  })});
+  // pop-up de la caja de muestras (?pop=1 lo abre para capturas)
+  var pop=document.getElementById('pop-muestras');
+  if(pop){var pf=pop.querySelector('.pop-form'),pk=pop.querySelector('.pop-ok');
+    var openPop=function(e){if(e)e.preventDefault();pf.hidden=false;pk.hidden=true;pop.hidden=false;document.documentElement.style.overflow='hidden';if(e)pf.querySelector('input').focus()};
+    var closePop=function(){pop.hidden=true;document.documentElement.style.overflow=''};
+    document.querySelectorAll('[data-samples]').forEach(function(a){a.addEventListener('click',openPop)});
+    pop.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closePop)});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!pop.hidden)closePop()});
+    pf.addEventListener('submit',function(e){e.preventDefault();if(!pf.reportValidity())return;pf.hidden=true;pk.hidden=false});
+    if(q.get('pop'))openPop();if(q.get('pop')==='ok'){pf.hidden=true;pk.hidden=false}
+  }
   // «Con instalación» desde un modelo: lo apunta en el formulario
   var qm=document.getElementById('qf-model');
   document.querySelectorAll('[data-model]').forEach(function(a){a.addEventListener('click',function(){if(qm){qm.value=a.dataset.model;qm.nextElementSibling.textContent=a.dataset.model;qm.parentNode.style.display='flex'}})});

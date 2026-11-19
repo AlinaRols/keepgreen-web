@@ -863,3 +863,32 @@ body.pr2 .rt.sm h3{font-size:19px}
 .calc.cbar+.nextbar{margin-top:16px}
 @media(max-width:1180px){.calc.cbar{grid-template-columns:130px 1fr auto}.calc.cbar h3{grid-column:1/-1;max-width:none}.calc.cbar .cbtn{grid-column:1/-1}.calc.cbar .cbtn .btn{flex:1;justify-content:center}}
 @media(max-width:700px){.calc.cbar{grid-template-columns:104px 1fr;padding:20px}.calc.cbar .cout{grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;text-align:left;padding:12px 14px;background:var(--pink-l);border-radius:12px}.calc.cbar .cout b{font-size:28px;margin:0}.calc.cbar .cbtn{flex-direction:column}}
+
+/* ===== MUESTRAS · la caja con los seis modelos + pop-up ===== */
+.slist{list-style:none;margin:20px 0 24px;padding:0;display:grid;gap:10px}
+.slist li{position:relative;padding-left:30px;font-size:15.5px}
+.slist li::before{content:"";position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:50%;background:var(--green-l) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234c8032' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/12px no-repeat}
+.pop{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:20px}
+.pop[hidden],.pop-form[hidden],.pop-ok[hidden]{display:none}
+.pop-bg{position:absolute;inset:0;background:rgba(15,25,15,.6);backdrop-filter:blur(3px)}
+.pop-card{position:relative;background:#fff;border-radius:24px;width:min(900px,100%);max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px);overflow:auto;display:grid;grid-template-columns:.78fr 1fr;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.pop-pic{position:relative;min-height:100%}
+.pop-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pop-pic .tag{position:absolute;left:18px;top:18px;background:#fff;border-radius:999px;padding:9px 14px;font-weight:700;font-size:12.5px;display:flex;gap:8px;align-items:center}
+.pop-pic .tag i{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.pop-form,.pop-ok{padding:34px 34px 26px}
+.pop-ok{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:420px}
+.pop-x{position:absolute;right:14px;top:14px;z-index:2;width:38px;height:38px;border-radius:50%;border:0;background:var(--green-l);color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+.pop-x:hover{background:var(--line)}
+.pop h3{font-size:25px;letter-spacing:-.01em;margin:8px 0 6px}
+.pop .sub{font-size:14.5px;color:var(--ink-2);margin-bottom:18px}
+.pop .f-grid{gap:12px}
+.pop .in{padding:11px 13px}
+.pop .btn{width:100%;justify-content:center;margin-top:16px;padding:15px}
+.pop-ok .btn{width:auto;padding:14px 26px}
+.pop .legal{font-size:12px;color:var(--ink-3);margin-top:10px}
+.pop .legal a{text-decoration:underline}
+.chk{display:flex;gap:10px;align-items:center;font-size:14px;cursor:pointer;margin-top:2px}
+.chk input{width:18px;height:18px;accent-color:var(--green);flex:none}
+@media(max-width:760px){.pop{padding:10px}.pop-card{grid-template-columns:1fr;border-radius:20px;max-height:calc(100dvh - 20px)}.pop-pic{display:none}.pop-form,.pop-ok{padding:26px 20px 20px}.pop h3{font-size:22px;padding-right:36px}.pop-ok{min-height:300px}}
+@media(max-width:760px){.pop .f-grid{grid-template-columns:1fr 1fr;gap:10px}.pop .in{padding:10px 12px}.pop .sub{margin-bottom:14px}}
