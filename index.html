@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795102054">
+<link rel="stylesheet" href="assets/kg.css?v=1795102111">
 </head>
 <body data-hero="f">
 
@@ -383,7 +383,7 @@
   var q=new URLSearchParams(location.search),h=(q.get('hero')||'f').toLowerCase();if(!/^[defg]$/.test(h))h='f';document.body.setAttribute('data-hero',h);
   var ins=q.get('ins')||'2';if(/^[12]$/.test(ins))document.body.classList.add('ins'+ins);
   var mo=q.get('mod')||'4';if(/^[1234]$/.test(mo))document.body.classList.add('mod'+mo);
-  var la=q.get('lay')||'1';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
+  var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
 if(q.get('video')==='0')document.body.classList.add('novideo');
 var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu'+me);
   var n=q.get('nav')||'2';if(/^[123]$/.test(n))document.body.classList.add('nav'+n);
