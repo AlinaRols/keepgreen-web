@@ -950,3 +950,13 @@ body.spk .sb-cta i{color:var(--pink)}
 .sb-f{margin-bottom:32px}
 @media(max-width:900px){.sbox .sact .sb-cta{justify-content:space-between;padding-left:24px}.sact2{align-items:stretch}.sb-ok{justify-content:center}.sb-v video{max-width:320px}}
 .sact .sb-cta span{color:#fff;font-size:inherit}
+
+/* muestras · teléfono junto al botón */
+.sb-row{display:flex;align-items:center;gap:14px 26px;flex-wrap:wrap}
+.sb-tel{display:flex;align-items:center;gap:12px;padding-left:26px;border-left:1px solid var(--line);color:var(--ink)}
+.sb-tel svg{flex:none;width:20px;height:20px;padding:13px;box-sizing:content-box;border-radius:50%;border:1.5px solid var(--line);stroke:var(--green);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:all .2s}
+.sb-tel:hover svg{background:var(--green);border-color:var(--green);stroke:#fff}
+.sact .sb-tel span{display:block;font-size:inherit;color:inherit;line-height:1.2}
+.sb-tel small{display:block;font-size:12.5px;color:var(--ink-2)}
+.sb-tel b{display:block;font-size:19px;font-weight:800;letter-spacing:-.01em;white-space:nowrap}
+@media(max-width:900px){.sb-row{flex-direction:column;align-items:stretch}.sb-tel{border-left:0;padding-left:0;justify-content:center}}
