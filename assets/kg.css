@@ -840,3 +840,13 @@ body.pr2 .rt.sm h3{font-size:19px}
   .prow .act{grid-column:1/-1}.prow .act .btn{flex:1;justify-content:center;padding:10px}
   .prow .mmc{margin-top:4px}
 }
+
+/* ===== MODELOS · barra blanca de siguiente paso (muestras / instalación) ===== */
+.nextbar{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;flex-wrap:wrap;margin-top:22px;background:#fff;border-radius:20px;padding:22px 26px 22px 30px;box-shadow:0 14px 40px rgba(20,40,20,.10)}
+.nb-t b{display:block;font-size:19px;letter-spacing:-.01em}
+.nb-t span{display:block;margin-top:3px;font-size:14.5px;color:var(--ink-2)}
+.nb-a{display:flex;gap:10px;flex-wrap:wrap}
+.nb-a .btn{margin:0;padding:13px 22px;font-size:14.5px}
+.nb-a .btn-ghost{border-color:var(--line);color:var(--ink)}
+.nb-a .btn-ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+@media(max-width:760px){.nextbar{padding:20px;border-radius:18px}.nb-t b{font-size:17px}.nb-a{width:100%;flex-direction:column}.nb-a .btn{justify-content:center}}
