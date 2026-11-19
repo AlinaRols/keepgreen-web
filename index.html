@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795107022">
+<link rel="stylesheet" href="assets/kg.css?v=1795107171">
 </head>
 <body data-hero="f">
 
@@ -226,7 +226,7 @@
         <li><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg><b>En casa en 24/48&nbsp;h</b><span>Sin pagar el envío</span></li>
         <li><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.5 3.6-5.5 7-5.5s6.2 2 7 5.5"/></svg><b>Un asesor para ti</b><span>Te ayuda a elegir, si quieres</span></li>
       </ul>
-      <div class="sact"><a class="btn btn-green" href="#muestras" data-samples>Pedir mi caja gratis →</a><span>Sin compromiso.</span></div>
+      <div class="sact sact2"><a class="btn btn-green sb-cta" href="#muestras" data-samples><span>Pedir mi caja gratis</span><i>→</i></a><ul class="sb-ok"><li>Sin compromiso</li><li>Sin coste de envío</li></ul></div>
     </div>
     <ol class="sb-s"><li><b>1</b>Pides la caja</li><li><b>2</b>La recibes en 24/48 h</li><li><b>3</b>Comparas en casa y eliges</li></ol>
   </div>
@@ -407,6 +407,7 @@
   var tr=q.get('tr')||'2';if(/^[0123]$/.test(tr))document.body.classList.add('tr'+tr);
 var pr=q.get('pr')||'2';if(/^[0123]$/.test(pr))document.body.classList.add('pr'+pr);
 var mm=q.get('mm')||(pr==='0'?'1':'2');if(/^[1234]$/.test(mm))document.body.classList.add('mm'+mm);
+if(q.get('cta')==='rosa')document.body.classList.add('spk');
 var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
 if(q.get('video')==='0')document.body.classList.add('novideo');
 var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu'+me);

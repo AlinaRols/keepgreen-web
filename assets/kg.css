@@ -933,3 +933,20 @@ body.pr2 .rt.sm h3{font-size:19px}
 @keyframes sbspin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.sb-free .ring{animation:none}}
 @media(max-width:900px){.sb-free{left:14px;top:14px;width:98px;height:98px}.sb-free b{font-size:19px}}
+
+/* muestras · botón grande con flecha en círculo y dos garantías debajo (?cta=rosa lo pone en rosa) */
+.sact2{flex-direction:column;align-items:flex-start;gap:16px}
+.sbox .sact .sb-cta{padding:9px 9px 9px 30px;font-size:17px;gap:22px;border-radius:999px;box-shadow:0 12px 26px rgba(76,128,50,.28)}
+.sb-cta i{font-style:normal;flex:none;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--green);display:grid;place-items:center;font-size:20px;transition:transform .25s}
+.sb-cta:hover i{transform:translateX(4px)}
+.sb-ok{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;color:var(--ink-2)}
+.sb-ok li{position:relative;padding-left:22px}
+.sb-ok li::before{content:"";position:absolute;left:0;top:50%;width:15px;height:15px;margin-top:-7.5px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234c8032' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5 9-10'/%3E%3C/svg%3E") center/contain no-repeat}
+body.spk .sbox .sact .sb-cta{background:var(--pink);box-shadow:0 12px 26px rgba(237,0,105,.28)}
+body.spk .sbox .sact .sb-cta:hover{background:var(--pink-d)}
+body.spk .sb-cta i{color:var(--pink)}
+.sb-v video{max-width:480px}
+.sb-t{padding-top:48px;padding-bottom:44px}
+.sb-f{margin-bottom:32px}
+@media(max-width:900px){.sbox .sact .sb-cta{justify-content:space-between;padding-left:24px}.sact2{align-items:stretch}.sb-ok{justify-content:center}.sb-v video{max-width:320px}}
+.sact .sb-cta span{color:#fff;font-size:inherit}
