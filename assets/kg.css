@@ -1057,3 +1057,18 @@ body.ib4 .form.qf{box-shadow:0 24px 60px rgba(0,0,0,.35)}
 .rmq.js::-webkit-scrollbar{display:none}
 .rmq.js .rmq-track{animation:none}
 .rmq.js.drag{cursor:grabbing}
+
+/* ===== GUÍAS · tarjetas limpias: foto, nombre debajo y el toque de Keepgreen ===== */
+.gkgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.gk{display:block;color:var(--ink)}
+.gk-i{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:var(--green-l)}
+.gk-i img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.gk:hover .gk-i img{transform:scale(1.05)}
+.gk-i em{position:absolute;left:14px;top:14px;font-style:normal;background:var(--pink);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.gk-t{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}
+.gk-t b{font-size:19px;letter-spacing:-.01em;line-height:1.2}
+.gk-t i{flex:none;font-style:normal;width:34px;height:34px;border-radius:50%;background:var(--green-l);color:var(--green);display:grid;place-items:center;font-size:17px;transition:all .25s}
+.gk:hover .gk-t i{background:var(--green);color:#fff;transform:translateX(3px)}
+.gk small{display:block;margin-top:4px;font-size:14px;color:var(--ink-2)}
+@media(max-width:900px){.gkgrid{grid-template-columns:1fr 1fr;gap:22px 12px}.gk-i{border-radius:14px}.gk-t{margin-top:12px}.gk-t b{font-size:16px}.gk-t i{width:28px;height:28px;font-size:14px}.gk small{font-size:13px}.gk-i em{left:10px;top:10px;font-size:10px;padding:5px 9px}}
+.gkgrid .gk:first-child .gk-i img{object-position:3% 50%}
