@@ -1312,3 +1312,30 @@ body.spk .hmu:hover,body.spk .promo .pp-go:hover,body.spk .pop .pop-send:hover{b
   body.mpie2 .ft-z.open{padding-bottom:18px}
   body.mpie2 .ft-z.open>a{display:inline-block;margin:0 6px 8px 0}
 }
+
+/* portada 5 · texto a la izquierda sobre blanco y vídeo a la derecha en un marco redondeado */
+body.lay5 .hero-f{--hx:calc(max(24px,(100vw - 1240px)/2) + 550px);background:#fff;color:var(--ink);min-height:min(780px,calc(100vh - 116px));align-items:flex-end;padding:32px 0 44px}
+body.lay5 .hero-f::after{display:none}
+body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{inset:auto;top:28px;right:40px;left:var(--hx);width:calc(100vw - var(--hx) - 40px);height:calc(100% - 72px);border-radius:22px;z-index:0}
+body.lay5 .hero-f .hf{align-items:flex-start;text-align:left;max-width:500px}
+body.lay5 .hero-f .eyebrow{color:var(--green)}
+body.lay5 .hero-f h1{font-size:clamp(36px,3.7vw,54px);line-height:1.06;letter-spacing:-.02em;text-shadow:none}
+body.lay5 .hero-f .sub{color:var(--ink-2);margin:16px 0 26px;max-width:40ch;font-size:17px}
+body.lay5 .hero-f .big{display:flex;flex-wrap:wrap;gap:10px;max-width:none;width:auto}
+body.lay5 .hero-f .bb{padding:13px 14px 13px 24px;border-radius:999px;gap:12px;box-shadow:none;border:1.5px solid var(--ink)}
+body.lay5 .hero-f .bb.pro{border-color:var(--green)}
+body.lay5 .hero-f .bb .s{display:none}
+body.lay5 .hero-f .bb b{font-size:15.5px}
+body.lay5 .hero-f .bb i{width:28px;height:28px;font-size:15px}
+body.lay5 .hero-f .help{justify-content:flex-start;margin-top:22px;color:var(--ink-2);gap:8px 16px}
+body.lay5 .hero-f .help a{color:var(--ink)}
+body.lay5.tr2 .trust{margin-top:0;background:linear-gradient(180deg,#fff 50%,var(--green-ll) 50%)}
+@media(max-width:980px){
+  body.lay5 .hero-f{min-height:0;display:block;padding:36px 0 calc((100vw - 48px)*.72 + 28px)}
+  body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{top:auto;bottom:0;left:24px;right:24px;width:calc(100% - 48px);height:calc((100vw - 48px)*.72);border-radius:18px}
+  body.lay5 .hero-f .hf{max-width:none}
+  body.lay5.tr2 .trust{background:var(--green-ll);padding-top:24px}
+}
+body.lay5 .hero-f .wrap{align-items:flex-start;position:relative;z-index:1}
+body.lay5 .hero-f .eyebrow{letter-spacing:.09em;font-size:11.5px;white-space:nowrap}
+@media(max-width:980px){body.lay5 .hero-f .eyebrow{white-space:normal}}
