@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795108271">
+<link rel="stylesheet" href="assets/kg.css?v=1795161817">
 </head>
 <body data-hero="f">
 
@@ -267,6 +267,11 @@
     <span class="eyebrow">Quiero un instalador</span>
     <h2>Lo medimos, lo instalamos y lo garantizamos</h2>
     <p class="lead" style="margin-top:14px">Equipos propios y precio cerrado. Te llamamos en 24 h.</p>
+    <div class="psteps">
+      <figure><img src="assets/home/instalacion-1.webp" alt="Instaladores de Keepgreen preparando el terreno" loading="lazy"><figcaption><i>1</i>Preparamos el terreno</figcaption></figure>
+      <figure><img src="assets/home/instalacion-2.webp" alt="Instalador de Keepgreen colocando el césped artificial" loading="lazy"><figcaption><i>2</i>Colocamos y ajustamos</figcaption></figure>
+      <figure><img src="assets/home/instalacion-3.webp" alt="Cepillado final del césped artificial instalado" loading="lazy"><figcaption><i>3</i>Rematamos y cepillamos</figcaption></figure>
+    </div>
     <div class="steps mini">
       <div><span>1</span><div><b>Nos cuentas tu espacio</b></div></div>
       <div><span>2</span><div><b>Te llamamos y medimos</b></div></div>
@@ -410,6 +415,7 @@
 var pr=q.get('pr')||'2';if(/^[0123]$/.test(pr))document.body.classList.add('pr'+pr);
 var mm=q.get('mm')||(pr==='0'?'1':'2');if(/^[1234]$/.test(mm))document.body.classList.add('mm'+mm);
 if(q.get('cta')==='rosa')document.body.classList.add('spk');
+var ib=q.get('ib')||'3';if(/^[123]$/.test(ib))document.body.classList.add('ib'+ib);
 var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
 if(q.get('video')==='0')document.body.classList.add('novideo');
 var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu'+me);
