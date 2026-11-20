@@ -1112,3 +1112,4 @@ body.fq3 .fq-c .btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
 @media(max-width:900px){body.fq3 .faq .wrap{grid-template-columns:1fr 1fr;gap:12px}}
 @media(max-width:600px){body.fq3 .faq .wrap{grid-template-columns:1fr}body.fq3 .faq details,body.fq3 .fq-x{padding:20px}}
 body.nofx .reveal{transition:none}
+body.fq1 .faq details:first-of-type{border-top:0;padding-top:0}
