@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795162259">
+<link rel="stylesheet" href="assets/kg.css?v=1795162382">
 </head>
 <body data-hero="f">
 
@@ -398,8 +398,28 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
   var v=(q.get('v')||'1');if(/^[0-3]$/.test(v)&&v!=='0')(v==='3'?document.body.classList.add('v1','v3'):document.body.classList.add('v'+v));
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){if(q.get('nofx'))el.classList.add('visible');else io.observe(el)});
-  // opiniones: se duplican para que la fila pase sin cortes
-  document.querySelectorAll('.rmq-track').forEach(function(t){[].slice.call(t.children).forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');t.appendChild(k)})});
+  // opiniones: la fila pasa sola, se para al poner el ratón y se puede arrastrar
+  document.querySelectorAll('.rmq').forEach(function(box){
+    var t=box.querySelector('.rmq-track');if(!t)return;
+    [].slice.call(t.children).forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');t.appendChild(k)});
+    box.classList.add('js');
+    var still=matchMedia('(prefers-reduced-motion:reduce)').matches,hold=false,drag=false,sx=0,sl=0,pos=1,last=0,tm;
+    function half(){return (t.scrollWidth+(parseFloat(getComputedStyle(t).columnGap)||20))/2}
+    function wrap(){var h=half();if(pos>=h){pos-=h;sl-=h}else if(pos<=0){pos+=h;sl+=h}}
+    function tick(ts){var dt=last?Math.min(60,ts-last):0;last=ts;
+      if(!hold&&!drag&&!still){pos+=dt*0.04;wrap();box.scrollLeft=pos}
+      requestAnimationFrame(tick)}
+    box.scrollLeft=pos;requestAnimationFrame(tick);
+    box.addEventListener('mouseenter',function(){hold=true});
+    box.addEventListener('mouseleave',function(){hold=false});
+    box.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;drag=true;sx=e.clientX;sl=pos;box.classList.add('drag');box.setPointerCapture(e.pointerId);e.preventDefault()});
+    box.addEventListener('pointermove',function(e){if(!drag)return;pos=sl-(e.clientX-sx);wrap();box.scrollLeft=pos});
+    function end(){drag=false;box.classList.remove('drag')}
+    box.addEventListener('pointerup',end);box.addEventListener('pointercancel',end);
+    box.addEventListener('touchstart',function(){hold=true;clearTimeout(tm)},{passive:true});
+    box.addEventListener('touchend',function(){tm=setTimeout(function(){pos=box.scrollLeft;hold=false},2500)},{passive:true});
+    box.addEventListener('scroll',function(){if(hold&&!drag){pos=box.scrollLeft;var h=half();if(pos>=h){pos-=h;box.scrollLeft=pos}else if(pos<=0){pos+=h;box.scrollLeft=pos}}},{passive:true});
+  });
   // pop-up de la caja de muestras (?pop=1 lo abre para capturas)
   var pop=document.getElementById('pop-muestras');
   if(pop){var pf=pop.querySelector('.pop-form'),pk=pop.querySelector('.pop-ok');

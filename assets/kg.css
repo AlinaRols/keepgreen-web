@@ -1051,3 +1051,9 @@ body.ib4 .form.qf{box-shadow:0 24px 60px rgba(0,0,0,.35)}
   .bento{grid-auto-rows:minmax(190px,auto)}
 }
 .bt.big img{object-position:0% 50%}
+
+/* opiniones · fila arrastrable */
+.rmq.js{overflow-x:auto;scrollbar-width:none;cursor:grab;-webkit-user-select:none;user-select:none;overscroll-behavior-x:contain}
+.rmq.js::-webkit-scrollbar{display:none}
+.rmq.js .rmq-track{animation:none}
+.rmq.js.drag{cursor:grabbing}
