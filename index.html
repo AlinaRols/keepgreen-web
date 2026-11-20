@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795168633">
+<link rel="stylesheet" href="assets/kg.css?v=1795168835">
 </head>
 <body data-hero="f">
 
@@ -336,7 +336,7 @@
   <div class="fq-x reveal">
     <b>¿Tienes otra duda?</b>
     <p>Llámanos o escríbenos por WhatsApp y te la resolvemos.</p>
-    <div class="fq-c"><a class="btn btn-green" href="tel:965403811">965 403 811</a><a class="btn btn-ghost" href="#">WhatsApp</a></div>
+    <div class="fq-c"><a class="btn btn-green" href="tel:965403811">965 403 811</a><a class="btn btn-ghost" href="https://wa.me/34865614188">WhatsApp</a></div>
   </div>
 </div></section>
 
@@ -348,14 +348,19 @@
 </div></section>
 
 <footer class="footer"><div class="wrap">
+  <div class="ft-cta">
+    <div><b>¿Empezamos?</b><p>Pide la caja de muestras o cuéntanos cómo es tu espacio y te pasamos presupuesto.</p></div>
+    <div class="ft-b"><a class="btn btn-pink" href="#muestras" data-samples>Muestras gratis</a><a class="btn btn-ghost" href="presupuesto.html">Pedir presupuesto</a></div>
+  </div>
   <div class="cols">
     <div class="brand"><img src="assets/home/logo-keepgreen.png" alt="Keepgreen"><p>Césped artificial premium. Lo instalas tú o lo instalamos nosotros.</p>
-      <form class="news" onsubmit="return false"><input type="email" placeholder="Tu email para ofertas y consejos"><button>Suscribirme</button></form></div>
-    <div><h4>Césped artificial</h4><ul><li><a href="#modelos">Todos los modelos</a></li><li><a href="#">Al corte</a></li><li><a href="#">En rollos</a></li><li><a href="#">Accesorios</a></li><li><a href="#">Caja de muestras</a></li></ul></div>
-    <div><h4>Instalación</h4><ul><li><a href="presupuesto.html">Pedir presupuesto</a></li><li><a href="#">Alicante</a></li><li><a href="#">Madrid</a></li><li><a href="#">Barcelona</a></li><li><a href="#">Valencia</a></li><li><a href="#">Todas las ciudades</a></li></ul></div>
-    <div><h4>Ayuda</h4><ul><li><a href="#guias">Cómo instalarlo</a></li><li><a href="#">Calcular medidas</a></li><li><a href="#">Garantía</a></li><li><a href="#">Envíos y devoluciones</a></li><li><a href="tel:965403811">965 403 811</a></li><li><a href="mailto:hola@keepgreen.es">hola@keepgreen.es</a></li></ul></div>
+      <ul class="ft-k"><li><a href="tel:965403811"><b>965 403 811</b></a></li><li><a href="mailto:hola@keepgreen.es">hola@keepgreen.es</a></li><li>De lunes a viernes, de 9:00 a 17:30</li><li>P. I. Faima, C/ Calp, nave 71-A<br>03330 Crevillent, Alicante</li></ul></div>
+    <div><h4>Césped artificial</h4><ul><li><a href="#modelos">Todos los modelos</a></li><li><a href="#">Al corte</a></li><li><a href="#">En rollos</a></li><li><a href="#">Accesorios</a></li><li><a href="#muestras">Caja de muestras</a></li><li><a href="presupuesto.html">Pedir presupuesto</a></li></ul></div>
+    <div class="ft-e"><h4>Césped por espacio</h4><ul class="two"><li><a href="#">Jardín</a></li><li><a href="#">Terrazas</a></li><li><a href="#">Balcón</a></li><li><a href="#">Piscina</a></li><li><a href="#">Mascotas</a></li><li><a href="#">Niños</a></li><li><a href="#">Eventos</a></li><li><a href="#">Camping</a></li><li><a href="#">Colegios</a></li><li><a href="#">Interiores</a></li></ul></div>
+    <div><h4>Ayuda</h4><ul><li><a href="#guias">Hazlo tú mismo</a></li><li><a href="#guias">¿Cuál elegir?</a></li><li><a href="#guias">Mantenimiento</a></li><li><a href="#guias">Blog</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="#">Envíos y devoluciones</a></li></ul></div>
   </div>
-  <div class="bottom"><span>© 2026 Keepgreen · Alicante, España</span><div><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a><a href="#">Términos</a></div></div>
+  <div class="ft-z"><span>Instalamos en</span><a href="#">Alicante</a><a href="#">Almería</a><a href="#">Barcelona</a><a href="#">Castellón</a><a href="#">Madrid</a><a href="#">Málaga</a><a href="#">Murcia</a><a href="#">Sevilla</a><a href="#">Valencia</a><a href="#">Zaragoza</a></div>
+  <div class="bottom"><span>© 2026 Keepgreen</span><div><a href="#">Aviso legal</a><a href="#">Política de privacidad</a><a href="#">Política de cookies</a><a href="#">Condiciones de compra</a></div></div>
 </div></footer>
 
 <!-- POP-UP · caja de muestras -->
@@ -392,6 +397,7 @@
 var pr=q.get('pr')||'2';if(/^[0123]$/.test(pr))document.body.classList.add('pr'+pr);
 var mm=q.get('mm')||(pr==='0'?'1':'2');if(/^[1234]$/.test(mm))document.body.classList.add('mm'+mm);
 if(q.get('cta')==='rosa')document.body.classList.add('spk');
+var ft=q.get('ft')||'1';if(/^[123]$/.test(ft))document.body.classList.add('ft'+ft);
 var fq=q.get('fq')||'1';if(/^[123]$/.test(fq))document.body.classList.add('fq'+fq);if(fq==='3')document.querySelectorAll('.faq details').forEach(function(d){d.open=true});
 var ib=q.get('ib')||'4';if(/^[1234]$/.test(ib))document.body.classList.add('ib'+ib);
 var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
