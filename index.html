@@ -397,7 +397,7 @@
 var pr=q.get('pr')||'2';if(/^[0123]$/.test(pr))document.body.classList.add('pr'+pr);
 var mm=q.get('mm')||(pr==='0'?'1':'2');if(/^[1234]$/.test(mm))document.body.classList.add('mm'+mm);
 if(q.get('cta')==='rosa')document.body.classList.add('spk');
-var ft=q.get('ft')||'1';if(/^[123]$/.test(ft))document.body.classList.add('ft'+ft);
+var ft=q.get('ft')||'2';if(/^[123]$/.test(ft))document.body.classList.add('ft'+ft);
 var fq=q.get('fq')||'1';if(/^[123]$/.test(fq))document.body.classList.add('fq'+fq);if(fq==='3')document.querySelectorAll('.faq details').forEach(function(d){d.open=true});
 var ib=q.get('ib')||'4';if(/^[1234]$/.test(ib))document.body.classList.add('ib'+ib);
 var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
