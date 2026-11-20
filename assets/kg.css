@@ -1183,3 +1183,8 @@ body.ab3 .ab-i:first-child{border-left:0}
 body.ab3 .ab-ic{display:none}
 body.ab3 .about h3::before{content:"";display:block;width:26px;height:3px;border-radius:2px;background:var(--pink);margin-bottom:14px}
 @media(max-width:860px){body.ab3 .ab-l{padding:6px 22px}body.ab3 .ab-i{padding:22px 0;border-left:0;border-top:1px solid #dfe6d8}body.ab3 .ab-i:first-child{border-top:0}}
+
+/* pruebas de fuente (font=2 Manrope · font=3 Figtree · font=4 títulos en Bricolage Grotesque) */
+body.fn2{--f:'Manrope',system-ui,sans-serif}
+body.fn3{--f:'Figtree',system-ui,sans-serif}
+body.fn4 h1,body.fn4 h2,body.fn4 h3,body.fn4 .ft-cta b{font-family:'Bricolage Grotesque','Montserrat',sans-serif}
