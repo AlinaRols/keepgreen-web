@@ -1071,4 +1071,3 @@ body.ib4 .form.qf{box-shadow:0 24px 60px rgba(0,0,0,.35)}
 .gk:hover .gk-t i{background:var(--green);color:#fff;transform:translateX(3px)}
 .gk small{display:block;margin-top:4px;font-size:14px;color:var(--ink-2)}
 @media(max-width:900px){.gkgrid{grid-template-columns:1fr 1fr;gap:22px 12px}.gk-i{border-radius:14px}.gk-t{margin-top:12px}.gk-t b{font-size:16px}.gk-t i{width:28px;height:28px;font-size:14px}.gk small{font-size:13px}.gk-i em{left:10px;top:10px;font-size:10px;padding:5px 9px}}
-.gkgrid .gk:first-child .gk-i img{object-position:3% 50%}
