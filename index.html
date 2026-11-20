@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795176960">
+<link rel="stylesheet" href="assets/kg.css?v=1795177142">
 </head>
 <body data-hero="f">
 
@@ -208,6 +208,7 @@
     <article class="rt sm"><a href="#"><img src="assets/cesped/cuco-3n.webp" alt="Césped artificial Cuco 35 mm"></a><div class="ptag"><b>16,50 €</b>/m²</div><div class="num"><b>35</b><span>mm<br>de fibra</span></div><div class="mms"><span>Altura</span><i>30</i><i class=on>35</i><i>40</i><i>45</i><em>mm</em></div><div class="mmp"><img src="assets/cesped/cuco-1n.webp" alt="" loading="lazy"><span><b>35 mm</b>de altura</span></div><div class="body"><div class="top"><h3>CUCO <span class="mmc">35 mm</span></h3><div class="price"><b>16,50 €<i>/m²</i></b><small>IVA incl.</small></div></div><p>Fibra plana, el más denso.</p><div class="act"><a class="btn btn-ghost" href="#">Ver modelo</a><a class="btn btn-green" href="#">Comprar</a></div></div></article>
     <article class="rt sm"><a href="#"><img src="assets/cesped/flamenco-3n.webp" alt="Césped artificial Flamenco 45 mm"></a><div class="ptag"><b>23,50 €</b>/m²</div><div class="num"><b>45</b><span>mm<br>de fibra</span></div><div class="mms"><span>Altura</span><i>30</i><i>35</i><i>40</i><i class=on>45</i><em>mm</em></div><div class="mmp"><img src="assets/cesped/flamenco-1n.webp" alt="" loading="lazy"><span><b>45 mm</b>de altura</span></div><div class="body"><div class="top"><h3>FLAMENCO <span class="mmc">45 mm</span></h3><div class="price"><b>23,50 €<i>/m²</i></b><small>IVA incl.</small></div></div><p>El más suave de la gama.</p><div class="act"><a class="btn btn-ghost" href="#">Ver modelo</a><a class="btn btn-green" href="#">Comprar</a></div></div></article>
   </div>
+  <p class="swipe-hint mod4" aria-hidden="true">Desliza para ver los seis <i>→</i></p>
   <div class="ptable reveal mod4">
     <div class="prow"><img src="assets/cesped/jilguero-3n.webp" alt="Césped artificial Jilguero 30 mm" loading="lazy"><div class="pn"><h3>JILGUERO <span class="mmc">30 mm</span></h3><p>Jardines familiares y mascotas.</p></div><div class="pp"><b>8,90 €</b><i>/m²</i><small>IVA incl.</small></div><div class="act"><a class="btn btn-ghost" href="#">Ver modelo</a><a class="btn btn-green" href="#">Comprar</a></div></div>
     <div class="prow"><img src="assets/cesped/ruisenor-3n.webp" alt="Césped artificial Ruiseñor 30 mm" loading="lazy"><div class="pn"><h3>RUISEÑOR <span class="mmc">30 mm</span></h3><p>Máxima densidad en 30 mm.</p></div><div class="pp"><b>13,30 €</b><i>/m²</i><small>IVA incl.</small></div><div class="act"><a class="btn btn-ghost" href="#">Ver modelo</a><a class="btn btn-green" href="#">Comprar</a></div></div>
@@ -433,6 +434,7 @@ if(q.get('cta')!=='verde')document.body.classList.add('spk');
 var fn=q.get('font')||'1';if(/^[234]$/.test(fn)){document.body.classList.add('fn'+fn);var fl=document.createElement('link');fl.rel='stylesheet';fl.href='https://fonts.googleapis.com/css2?family='+({2:'Manrope:wght@400;500;600;700;800',3:'Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400',4:'Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800'})[fn]+'&display=swap';document.head.appendChild(fl)}
 var ab=q.get('ab')||'3';if(/^[123]$/.test(ab))document.body.classList.add('ab'+ab);
 var ft=q.get('ft')||'2';if(/^[123]$/.test(ft))document.body.classList.add('ft'+ft);
+var mmo=q.get('mmo')||'1';if(mmo==='2')document.body.classList.add('mmo2');var mpie=q.get('mpie')||'1';if(mpie==='2')document.body.classList.add('mpie2');
 var fq=q.get('fq')||'1';if(/^[123]$/.test(fq))document.body.classList.add('fq'+fq);if(fq==='3')document.querySelectorAll('.faq details').forEach(function(d){d.open=true});
 var ib=q.get('ib')||'4';if(/^[1234]$/.test(ib))document.body.classList.add('ib'+ib);
 var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
@@ -477,6 +479,8 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
     pf.addEventListener('submit',function(e){e.preventDefault();if(!pf.reportValidity())return;pf.hidden=true;pk.hidden=false});
     if(q.get('pop'))openPop();if(q.get('pop')==='ok'){pf.hidden=true;pk.hidden=false}
   }
+  // pie plegable en móvil (solo actúa con body.mpie2)
+  document.querySelectorAll('.footer .cols>div:not(.brand) h4,.footer .ft-z>span').forEach(function(h){h.addEventListener('click',function(){h.parentNode.classList.toggle('open')})});
   // menú del móvil
   var bg=document.querySelector('.burger'),mn=document.getElementById('mnav');
   if(bg&&mn){var mnt=function(o){mn.hidden=!o;bg.setAttribute('aria-expanded',o?'true':'false');bg.classList.toggle('on',o)};
