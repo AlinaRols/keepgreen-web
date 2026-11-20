@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795175898">
+<link rel="stylesheet" href="assets/kg.css?v=1795176071">
 </head>
 <body data-hero="f">
 
@@ -471,6 +471,9 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
     promo.querySelector('.pp-go').addEventListener('click',function(){promo.hidden=true});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!promo.hidden)closePromo()});
     if(q.get('pop')==='promo'){if(pop)pop.hidden=true;document.documentElement.style.overflow='';openPromo()}
+    // aparece solo a los 6 s, una vez por visita (no en capturas ni si ya hay otro pop-up abierto)
+    var seen=false;try{seen=sessionStorage.getItem('kg-promo')==='1'}catch(e){}
+    if(!q.get('pop')&&!q.get('nofx')&&!seen)setTimeout(function(){if(pop&&!pop.hidden)return;try{sessionStorage.setItem('kg-promo','1')}catch(e){}openPromo()},6000);
   }
   // «Con instalación» desde un modelo: lo apunta en el formulario
   var qm=document.getElementById('qf-model');

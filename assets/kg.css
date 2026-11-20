@@ -1231,3 +1231,7 @@ body.pp3 .promo .pp-seal{width:76px;height:76px;left:12px;top:12px}
 body.pp3 .promo .pp-seal b{font-size:15px}
 body.pp3 .promo .pop-x{width:32px;height:32px;font-size:20px;right:10px;top:10px;background:#fff}
 @media(max-width:760px){body.pp3 .promo{inset:auto 10px 10px 10px}body.pp3 .pp-card{width:auto;grid-template-columns:104px 1fr;overflow:hidden}body.pp3 .pp-v{aspect-ratio:auto;min-height:100%}body.pp3 .promo .pp-seal{display:none}body.pp3 .pp-t{padding:16px 16px 14px}body.pp3 .promo h3{font-size:17px;padding-right:30px;margin-top:4px}body.pp3 .promo .sub{display:none}body.pp3 .promo .eyebrow{font-size:10.5px}body.pp3 .promo .pp-go{margin-top:10px;padding:11px;font-size:14px}}
+
+/* pop-up promocional: el vídeo de la caja entero, sin recortar */
+.pp-v{background:#fff}
+.pp-v video{object-fit:contain}
