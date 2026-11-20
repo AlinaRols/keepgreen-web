@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795175579">
+<link rel="stylesheet" href="assets/kg.css?v=1795175898">
 </head>
 <body data-hero="f">
 
@@ -367,6 +367,21 @@
 </div></footer>
 
 <!-- POP-UP · caja de muestras -->
+<div class="pop promo" id="pop-promo" hidden>
+  <div class="pop-bg" data-close></div>
+  <div class="pp-card" role="dialog" aria-modal="true" aria-labelledby="pp-t">
+    <button class="pop-x" type="button" data-close aria-label="Cerrar">×</button>
+    <div class="pp-v"><video autoplay muted loop playsinline preload="metadata" poster="assets/home/caja-muestras.webp"><source src="assets/home/caja-muestras.mp4" type="video/mp4"></video><span class="sb-free pp-seal" role="img" aria-label="Gratis, envío incluido y sin compromiso"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="ppc" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs><circle cx="60" cy="60" r="60" fill="#ed0069"/><circle cx="60" cy="60" r="35" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1" stroke-dasharray="1.5 3.5" stroke-linecap="round"/><g class="ring"><text font-size="9" font-weight="700" fill="#fff"><textPath href="#ppc" textLength="276" lengthAdjust="spacing">ENVÍO INCLUIDO · SIN COMPROMISO ·</textPath></text></g></svg><b>Gratis</b></span></div>
+    <div class="pp-t">
+      <span class="eyebrow">Caja de muestras</span>
+      <h3 id="pp-t">Recibe en casa los seis modelos, gratis</h3>
+      <p class="sub">Tócalos y compáralos antes de decidir. Te mandamos la caja con el catálogo, sin coste de envío.</p>
+      <ul class="pp-l"><li>Los 6 modelos</li><li>En casa en 24/48&nbsp;h</li><li>Sin compromiso</li></ul>
+      <a class="btn btn-green pp-go" href="#muestras" data-samples><span>Pedir mi caja gratis</span><i>→</i></a>
+      <button class="pp-no" type="button" data-close>Ahora no, gracias</button>
+    </div>
+  </div>
+</div>
 <div class="pop" id="pop-muestras" hidden>
   <div class="pop-bg" data-close></div>
   <div class="pop-card" role="dialog" aria-modal="true" aria-labelledby="pm-t">
@@ -446,6 +461,16 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!pop.hidden)closePop()});
     pf.addEventListener('submit',function(e){e.preventDefault();if(!pf.reportValidity())return;pf.hidden=true;pk.hidden=false});
     if(q.get('pop'))openPop();if(q.get('pop')==='ok'){pf.hidden=true;pk.hidden=false}
+  }
+  // pop-up promocional de muestras (?pop=promo lo abre; pp=1|2|3 cambia el diseño)
+  var promo=document.getElementById('pop-promo');
+  if(promo){var ppv=q.get('pp')||'1';if(/^[123]$/.test(ppv))document.body.classList.add('pp'+ppv);
+    var closePromo=function(){promo.hidden=true;document.documentElement.style.overflow=''};
+    var openPromo=function(){promo.hidden=false;if(ppv!=='3')document.documentElement.style.overflow='hidden'};
+    promo.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closePromo)});
+    promo.querySelector('.pp-go').addEventListener('click',function(){promo.hidden=true});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!promo.hidden)closePromo()});
+    if(q.get('pop')==='promo'){if(pop)pop.hidden=true;document.documentElement.style.overflow='';openPromo()}
   }
   // «Con instalación» desde un modelo: lo apunta en el formulario
   var qm=document.getElementById('qf-model');

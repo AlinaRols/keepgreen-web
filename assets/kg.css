@@ -1188,3 +1188,46 @@ body.ab3 .about h3::before{content:"";display:block;width:26px;height:3px;border
 body.fn2{--f:'Manrope',system-ui,sans-serif}
 body.fn3{--f:'Figtree',system-ui,sans-serif}
 body.fn4 h1,body.fn4 h2,body.fn4 h3,body.fn4 .ft-cta b{font-family:'Bricolage Grotesque','Montserrat',sans-serif}
+
+/* pop-up promocional de muestras: versiones (pp1 dos columnas · pp2 vertical · pp3 tarjeta en la esquina) */
+.pp-card{position:relative;background:#fff;border-radius:24px;width:min(840px,100%);max-height:calc(100dvh - 40px);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.pp-v{position:relative;background:var(--green-l);min-height:420px}
+.pp-v video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.promo .pp-seal{left:22px;top:22px;width:104px;height:104px}
+.promo .pp-seal b{font-size:21px}
+.pp-t{padding:44px 40px 30px;display:flex;flex-direction:column;justify-content:center}
+.promo h3{font-size:30px;line-height:1.15;letter-spacing:-.015em;margin:10px 0 10px}
+.promo .sub{font-size:15px;margin-bottom:16px}
+.pp-l{list-style:none;display:grid;gap:8px;margin-bottom:6px;font-size:14.5px;font-weight:600}
+.pp-l li{display:flex;align-items:center;gap:10px}
+.pp-l li::before{content:"";flex:none;width:20px;height:20px;border-radius:50%;background:var(--pink-l) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.4l2.9 2.9 6.1-6.4' fill='none' stroke='%23ed0069' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px}
+.promo .pp-go{margin-top:20px;font-size:16px;padding:17px}
+.promo .pp-go i{font-style:normal}
+.pp-no{margin-top:12px;font-size:13.5px;color:var(--ink-3);text-decoration:underline;text-underline-offset:3px;align-self:center}
+.pp-no:hover{color:var(--ink)}
+@media(max-width:760px){.pp-card{grid-template-columns:1fr;border-radius:20px;overflow:auto}.pp-v{min-height:0;aspect-ratio:16/10}.pp-t{padding:22px 20px 18px}.promo h3{font-size:24px;margin-top:8px}.promo .pp-seal{left:14px;top:14px;width:84px;height:84px}.promo .pp-seal b{font-size:17px}.promo .pp-go{margin-top:14px}}
+
+body.pp2 .pp-card{width:min(440px,100%);grid-template-columns:1fr;overflow:auto}
+body.pp2 .pp-v{min-height:0;aspect-ratio:16/10}
+body.pp2 .pp-t{padding:26px 30px 22px;text-align:center;align-items:center}
+body.pp2 .promo h3{font-size:26px}
+body.pp2 .pp-l{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:13.5px}
+body.pp2 .promo .sub{margin-bottom:14px}
+body.pp2 .promo .pp-seal{width:92px;height:92px;left:16px;top:16px}
+body.pp2 .promo .pp-seal b{font-size:19px}
+@media(max-width:760px){body.pp2 .pp-t{padding:22px 20px 18px}body.pp2 .promo h3{font-size:23px}}
+
+body.pp3 .promo{inset:auto 24px 24px auto;padding:0;display:block}
+body.pp3 .promo .pop-bg{display:none}
+body.pp3 .pp-card{width:360px;grid-template-columns:1fr;border-radius:20px;box-shadow:0 18px 50px rgba(15,25,15,.28),0 0 0 1px rgba(15,25,15,.06)}
+body.pp3 .pp-v{min-height:0;aspect-ratio:16/9}
+body.pp3 .pp-t{padding:20px 22px 18px}
+body.pp3 .promo h3{font-size:21px;margin:6px 0 8px}
+body.pp3 .promo .sub{font-size:13.5px;margin-bottom:0}
+body.pp3 .pp-l{display:none}
+body.pp3 .promo .pp-go{margin-top:14px;padding:13px;font-size:15px}
+body.pp3 .pp-no{margin-top:8px;font-size:12.5px}
+body.pp3 .promo .pp-seal{width:76px;height:76px;left:12px;top:12px}
+body.pp3 .promo .pp-seal b{font-size:15px}
+body.pp3 .promo .pop-x{width:32px;height:32px;font-size:20px;right:10px;top:10px;background:#fff}
+@media(max-width:760px){body.pp3 .promo{inset:auto 10px 10px 10px}body.pp3 .pp-card{width:auto;grid-template-columns:104px 1fr;overflow:hidden}body.pp3 .pp-v{aspect-ratio:auto;min-height:100%}body.pp3 .promo .pp-seal{display:none}body.pp3 .pp-t{padding:16px 16px 14px}body.pp3 .promo h3{font-size:17px;padding-right:30px;margin-top:4px}body.pp3 .promo .sub{display:none}body.pp3 .promo .eyebrow{font-size:10.5px}body.pp3 .promo .pp-go{margin-top:10px;padding:11px;font-size:14px}}
