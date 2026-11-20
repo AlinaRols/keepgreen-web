@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795162979">
+<link rel="stylesheet" href="assets/kg.css?v=1795168454">
 </head>
 <body data-hero="f">
 
@@ -323,17 +323,20 @@
 
 <!-- 7 · FAQ + guías -->
 <section class="sec faq" id="faq"><div class="wrap">
-  <div class="reveal">
+  <div class="fq-h reveal">
     <span class="eyebrow">Preguntas frecuentes</span><h2>Lo que nos preguntan antes de decidir</h2>
-    <p class="lead" style="margin-top:14px">Y si tu duda no está aquí, llámanos al 965 403 811 o escríbenos por WhatsApp.</p>
   </div>
-  <div class="reveal">
-    <details open><summary>¿Cuánto cuesta el césped artificial instalado?<span>+</span></summary><p>El césped va de 8,90 a 23,50 €/m²; la instalación depende de los metros y del terreno. Te damos precio cerrado en 24 h.</p></details>
-    <details><summary>¿Instaláis en mi zona?<span>+</span></summary><p>Instalamos en Alicante, Almería, Barcelona, Castellón, Madrid, Málaga, Murcia, Sevilla, Valencia y Zaragoza. En otra zona, te enviamos el césped y te acompañamos por teléfono.</p></details>
-    <details><summary>¿Puedo instalarlo yo?<span>+</span></summary><p>Sí. Sobre baldosa o cemento es muy sencillo; sobre tierra hay que preparar la base. Tienes guías y vídeos para cada superficie.</p></details>
-    <details><summary>¿Cuánto tardan las muestras y el pedido?<span>+</span></summary><p>Muestras y pedidos al corte, en 24/48 h. Envío gratis a partir de 160 €.</p></details>
-    <details><summary>¿Qué mantenimiento necesita?<span>+</span></summary><p>Un cepillado ocasional y retirar hojas. Con mascotas, un limpiador higienizante de vez en cuando. No se riega, no se corta y no se abona.</p></details>
-    <details><summary>¿Qué cubre la garantía de 10 años?<span>+</span></summary><p>La pérdida de color por el sol y el desgaste de la fibra con un uso normal. Si lo instalamos nosotros, también la instalación.</p></details>
+  <div class="fq-l reveal">
+    <details open><summary>¿Cuánto cuesta el césped artificial?<span>+</span></summary><p>De 8,90 a 23,50&nbsp;€/m² según el modelo. Si lo instalamos nosotros, te pasamos el precio cerrado en 24&nbsp;h.</p></details>
+    <details><summary>¿Instaláis en mi zona?<span>+</span></summary><p>Instalamos en Alicante, Almería, Barcelona, Castellón, Madrid, Málaga, Murcia, Sevilla, Valencia y Zaragoza. Al resto de España te lo enviamos.</p></details>
+    <details><summary>¿Puedo instalarlo yo?<span>+</span></summary><p>Sí. Sobre baldosa o cemento es muy sencillo; sobre tierra hay que preparar la base. Tienes una guía para cada superficie.</p></details>
+    <details><summary>¿Cuánto tarda en llegar?<span>+</span></summary><p>Las muestras y los pedidos al corte llegan en 24/48&nbsp;h. Envío gratis a partir de 160&nbsp;€.</p></details>
+    <details><summary>¿Qué mantenimiento necesita?<span>+</span></summary><p>Un cepillado de vez en cuando y retirar las hojas. No se riega, no se corta y no se abona.</p></details>
+  </div>
+  <div class="fq-x reveal">
+    <b>¿Tienes otra duda?</b>
+    <p>Llámanos o escríbenos por WhatsApp y te la resolvemos.</p>
+    <div class="fq-c"><a class="btn btn-green" href="tel:965403811">965 403 811</a><a class="btn btn-ghost" href="#">WhatsApp</a></div>
   </div>
 </div></section>
 
@@ -389,6 +392,7 @@
 var pr=q.get('pr')||'2';if(/^[0123]$/.test(pr))document.body.classList.add('pr'+pr);
 var mm=q.get('mm')||(pr==='0'?'1':'2');if(/^[1234]$/.test(mm))document.body.classList.add('mm'+mm);
 if(q.get('cta')==='rosa')document.body.classList.add('spk');
+var fq=q.get('fq')||'1';if(/^[123]$/.test(fq))document.body.classList.add('fq'+fq);if(fq==='3')document.querySelectorAll('.faq details').forEach(function(d){d.open=true});
 var ib=q.get('ib')||'4';if(/^[1234]$/.test(ib))document.body.classList.add('ib'+ib);
 var la=q.get('lay')||'2';if(/^[1234]$/.test(la))document.body.classList.add('lay'+la);
 if(q.get('video')==='0')document.body.classList.add('novideo');
@@ -397,6 +401,7 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
   if(n==='3'){var hd=document.querySelector('.header'),tb=document.querySelector('.topbar');function sc(){hd.classList.toggle('solid',window.scrollY>tb.offsetHeight+10)}window.addEventListener('scroll',sc);sc()}
   var v=(q.get('v')||'1');if(/^[0-3]$/.test(v)&&v!=='0')(v==='3'?document.body.classList.add('v1','v3'):document.body.classList.add('v'+v));
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
+  if(q.get('nofx'))document.body.classList.add('nofx');
   document.querySelectorAll('.reveal').forEach(function(el){if(q.get('nofx'))el.classList.add('visible');else io.observe(el)});
   // opiniones: la fila pasa sola, se para al poner el ratón y se puede arrastrar
   document.querySelectorAll('.rmq').forEach(function(box){
