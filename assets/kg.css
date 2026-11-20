@@ -1362,3 +1362,9 @@ body.lay5 .hero-f .help span{flex-basis:100%}
 }
 body.lay5 .hero-f h1{text-wrap:balance}
 body.lay5 .hero-f .sub{max-width:44ch;text-wrap:balance}
+/* portada 5 · en pantallas anchas el texto y la cabecera se pegan a la izquierda (margen de 64 px) en vez de centrarse */
+body.lay5{--hl:min(64px,max(24px,(100vw - 1240px)/2))}
+body.lay5 .hero-f{--hx:calc(var(--hl) + 610px)}
+body.lay5 .hero-f .wrap{width:auto;max-width:none;margin:0 var(--hl)}
+body.lay5 .header .wrap,body.lay5 .topbar .wrap{width:auto;max-width:none;margin-inline:var(--hl)}
+@media(min-width:1101px){body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{right:var(--hl);width:calc(100vw - var(--hx) - var(--hl))}}
