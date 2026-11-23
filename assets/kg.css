@@ -1378,7 +1378,7 @@ body.lay5 .hero-f .eyebrow{font-size:10.5px;padding:8px 14px 8px 12px}
 body.lay5 .hero-f .help{font-size:13.5px;margin-top:30px;padding-top:20px}
 @media(max-width:1100px){body.lay5 .hero-f h1{margin-top:18px}body.lay5 .hero-f .sub{font-size:16px;margin:14px 0 24px}}
 
-/* PALETA · un solo verde (por defecto). ?color=rosa deja ese verde + el rosa; ?color=antes recupera los dos verdes y el rosa */
+/* PALETA · un solo verde + el rosa (por defecto). ?color=verde quita también el rosa; ?color=antes recupera los dos verdes y el rosa */
 body.mono{--green-d:#4c8032;--green-dd:#4c8032}
 body.mono .btn-green:hover,body.mono .bb.pro:hover,body.mono.nav2 .hcta:hover{filter:brightness(.93)}
 body.mono .topbar{color:#fff}
