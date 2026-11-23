@@ -1377,3 +1377,22 @@ body.lay5 .hero-f .bb i{width:28px;height:28px}
 body.lay5 .hero-f .eyebrow{font-size:10.5px;padding:8px 14px 8px 12px}
 body.lay5 .hero-f .help{font-size:13.5px;margin-top:30px;padding-top:20px}
 @media(max-width:1100px){body.lay5 .hero-f h1{margin-top:18px}body.lay5 .hero-f .sub{font-size:16px;margin:14px 0 24px}}
+
+/* PALETA · un solo verde (por defecto). ?color=rosa deja ese verde + el rosa; ?color=antes recupera los dos verdes y el rosa */
+body.mono{--green-d:#4c8032;--green-dd:#4c8032}
+body.mono .btn-green:hover,body.mono .bb.pro:hover,body.mono.nav2 .hcta:hover{filter:brightness(.93)}
+body.mono .topbar{color:#fff}
+body.mono .topbar svg,body.mono.nav2 .tb-right svg{color:rgba(255,255,255,.85)}
+body.mono.ft2 .footer{color:rgba(255,255,255,.92)}
+body.mono.ft2 .ft-cta,body.mono.ft2 .ft-z,body.mono.ft2 .ft-z a{border-color:rgba(255,255,255,.3)}
+body.mono .install .eyebrow{color:#fff}
+body.mono.ib4 .psteps i{background:var(--green);color:#fff}
+body.nopink{--pink:#4c8032;--pink-d:#437229;--pink-l:var(--green-l)}
+body.nopink .sb-free svg>circle:first-of-type{fill:var(--green)}
+body.nopink .sb-free{filter:drop-shadow(0 12px 18px rgba(76,128,50,.28))}
+body.nopink.spk .sbox .sact .sb-cta{box-shadow:0 12px 26px rgba(76,128,50,.28)}
+body.nopink .rt.sm .ptag{box-shadow:0 6px 16px rgba(76,128,50,.3)}
+body.nopink .gk-i em{background:#fff;color:var(--green)}
+body.nopink .pp-l li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.4l2.9 2.9 6.1-6.4' fill='none' stroke='%234c8032' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+body.nopink .footer .btn-pink{background:#fff;color:var(--green)}
+body.nopink .footer .btn-pink:hover{background:var(--green-l)}
