@@ -1396,3 +1396,9 @@ body.nopink .gk-i em{background:#fff;color:var(--green)}
 body.nopink .pp-l li::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.4l2.9 2.9 6.1-6.4' fill='none' stroke='%234c8032' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
 body.nopink .footer .btn-pink{background:#fff;color:var(--green)}
 body.nopink .footer .btn-pink:hover{background:var(--green-l)}
+
+/* modelos: al pasar el ratón por la tarjeta, la foto cambia a la textura vista de cerca */
+.rt.sm>a{position:relative;overflow:hidden}
+.rt.sm>a img.tx{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .45s ease,transform .8s ease;background:none}
+@media(hover:hover){.rt.sm:hover>a img.tx{opacity:1;transform:none}}
+body.nofx .rt.sm.hov>a img.tx{opacity:1;transform:none;transition:none}
