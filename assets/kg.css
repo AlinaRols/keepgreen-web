@@ -1402,3 +1402,22 @@ body.nopink .footer .btn-pink:hover{background:var(--green-l)}
 .rt.sm>a img.tx{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .45s ease,transform .8s ease;background:none}
 @media(hover:hover){.rt.sm:hover>a img.tx{opacity:1;transform:none}}
 body.nofx .rt.sm.hov>a img.tx{opacity:1;transform:none;transition:none}
+
+/* instalación simplificada: si1 sin fotos y con menos texto (por defecto) · si2 además formulario corto · si=0 como antes */
+.ld-b,.ins-ok,.ins-z{display:none}
+body.si1 .install .psteps,body.si1 .install .chips,body.si1 .install .cov-line,body.si1 .install .ld-a{display:none}
+body.si1 .install .ld-b{display:block}
+body.si1 .ins-ok{display:grid;gap:14px;list-style:none;margin:30px 0 0}
+body.si1 .ins-ok li{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:600;color:#fff}
+body.si1 .ins-ok li::before{content:"";flex:none;width:26px;height:26px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M7.5 13.4l3.6 3.6 7.4-7.8' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/26px}
+body.si1 .ins-z{display:block;margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78);max-width:52ch}
+body.si1 .ins-z b{color:#fff}
+body.si1 .install .lead{max-width:40ch}
+body.si2 .form.qf .qf-sp,body.si2 .form.qf .qf-m2{display:none}
+body.si2 .form.qf .qf-nm{order:1}
+body.si2 .form.qf .qf-tf{order:2;grid-column:auto}
+body.si2 .form.qf .qf-cp{order:3;grid-column:1/-1}
+body.si2 .install .wrap{grid-template-columns:1.1fr .9fr}
+@media(max-width:860px){body.si2 .install .wrap{grid-template-columns:1fr}body.si2 .form.qf .qf-tf{grid-column:1/-1}body.si1 .ins-ok li{font-size:16px}}
+body.si1 .install h2,body.si1 .install .lead{text-wrap:balance}
+body.si1 .install .lead{max-width:46ch}
