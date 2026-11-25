@@ -1477,3 +1477,27 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
 }
 @media(max-width:380px){body.lay5 .hero-f .bb{padding:0 11px}body.lay5 .hero-f .bb b{font-size:11.5px}}
 @media(max-width:340px){body.lay5 .hero-f .bb.pro b{white-space:normal;line-height:1.15}body.lay5 .hero-f .bb.pro{padding:0 14px}}
+
+/* móvil · tarjeta de ventajas: versiones (mt1 cuatro casillas centradas · mt2 lista con descripción · mt3 fila de pastillas que se desliza) */
+@media(max-width:520px){
+  body.mt1.tr2 .trust .wrap{grid-template-columns:1fr 1fr;gap:0;padding:4px 6px;align-items:stretch}
+  body.mt1.tr2 .trust .wrap>div{flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;gap:10px;padding:18px 10px 16px}
+  body.mt1.tr2 .trust .wrap>div:nth-child(odd){border-right:1px solid var(--line)}
+  body.mt1.tr2 .trust .wrap>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  body.mt1.tr2 .trust b{font-size:12.5px;line-height:1.25;text-wrap:balance}
+  body.mt1.tr2 .trust svg{width:20px;height:20px;padding:11px}
+
+  body.mt2.tr2 .trust .wrap{grid-template-columns:1fr;gap:0;padding:4px 20px}
+  body.mt2.tr2 .trust .wrap>div{flex-direction:row;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+  body.mt2.tr2 .trust .wrap>div:first-child{border-top:0}
+  body.mt2.tr2 .trust .wrap>div span{display:block;font-size:12px;margin-top:2px}
+  body.mt2.tr2 .trust b{font-size:13.5px}
+  body.mt2.tr2 .trust svg{width:20px;height:20px;padding:11px}
+
+  body.mt3.tr2 .trust .wrap{display:flex;gap:8px;width:100%;margin:0;padding:2px 24px 14px;background:none;box-shadow:none;border-radius:0;overflow-x:auto;scrollbar-width:none;scroll-snap-type:x proximity;scroll-padding-left:24px}
+  body.mt3.tr2 .trust .wrap::-webkit-scrollbar{display:none}
+  body.mt3.tr2 .trust .wrap>div{flex:none;scroll-snap-align:start;background:#fff;border-radius:999px;padding:7px 18px 7px 7px;gap:10px;box-shadow:0 6px 16px rgba(20,40,20,.08)}
+  body.mt3.tr2 .trust b{font-size:12.5px;white-space:nowrap}
+  body.mt3.tr2 .trust svg{width:17px;height:17px;padding:9px}
+  body.mt3.lay5.tr2 .trust{padding-top:20px}
+}
