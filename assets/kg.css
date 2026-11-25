@@ -1524,3 +1524,8 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   .rev-head{margin-bottom:20px}
 }
 @media(max-width:760px){.samples{position:relative;z-index:1}}
+/* móvil · menos aire entre bloques: 44 px arriba y abajo en instalación, guías y preguntas (antes 60) y 24 px bajo los títulos de sección (antes 40) */
+@media(max-width:760px){
+  .install,.guides,.faq{padding-top:44px;padding-bottom:44px}
+  .sec-head{margin-bottom:24px}
+}
