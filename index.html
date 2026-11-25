@@ -517,8 +517,9 @@ var me=q.get('menu')||'2';if(/^[12]$/.test(me))document.body.classList.add('menu
     document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!promo.hidden)closePromo()});
     if(q.get('pop')==='promo'){if(pop)pop.hidden=true;document.documentElement.style.overflow='';openPromo()}
     // aparece al entrar, una vez por visita (no en capturas ni si ya hay otro pop-up abierto)
-    var seen=false;try{seen=sessionStorage.getItem('kg-promo')==='1'}catch(e){}
-    if(!q.get('pop')&&!q.get('nofx')&&!seen)setTimeout(function(){if(pop&&!pop.hidden)return;try{sessionStorage.setItem('kg-promo','1')}catch(e){}openPromo()},700);
+    /* maqueta: sale a los 4 s cada vez que se entra o se recarga (?espera=N cambia los segundos) */
+    var esp=parseFloat(q.get('espera'));if(!(esp>=0))esp=4;
+    if(!q.get('pop')&&!q.get('nofx'))setTimeout(function(){if(pop&&!pop.hidden)return;openPromo()},esp*1000);
   }
   // «Con instalación» desde un modelo: lo apunta en el formulario
   var qm=document.getElementById('qf-model');
