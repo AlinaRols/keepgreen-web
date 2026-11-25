@@ -1529,3 +1529,24 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   .install,.guides,.faq{padding-top:44px;padding-bottom:44px}
   .sec-head{margin-bottom:24px}
 }
+/* móvil · pie ordenado (mpie2, por defecto): botones en fila, contacto en cuatro casillas con etiqueta, listas plegadas y legales en dos columnas */
+@media(max-width:760px){
+  body.mpie2.ft2 .ft-cta{display:block;padding-bottom:28px;margin-bottom:28px}
+  body.mpie2 .ft-cta b{font-size:22px}
+  body.mpie2 .ft-cta .ft-b{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+  body.mpie2 .ft-cta .ft-b .btn{justify-content:center;height:48px;padding:0 8px;font-size:12.5px}
+  body.mpie2 .footer .brand p{max-width:none}
+  body.mpie2 .footer .ft-k{display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;margin-top:22px}
+  body.mpie2 .footer .ft-k li{font-size:12.5px;line-height:1.45;color:#fff}
+  body.mpie2 .footer .ft-k li::before{display:block;margin-bottom:4px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+  body.mpie2 .footer .ft-k li:nth-child(1)::before{content:"Teléfono"}
+  body.mpie2 .footer .ft-k li:nth-child(2)::before{content:"Email"}
+  body.mpie2 .footer .ft-k li:nth-child(3)::before{content:"Horario"}
+  body.mpie2 .footer .ft-k li:nth-child(4)::before{content:"Dirección"}
+  body.mpie2 .footer .ft-k b{font-size:15px}
+  body.mpie2 .footer .cols>div:not(.brand) h4::after,body.mpie2 .ft-z>span::after{color:#fff}
+  body.mpie2 .footer .bottom{display:flex;flex-direction:column-reverse;gap:16px;padding-top:22px}
+  body.mpie2 .footer .bottom div{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+  body.mpie2 .footer .bottom span{opacity:.8}
+}
+@media(max-width:760px){body.mpie2 .footer .ft-k li:nth-child(n+3){grid-column:1/-1}}
