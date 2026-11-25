@@ -1426,3 +1426,31 @@ body.menu2 .hmu,body.menu2 .hcta{box-sizing:border-box;height:57px;padding:0 26p
 @media(max-width:1540px){.hmu .t-l{display:none}.hmu .t-s{display:inline}body.menu2 .hmu,body.menu2 .hcta{padding:0 22px}}
 @media(min-width:1401px) and (max-width:1540px){body.menu2 .nav{gap:18px}body.menu2 .header .wrap{gap:24px}}
 @media(min-width:1141px) and (max-width:1400px){body.menu2 .nav{gap:14px;font-size:11px;letter-spacing:.05em}body.menu2 .header .wrap{gap:20px}}
+
+/* BARRA SUPERIOR · versiones: tb1 mensajes que rotan · tb2 mensajes que pasan de lado · tb3 solo contacto (tb0 = la de tres ventajas fijas) */
+.tb-rot,.tb-mq,.topbar .tb-say,.topbar .tb-hr{display:none}
+body.tb1 .topbar .tb-o,body.tb2 .topbar .tb-o,body.tb3 .topbar .tb-o{display:none}
+.tb-m{display:flex;align-items:center;gap:8px;white-space:nowrap;line-height:17px}
+.tb-m b{font-weight:700;color:#fff}
+.topbar .tb-m span{display:inline;gap:0}
+body.tb1 .tb-rot{display:block;position:relative;height:17px;flex:1;min-width:0;overflow:hidden}
+.tb-rot .tb-m{position:absolute;left:0;right:0;top:0;opacity:0;transform:translateY(100%);transition:opacity .45s ease,transform .45s ease}
+.tb-rot .tb-m.on{opacity:1;transform:none}
+.tb-rot .tb-m.out{opacity:0;transform:translateY(-100%)}
+body.tb2 .tb-mq{display:block;flex:1;min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent)}
+.tb-mqt{display:flex;gap:64px;padding-right:64px;width:max-content;animation:tbmq 48s linear infinite}
+.tb-mq:hover .tb-mqt{animation-play-state:paused}
+@keyframes tbmq{to{transform:translateX(-50%)}}
+body.nofx .tb-mqt,body.nofx .tb-rot .tb-m{animation:none;transition:none}
+@media(prefers-reduced-motion:reduce){.tb-mqt{animation:none}.tb-rot .tb-m{transition:opacity .3s;transform:none!important}}
+body.tb3 .topbar .tb-hr{display:flex}
+body.tb3 .topbar .tb-say{display:flex;margin-left:auto;margin-right:-10px}
+body.tb3.nav2 .topbar .tb-right{margin-left:0}
+@media(max-width:760px){
+  body.tb1 .topbar .tb-right,body.tb2 .topbar .tb-right{display:none}
+  body.tb1 .tb-rot .tb-m{justify-content:center}
+  body.tb3 .topbar .tb-say,body.tb3 .topbar .tb-hr{display:none}
+  body.tb3 .topbar .wrap{justify-content:center!important;gap:22px!important}
+  body.tb3 .topbar .tb-wa{display:flex!important}
+  body.tb3.nav2 .topbar .tb-right{gap:22px}
+}
