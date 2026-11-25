@@ -1517,3 +1517,10 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.mt1.lay5.tr2 .trust{padding-top:0;background:linear-gradient(180deg,#fff 50%,var(--green-ll) 50%)}
   body.mt1 .products-sec{padding-top:38px}
 }
+/* móvil · espacios entre la caja de muestras y las opiniones: 56 px entre la caja y la nota (antes 84), 28 px hasta las tarjetas (antes 44) */
+@media(max-width:760px){
+  .samples{padding-bottom:24px}
+  .reviews{padding-top:32px;padding-bottom:44px}
+  .rev-head{margin-bottom:20px}
+}
+@media(max-width:760px){.samples{position:relative;z-index:1}}
