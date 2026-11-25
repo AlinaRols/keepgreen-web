@@ -1454,3 +1454,15 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.tb3 .topbar .tb-wa{display:flex!important}
   body.tb3.nav2 .topbar .tb-right{gap:22px}
 }
+/* móvil · portada: sin la etiqueta de arriba; la línea de «¿No lo tienes claro?» baja debajo del vídeo */
+@media(max-width:760px){
+  body.lay5 .hero-f .eyebrow{display:none}
+  body.lay5 .hero-f h1{margin-top:0}
+  body.lay5 .hero-f{--vh:calc((100vw - 48px)*.72);padding-top:30px;padding-bottom:calc(28px + var(--vh) + 18px + 66px)}
+  body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{bottom:84px;height:var(--vh)}
+  body.lay5 .hero-f .help{position:absolute;left:0;right:0;top:100%;width:auto;margin-top:calc(28px + var(--vh) + 18px);padding-top:0;border-top:0}
+}
+@media(max-width:380px){
+  body.lay5 .hero-f{padding-bottom:calc(28px + var(--vh) + 18px + 90px)}
+  body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{bottom:108px}
+}
