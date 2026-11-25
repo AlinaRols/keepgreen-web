@@ -1454,17 +1454,16 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.tb3 .topbar .tb-wa{display:flex!important}
   body.tb3.nav2 .topbar .tb-right{gap:22px}
 }
-/* móvil · portada: sin la etiqueta de arriba; la línea de «¿No lo tienes claro?» baja debajo del vídeo */
+/* móvil · portada en una sola columna que fluye: título, texto, botones, vídeo y, debajo, «¿No lo tienes claro?». Sin la etiqueta de arriba */
 @media(max-width:760px){
+  body.lay5 .hero-f{display:grid;grid-template-columns:minmax(0,1fr);min-height:0;padding:30px 24px 30px}
+  body.lay5 .hero-f .wrap,body.lay5 .hero-f .hf{display:contents}
   body.lay5 .hero-f .eyebrow{display:none}
-  body.lay5 .hero-f h1{margin-top:0}
-  body.lay5 .hero-f{--vh:calc((100vw - 48px)*.72);padding-top:30px;padding-bottom:calc(28px + var(--vh) + 18px + 66px)}
-  body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{bottom:84px;height:var(--vh)}
-  body.lay5 .hero-f .help{position:absolute;left:0;right:0;top:100%;width:auto;margin-top:calc(28px + var(--vh) + 18px);padding-top:0;border-top:0}
-}
-@media(max-width:380px){
-  body.lay5 .hero-f{padding-bottom:calc(28px + var(--vh) + 18px + 90px)}
-  body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{bottom:108px}
+  body.lay5 .hero-f h1{grid-row:1;margin-top:0}
+  body.lay5 .hero-f .sub{grid-row:2}
+  body.lay5 .hero-f .big{grid-row:3}
+  body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{grid-row:4;grid-column:1;position:static;width:100%;height:auto;aspect-ratio:25/18;margin-top:24px;border-radius:18px}
+  body.lay5 .hero-f .help{grid-row:5;position:static;width:auto;margin-top:18px;padding-top:0;border-top:0}
 }
 /* móvil · portada: los dos botones en una fila (sin la flechita, que no cabe) */
 @media(max-width:760px){
@@ -1512,4 +1511,9 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.mt1.tr2 .trust .wrap>div{gap:7px;padding:12px 6px 11px}
   body.mt1.tr2 .trust svg{width:15px;height:15px;padding:7px}
   body.mt1.tr2 .trust b{font-size:11.5px;line-height:1.2}
+}
+/* móvil · espacios parejos alrededor de la tarjeta de ventajas */
+@media(max-width:520px){
+  body.mt1.lay5.tr2 .trust{padding-top:0;background:linear-gradient(180deg,#fff 50%,var(--green-ll) 50%)}
+  body.mt1 .products-sec{padding-top:38px}
 }
