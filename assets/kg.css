@@ -1466,3 +1466,14 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.lay5 .hero-f{padding-bottom:calc(28px + var(--vh) + 18px + 90px)}
   body.lay5 .hero-f>img,body.lay5 .hero-f>video.hv{bottom:108px}
 }
+/* móvil · portada: los dos botones en una fila (sin la flechita, que no cabe) */
+@media(max-width:760px){
+  body.lay5 .hero-f .big{flex-wrap:nowrap;gap:8px;width:100%}
+  body.lay5 .hero-f .bb{flex:1 1 auto;min-width:0;height:52px;padding:0 14px;justify-content:center;text-align:center}
+  body.lay5 .hero-f .bb:first-child{flex:0 0 auto}
+  body.lay5 .hero-f .bb i{display:none}
+  body.lay5 .hero-f .bb .tx{flex:0 1 auto;align-items:center}
+  body.lay5 .hero-f .bb b{font-size:12.5px;white-space:nowrap}
+}
+@media(max-width:380px){body.lay5 .hero-f .bb{padding:0 11px}body.lay5 .hero-f .bb b{font-size:11.5px}}
+@media(max-width:340px){body.lay5 .hero-f .bb.pro b{white-space:normal;line-height:1.15}body.lay5 .hero-f .bb.pro{padding:0 14px}}
