@@ -1421,3 +1421,8 @@ body.si2 .install .wrap{grid-template-columns:1.1fr .9fr}
 @media(max-width:860px){body.si2 .install .wrap{grid-template-columns:1fr}body.si2 .form.qf .qf-tf{grid-column:1/-1}body.si1 .ins-ok li{font-size:14px}}
 body.si1 .install h2,body.si1 .install .lead{text-wrap:balance}
 body.si1 .install .lead{max-width:46ch}
+/* cabecera: los dos botones, del mismo tamaño que los de la portada (57 px de alto, letra de 13 px en negrita) */
+body.menu2 .hmu,body.menu2 .hcta{box-sizing:border-box;height:57px;padding:0 26px;font-size:13px;font-weight:700;justify-content:center}
+@media(max-width:1540px){.hmu .t-l{display:none}.hmu .t-s{display:inline}body.menu2 .hmu,body.menu2 .hcta{padding:0 22px}}
+@media(min-width:1401px) and (max-width:1540px){body.menu2 .nav{gap:18px}body.menu2 .header .wrap{gap:24px}}
+@media(min-width:1141px) and (max-width:1400px){body.menu2 .nav{gap:14px;font-size:11px;letter-spacing:.05em}body.menu2 .header .wrap{gap:20px}}
