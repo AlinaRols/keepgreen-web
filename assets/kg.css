@@ -1506,3 +1506,10 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.mt1.lay5.tr2 .trust{padding-top:4px;background:linear-gradient(180deg,#fff calc(50% + 2px),var(--green-ll) calc(50% + 2px))}
   body.mt1.tr2 .trust .wrap{box-shadow:0 14px 36px rgba(20,40,20,.12)}
 }
+/* móvil · ventajas en casillas, más compactas */
+@media(max-width:520px){
+  body.mt1.tr2 .trust .wrap{padding:2px 4px;border-radius:16px}
+  body.mt1.tr2 .trust .wrap>div{gap:7px;padding:12px 6px 11px}
+  body.mt1.tr2 .trust svg{width:15px;height:15px;padding:7px}
+  body.mt1.tr2 .trust b{font-size:11.5px;line-height:1.2}
+}
