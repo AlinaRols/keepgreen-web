@@ -1550,3 +1550,25 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.mpie2 .footer .bottom span{opacity:.8}
 }
 @media(max-width:760px){body.mpie2 .footer .ft-k li:nth-child(n+3){grid-column:1/-1}}
+
+/* móvil · pop-ups más recogidos: el de la caja cabe sin deslizar y el título del formulario va en una línea */
+@media(max-width:760px){
+  .promo .pp-v{aspect-ratio:2/1}
+  .promo .pp-seal{left:12px;top:12px;width:74px;height:74px}
+  .promo .pp-seal b{font-size:13.5px}
+  .promo .pp-t{padding:16px 20px 16px}
+  .promo h3{font-size:20px;margin:6px 0 6px}
+  .promo .sub{font-size:12.5px;line-height:1.5;margin-bottom:12px}
+  .promo .pp-l{gap:6px;font-size:12.5px;margin-bottom:0}
+  .promo .pp-l li{gap:8px}
+  .promo .pp-l li::before{width:18px;height:18px}
+  .promo .pp-go{margin-top:16px;padding:15px;font-size:13.5px}
+  .promo .pp-no{margin-top:10px}
+  .pop .pop-x{width:32px;height:32px;right:10px;top:10px;font-size:18px}
+  .pop h3{padding-right:0;text-wrap:balance}
+  .pop-form{padding:24px 20px 18px}
+  .pop-form .sub{margin-bottom:12px}
+  .pop-form .f-grid{gap:8px 10px}
+  .pop-form .in{padding:9px 12px}
+  .pop-form .legal{margin-top:8px}
+}
