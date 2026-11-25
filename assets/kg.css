@@ -1501,3 +1501,8 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   body.mt3.tr2 .trust svg{width:17px;height:17px;padding:9px}
   body.mt3.lay5.tr2 .trust{padding-top:20px}
 }
+/* móvil · ventajas en casillas con efecto flotante: blanco hasta la mitad de la tarjeta y verde claro desde ahí, como en escritorio */
+@media(max-width:520px){
+  body.mt1.lay5.tr2 .trust{padding-top:4px;background:linear-gradient(180deg,#fff calc(50% + 2px),var(--green-ll) calc(50% + 2px))}
+  body.mt1.tr2 .trust .wrap{box-shadow:0 14px 36px rgba(20,40,20,.12)}
+}
