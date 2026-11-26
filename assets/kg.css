@@ -1572,3 +1572,55 @@ body.tb3.nav2 .topbar .tb-right{margin-left:0}
   .pop-form .in{padding:9px 12px}
   .pop-form .legal{margin-top:8px}
 }
+
+/* contacto · teléfono y WhatsApp llevan siempre el mismo icono (portada, preguntas, menú de móvil, pie) */
+.ct{display:inline-flex;align-items:center;gap:7px}
+.ct svg{width:15px;height:15px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn.ct{gap:9px}
+.btn.ct svg{width:16px;height:16px}
+.hero-f .help a.ct svg{color:var(--green-d)}
+.mn-c{display:flex;justify-content:center;gap:22px}
+.ft-k li:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px}
+.ft-k .ct svg{width:16px;height:16px;color:rgba(255,255,255,.85)}
+.ft-k .ft-wa{color:#fff;font-weight:600}
+@media(max-width:760px){
+  body.mpie2 .footer .ft-k li:first-child{display:block}
+  body.mpie2 .footer .ft-k li:first-child::before{content:"Teléfono y WhatsApp"}
+  body.mpie2 .footer .ft-k li:first-child .ct{display:flex;margin-top:2px}
+  body.mpie2 .footer .ft-k .ft-wa{margin-top:6px}
+}
+
+/* móvil · caja de muestras corta: vídeo apaisado, las cuatro ventajas en dos filas de una línea, sin la lista de pasos */
+@media(max-width:760px){
+  .sbox .sb-v{padding:0}
+  .sbox .sb-v video{max-width:none;width:100%;aspect-ratio:2/1}
+  .sbox .sb-free{left:12px;top:12px;width:76px;height:76px}
+  .sbox .sb-free b{font-size:13.5px}
+  .sbox .sb-t{padding:4px 20px 22px}
+  .samples .sb-t h2{font-size:21px;margin:6px 0 6px}
+  .sbox .sb-t .lead{font-size:13px;line-height:1.5}
+  .sbox .sb-f{grid-template-columns:auto auto;justify-content:space-between;gap:10px 12px;margin:16px 0 18px}
+  .sbox .sb-f li{display:flex;align-items:center;gap:7px}
+  .sbox .sb-f svg{width:16px;height:16px;padding:0;margin:0;flex:none;background:none;border-radius:0}
+  .sbox .sb-f b{font-size:12px;line-height:1.2;align-self:center}
+  .sbox .sb-f span{display:none}
+  .sbox .sact .sb-cta{box-sizing:border-box;width:100%;justify-content:space-between;padding:7px 7px 7px 22px;font-size:14px}
+  body.lay5 .hero-f .sub .s2{white-space:nowrap}
+  .sbox .sb-ok{display:none}
+  .sbox .sb-s{display:none}
+}
+@media(max-width:340px){.samples .sb-t h2{font-size:19px}.sbox .sb-f b{font-size:11.5px}}
+
+/* cabecera · el menú nuevo es más largo (Modelos y precios, Guía de instalación, Dónde instalamos): se aprieta por tramos */
+@media(min-width:1401px) and (max-width:1540px){body.menu2 .nav{gap:14px;font-size:11px;letter-spacing:.04em}body.menu2 .header .wrap{gap:20px}body.menu2 .hmu,body.menu2 .hcta{padding:0 22px}}
+@media(min-width:1341px) and (max-width:1400px){body.menu2 .nav{gap:11px;font-size:10.5px;letter-spacing:.02em}body.menu2 .header .wrap{gap:16px}body.menu2 .hmu,body.menu2 .hcta{padding:0 20px}}
+@media(max-width:1340px){body.menu2 .hcta{display:none}}
+@media(min-width:1061px) and (max-width:1140px){body.menu2 .nav{gap:10px;font-size:10.5px;letter-spacing:.02em}body.menu2 .header .wrap{gap:12px}body.menu2 .hmu{padding:0 18px}}
+@media(min-width:1541px) and (max-width:1620px){body.menu2 .nav{gap:14px;letter-spacing:.04em}body.menu2 .header .wrap{gap:18px}body.menu2 .hmu,body.menu2 .hcta{padding:0 22px}}
+@media(min-width:1401px) and (max-width:1470px){body.menu2 .nav{gap:12px;font-size:10.5px;letter-spacing:.02em}body.menu2 .header .wrap{gap:18px}}
+@media(min-width:1341px) and (max-width:1400px){body.menu2 .nav{gap:10px;letter-spacing:.01em}}
+@media(min-width:1141px) and (max-width:1239px){body.menu2 .nav{gap:12px;font-size:10.5px;letter-spacing:.02em}}
+@media(min-width:1061px) and (max-width:1099px){body.menu2 .nav{gap:8px;font-size:10px;letter-spacing:.01em}}
+
+/* tarjeta de ventajas: la segunda línea no deja una palabra suelta */
+body.tr2 .trust span{text-wrap:balance}
