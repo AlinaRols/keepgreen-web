@@ -1669,3 +1669,10 @@ body.nofx.ab4 .ab-i,body.nofx.ab4 .ab-ic,body.nofx.ab4 .ab-a i{transition:none}
   body.ab4 .about p{grid-column:1/-1;margin:12px 0 16px;font-size:12.5px}
   body.ab4 .ab-a{grid-column:1/-1;padding:12px 0 14px;font-size:12.5px}
 }
+
+/* textos del final · toque de rosa: punto en la etiqueta y flechas de las tarjetas en rosa */
+body.ab4 .ab-h .eyebrow{display:inline-flex;align-items:center;gap:9px}
+body.ab4 .ab-h .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--pink)}
+body.ab4 .ab-a i{background:var(--pink);color:#fff}
+@media(hover:hover){body.ab4 .ab-i:hover .ab-a i{background:var(--pink-d);transform:translateX(3px)}}
+body.nopink.ab4 .ab-a i{background:var(--green);color:#fff}
