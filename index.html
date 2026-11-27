@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/kg.css?v=1795781807">
+<link rel="stylesheet" href="assets/kg.css?v=1795784118">
 </head>
 <body data-hero="f">
 
@@ -308,10 +308,10 @@
         </div></div>
       <div class="full qf-m2"><label class="l">Metros aproximados</label>
         <div class="range">
-          <input type="radio" name="m2" id="m1"><label for="m1">Menos de 20</label>
-          <input type="radio" name="m2" id="m2" checked><label for="m2">20–50</label>
-          <input type="radio" name="m2" id="m3"><label for="m3">50–100</label>
-          <input type="radio" name="m2" id="m4"><label for="m4">Más de 100</label>
+          <input type="radio" name="m2" id="m1"><label for="m1">Menos de 20&nbsp;m²</label>
+          <input type="radio" name="m2" id="m2" checked><label for="m2">20–50&nbsp;m²</label>
+          <input type="radio" name="m2" id="m3"><label for="m3">50–100&nbsp;m²</label>
+          <input type="radio" name="m2" id="m4"><label for="m4">Más de 100&nbsp;m²</label>
           <input type="radio" name="m2" id="m5"><label for="m5">No lo sé</label>
         </div></div>
       <div class="qf-cp"><label class="l" for="cp">Código postal</label><input class="in" id="cp" placeholder="03001" inputmode="numeric"></div>
@@ -357,6 +357,7 @@
 <!-- 8 · TEXTO SEO + pie -->
 <section class="about"><div class="wrap">
   <figure class="ab-ph reveal"><img src="assets/home/cesped-artificial.webp" alt="Rollos de césped artificial Keepgreen" loading="lazy"></figure>
+  <div class="ab-h reveal"><span class="eyebrow">Sobre Keepgreen</span><h2>Césped artificial, de la muestra a la instalación</h2></div>
   <div class="ab-l">
     <div class="ab-i reveal"><span class="ab-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/></svg></span><div><h3>Especialistas en césped artificial para el hogar</h3><p>Tienda especializada con sede en Alicante y centros en diez ciudades donde ver y tocar el césped. Calidades premium al mejor precio garantizado y 10 años de garantía.</p><a class="ab-a" href="#zonas">Ver dónde estamos <i>→</i></a></div></div>
     <div class="ab-i reveal"><span class="ab-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L3.5 17.5l3 3 5.7-5.7a4 4 0 0 0 5.3-5.3L15 12l-3-3z"/></svg></span><div><h3>Instalación de césped artificial</h3><p>Instalamos en diez ciudades. Medimos, preparamos el terreno y te damos precio cerrado antes de empezar. En el resto de España te enviamos el césped y te asesoramos.</p><a class="ab-a" href="#instalacion">Pedir presupuesto <i>→</i></a></div></div>
@@ -436,7 +437,7 @@ var pr=q.get('pr')||'2';if(/^[0123]$/.test(pr))document.body.classList.add('pr'+
 var mm=q.get('mm')||(pr==='0'?'1':'2');if(/^[1234]$/.test(mm))document.body.classList.add('mm'+mm);
 if(q.get('cta')!=='verde')document.body.classList.add('spk');
 var fn=q.get('font')||'1';if(/^[234]$/.test(fn)){document.body.classList.add('fn'+fn);var fl=document.createElement('link');fl.rel='stylesheet';fl.href='https://fonts.googleapis.com/css2?family='+({2:'Manrope:wght@400;500;600;700;800',3:'Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400',4:'Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800'})[fn]+'&display=swap';document.head.appendChild(fl)}
-var ab=q.get('ab')||'3';if(/^[123]$/.test(ab))document.body.classList.add('ab'+ab);
+var ab=q.get('ab')||'4';if(/^[1234]$/.test(ab))document.body.classList.add('ab'+ab);
 var ft=q.get('ft')||'2';if(/^[123]$/.test(ft))document.body.classList.add('ft'+ft);
 var mmo=q.get('mmo')||'1';if(mmo==='2')document.body.classList.add('mmo2');var mpie=q.get('mpie')||'2';if(mpie==='2')document.body.classList.add('mpie2');
 var col=q.get('color')||'rosa';if(col!=='antes'){document.body.classList.add('mono');if(col==='verde')document.body.classList.add('nopink')}
